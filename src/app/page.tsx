@@ -78,7 +78,7 @@ export default function Home() {
         id="experience"
         eyebrow="Career"
         title="Experience"
-        intro="Four years of cross-border delivery across Bangladesh, Japan, and Korea."
+        intro="Four years shipping software end-to-end for clients across Japan, Korea, the US, and the EU."
       >
         <Timeline items={experience} />
       </Section>
@@ -139,6 +139,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+
+            <h3 className="mb-2 mt-8 text-sm font-semibold uppercase tracking-wide text-[var(--muted-2)]">
+              Languages
+            </h3>
+            <p className="text-sm text-[var(--muted)]">{profile.languages}</p>
           </div>
         </div>
       </Section>

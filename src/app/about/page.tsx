@@ -23,7 +23,7 @@ export default function About() {
           <a href={profile.currentlyAt.url} target="_blank" rel="noreferrer">
             Potential Inc.
           </a>
-          , a Korean software studio, I&apos;ve shipped 6 web and mobile products end-to-end in 11
+          , a South Korea-based software studio, I&apos;ve shipped 6 web and mobile products end-to-end in 11
           months for clients across Japan, Korea, the US, and the EU — including a dental-restoration
           lab platform, an AI artwork-recognition app, an art-appraisal marketplace, a TCG marketplace
           app, a B2B Premier League ticket platform, and a Korea social-discovery app.
