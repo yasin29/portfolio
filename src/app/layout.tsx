@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Yasin Billah — Technical Project Manager',
     description:
-      '4 years end-to-end delivery. AI-augmented workflows that cut client delivery 3x. Remote, GMT+6.',
+      '4 years end-to-end delivery. AI-augmented workflows that cut client delivery 3x. Dhaka, GMT+6.',
     url: 'https://yasinbillah.com',
     siteName: 'Yasin Billah',
     locale: 'en_US',

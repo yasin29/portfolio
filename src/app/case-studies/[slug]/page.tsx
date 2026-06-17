@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Cover from '@/components/Cover';
 import { getAllCaseStudies, getCaseStudyBySlug } from '@/lib/case-studies';
+import { basePath } from '@/lib/profile';
 
 export async function generateStaticParams() {
   return getAllCaseStudies().map((s) => ({ slug: s.slug }));
@@ -41,7 +42,7 @@ export default async function CaseStudyPage({
       {/* hero preview */}
       <div className="relative aspect-[21/8] w-full overflow-hidden border-b border-[var(--border)] bg-[var(--surface)]">
         {study.preview ? (
-          <Image src={study.preview} alt={`${study.title} preview`} fill priority className="object-cover" sizes="100vw" />
+          <Image src={`${basePath}${study.preview}`} alt={`${study.title} preview`} fill priority className="object-cover" sizes="100vw" />
         ) : (
           <Cover study={study} className="h-full w-full" />
         )}
@@ -53,6 +54,14 @@ export default async function CaseStudyPage({
         </Link>
 
         <header className="mt-6 mb-8 border-b border-[var(--border)] pb-8">
+          {study.logo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={`${basePath}${study.logo}`}
+              alt={`${study.title.split(' — ')[0]} logo`}
+              className="mb-4 h-8 w-auto"
+            />
+          )}
           <p className="text-xs uppercase tracking-wider text-[var(--muted-2)]">
             {study.period} · {study.status ?? 'In progress'}
           </p>
@@ -62,6 +71,16 @@ export default async function CaseStudyPage({
           <p className="mt-3 text-[var(--muted)]">
             {study.client} · {study.role}
           </p>
+          {study.link && (
+            <a
+              href={study.link}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary mt-5 text-sm"
+            >
+              Visit site →
+            </a>
+          )}
           {study.chips && (
             <div className="mt-4 flex flex-wrap gap-1.5">
               {study.chips.map((c) => (

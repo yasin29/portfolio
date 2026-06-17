@@ -11,6 +11,10 @@ export type CaseStudyMeta = {
   status?: string;
   stack?: string[];
   chips?: string[];
+  /** Public path to a logo (e.g. SVG), prefixed with basePath at render time. */
+  logo?: string;
+  /** External "visit site" URL. */
+  link?: string;
   /** Public path to a real screenshot/preview, only set when the file exists on disk. */
   preview?: string;
   /** Short blurb shown on cards — first paragraph of the body if not given. */
@@ -26,13 +30,13 @@ const PUBLIC_DIR = path.join(process.cwd(), 'public');
 
 // Curated display order (most relevant / recent first).
 const ORDER = [
+  'ivory',
   'artlive',
   'bside',
   'jtbs-erp',
   'lifeark-nihongo',
   'det-bridge',
   'findy-job',
-  'ivory',
   'insidemaps',
 ];
 
@@ -86,6 +90,8 @@ export function getAllCaseStudies(): CaseStudy[] {
       status: data.status,
       stack: data.stack,
       chips: data.chips,
+      logo: data.logo as string | undefined,
+      link: data.link as string | undefined,
       preview: findPreview(slug, data.hero as string | undefined),
       summary: (data.summary as string) || firstParagraph(content),
       content,

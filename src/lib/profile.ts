@@ -11,7 +11,7 @@ export const profile = {
   role: 'Technical Project Manager',
   tagline: 'I ship web and mobile products end-to-end — with AI-augmented delivery.',
   location: 'Dhaka, Bangladesh',
-  timezone: 'Remote · GMT+6',
+  timezone: 'Dhaka · GMT+6',
   email: 'yasinbillah46@gmail.com',
   phone: '+880 1784 468706',
   resume: `${basePath}/Yasin-Billah-Resume.pdf`,
@@ -26,7 +26,7 @@ export const profile = {
     url: 'https://potentialai.com',
     note: 'a Korean software studio',
   },
-  availability: 'Open to senior Technical PM roles · remote-first',
+  availability: 'Open to senior Technical PM roles',
 } as const;
 
 export const highlights = [
@@ -51,7 +51,7 @@ export const experience: Experience[] = [
     company: 'Potential Inc.',
     role: 'Project Manager',
     period: 'Jun 2025 – Present',
-    context: 'Remote · Full time · Korean software studio',
+    context: 'Full time · Korean software studio',
     bullets: [
       'Run client kickoffs with tech-stack guidance and budget scoping; own WBS, sprint planning, daily standups, and weekly stakeholder reports.',
       'Shipped 6 web and mobile products end-to-end in 11 months — a dental-restoration lab platform ($138K H1 2026 US/CA sales), an AI artwork-recognition app, an art-appraisal marketplace, a TCG marketplace app, a B2B Premier League ticket platform, and a Korea social-discovery app.',

@@ -78,7 +78,7 @@ export default function Home() {
         id="experience"
         eyebrow="Career"
         title="Experience"
-        intro="Three years of remote, cross-border delivery across Bangladesh, Japan, and Korea."
+        intro="Four years of cross-border delivery across Bangladesh, Japan, and Korea."
       >
         <Timeline items={experience} />
       </Section>
@@ -147,7 +147,7 @@ export default function Home() {
       <Section id="contact" eyebrow="Contact" title="Let's talk">
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 md:p-12">
           <p className="max-w-2xl text-lg leading-relaxed text-[var(--muted)]">
-            I&apos;m open to senior PM roles at remote-first teams shipping a product I&apos;d use.
+            I&apos;m open to senior Technical PM roles at teams shipping a product I&apos;d use.
             Comfortable across US, EU, JP, and KR timezones. The fastest way to reach me is email.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

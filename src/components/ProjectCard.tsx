@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { CaseStudyMeta } from '@/lib/case-studies';
+import { basePath } from '@/lib/profile';
 import Cover from './Cover';
 
 export default function ProjectCard({ study }: { study: CaseStudyMeta }) {
@@ -10,7 +11,7 @@ export default function ProjectCard({ study }: { study: CaseStudyMeta }) {
       <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-[var(--border)]">
         {study.preview ? (
           <Image
-            src={study.preview}
+            src={`${basePath}${study.preview}`}
             alt={`${study.title} preview`}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

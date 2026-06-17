@@ -60,7 +60,7 @@ export default function About() {
 
         <h2>What I&apos;m looking for</h2>
         <p>
-          A senior Technical PM seat at a remote-first team shipping a product I&apos;d use. Comfortable
+          A senior Technical PM seat at a team shipping a product I&apos;d use. Comfortable
           across US, EU, JP, and KR timezones.
         </p>
 
