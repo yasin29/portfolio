@@ -23,7 +23,7 @@ export const profile = {
     'Technical Project Manager with 4 years of experience shipping web and mobile products end-to-end for clients across Japan, Korea, the US, and the EU. I build AI-augmented delivery workflows in Claude Code that have cut average client delivery 3x — from three months to one. I own the full lifecycle: kickoff and budget scoping, sprint planning, cross-functional coordination, UAT, and release.',
   currentlyAt: {
     company: 'Potential Inc.',
-    url: 'https://potential.so',
+    url: 'https://potentialai.com',
     note: 'a Korean software studio',
   },
   availability: 'Open to senior Technical PM roles · remote-first',
