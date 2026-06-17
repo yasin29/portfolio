@@ -157,7 +157,10 @@ export default function Home() {
             <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" className="btn btn-ghost">
               LinkedIn
             </a>
-            <a href={profile.resume} className="btn btn-ghost">
+            <a href={profile.socials.github} target="_blank" rel="noreferrer" className="btn btn-ghost">
+              GitHub
+            </a>
+            <a href={profile.resume} target="_blank" rel="noreferrer" className="btn btn-ghost">
               Resume (PDF)
             </a>
           </div>

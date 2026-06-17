@@ -25,7 +25,7 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a href={profile.resume} className="btn btn-primary text-sm">
+        <a href={profile.resume} target="_blank" rel="noreferrer" className="btn btn-primary text-sm">
           Resume
         </a>
       </div>

@@ -2,7 +2,9 @@
 // Source of truth: Yasin Billah CV (2026-06-17). Defensible facts only.
 
 // Set at build time (e.g. "/portfolio" for GitHub Pages project sites); empty in dev/Vercel.
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+// Exported so components can prefix static asset URLs (next/image doesn't do this for
+// unoptimized sources under a basePath).
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 export const profile = {
   name: 'Yasin Billah',
@@ -12,7 +14,7 @@ export const profile = {
   timezone: 'Remote · GMT+6',
   email: 'yasinbillah46@gmail.com',
   phone: '+880 1784 468706',
-  resume: `${BASE_PATH}/Yasin-Billah-Resume.pdf`,
+  resume: `${basePath}/Yasin-Billah-Resume.pdf`,
   socials: {
     linkedin: 'https://linkedin.com/in/yasin-billah',
     github: 'https://github.com/yasin29',
