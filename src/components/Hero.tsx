@@ -30,7 +30,7 @@ export default function Hero() {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <a href="/#work" className="btn btn-primary">
+        <a href="#work" className="btn btn-primary">
           View work
         </a>
         <a href={profile.resume} className="btn btn-ghost">
