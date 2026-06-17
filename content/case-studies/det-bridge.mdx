@@ -1,0 +1,60 @@
+---
+slug: det-bridge
+title: "DET Bridge — Japan's First Duolingo English Test Prep App"
+client: Kawaii Advanced Technology
+role: Project Manager
+period: "2024"
+status: Launched
+stack: [Next.js, Django, PostgreSQL, OpenAI API]
+chips:
+  - EdTech
+  - SaaS
+  - Japan-market
+  - AI-augmented
+hero: /case-studies/det-bridge/hero.png
+---
+
+## At a glance
+
+Japan's first dedicated preparation app for the **Duolingo English Test (DET)** — the alternative to TOEFL/IELTS that has become the default for cross-border university applications. PM'd the SaaS launch from PRD through release.
+
+## The problem
+
+DET is rising fast as a TOEFL alternative for Japanese students applying abroad, but the prep market in Japan was almost entirely TOEFL-focused. Students were guessing the question formats from outdated forum posts. Kawaii spotted the gap; my job was to ship the product before competitors noticed.
+
+## My role
+
+- **PM ownership** end-to-end: PRD, sprint plan, content strategy, release.
+- **Curriculum architect** — collaborated with Japan-side education advisors on item-type taxonomy.
+- **Launch coordinator** — landing page, payment integration, support flow.
+
+## Approach
+
+- Reverse-engineered DET's published item types into a structured question taxonomy so we could generate practice content systematically rather than ad-hoc.
+- Used **OpenAI API** for automated question generation and feedback, but enforced human review on the first thousand items to anchor quality.
+- Built the question bank as a separate Django app from the practice runner — let the content team add items without touching student-facing code.
+- Localised the entire surface to Japanese first; English UI was a later toggle.
+
+## What shipped
+
+- Full DET-mapped practice modes (reading, listening, writing, speaking with audio)
+- AI-powered feedback on free-response answers
+- Progress tracking + readiness score
+- Subscription billing
+- Japanese-first UI
+
+## Outcome
+
+- **One of two SaaS products** launched at Kawaii during my tenure.
+- Validated the Japan EdTech distribution playbook (same one we'd reuse for LifeArk).
+- Marketed as **Japan's first** DET-dedicated app — first-mover positioning maintained at launch.
+
+## What I'd do differently
+
+Invest earlier in **listening audio quality**. We launched with TTS-generated audio for practice items and replaced it with native recordings post-launch — students noticed immediately. Should have been native from day one.
+
+## Stack & tools
+
+**Build:** Next.js · Django · PostgreSQL · OpenAI API · Stripe (JP payment methods)
+
+**PM tooling:** Jira · Notion · Figma · Slack

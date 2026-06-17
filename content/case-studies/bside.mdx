@@ -1,0 +1,60 @@
+---
+slug: bside
+title: "Bside — Mobile Art Exhibition + AI Artwork Recognition"
+client: Potential Inc.
+role: Project Manager
+period: "2025 – present"
+status: Active
+stack: [React Native, Expo, Django, FastAPI, PyTorch, PostgreSQL, AWS ECS]
+chips:
+  - Mobile (iOS / Android)
+  - AI / Computer Vision
+  - Consumer
+hero: /case-studies/bside/hero.png
+---
+
+## At a glance
+
+A mobile-first art exhibition app — point your phone at a piece in a gallery, the app recognises it, and adds it to your private collection. I PM the build across mobile, backend, and an external AI vision service.
+
+## The problem
+
+Most gallery-goers leave with no record of what moved them — just a phone full of badly-lit photos. Bside's bet: if recognition is fast and accurate enough, the camera becomes the primary save action, and a collection emerges by accident. That requires sub-second on-device capture, a vision model that handles partial-frame and oblique-angle shots, and a backend that scales when a single exhibition opening sends a few thousand recognitions per hour.
+
+## My role
+
+- **End-to-end PM** across three workstreams: React Native mobile (Expo SDK 54), Django backend, and the **Dunamis** FastAPI AI service (artwork recognition + bounding-box detection).
+- **Integration owner** for the AI contract: input shape (base64 image), output shape (ArtworkDTO + coordinates), latency budget, fallback when recognition fails.
+- Coordinated the **Claude Code submodule workflow** that the team uses across all Potential Inc. projects — same `.claude` configuration, project-specific knowledge base.
+
+## Approach
+
+- Locked the AI service contract *first*. Before mobile or backend committed to flows, Dunamis had to commit to a stable schema and latency SLA. This let mobile build optimistic UI assuming the API would respond in under 2s.
+- Split mobile into capture, recognition, and collection screens — each a separate epic with its own QA pass.
+- Used the AWS ECS + S3 + CloudFront stack we'd standardised on for other Potential projects, so DevOps could reuse pipelines.
+- Wrote the PRD as a state machine on the user side: pre-capture → captured → recognised → confirmed → saved. Each transition has an unambiguous trigger.
+
+## What shipped
+
+- Capture screen with on-device camera + crop
+- Recognition flow with confidence threshold + "this isn't right" fallback
+- Personal collection with grouping by exhibition / artist
+- Artist gallery + art feed (social discovery)
+- Camera check-in tied to physical exhibitions
+- WIP frames (in-progress shots) — drives engagement during gallery visits
+
+## Outcome
+
+- App in active build, mobile + backend + AI service all in production environments.
+- Recognition contract held under load testing.
+- Knowledge base and PRD reused as the template for new Potential Inc. mobile projects.
+
+## What I'd do differently
+
+Push for an **offline-first** capture model earlier. Gallery wifi is often dead — captures should queue and sync on-network, not fail. We're adding this now; it would have been cheaper to design in from the start.
+
+## Stack & tools
+
+**Build:** React Native (Expo SDK 54) · Django 6 · FastAPI · PyTorch / TensorFlow · PostgreSQL 16 · AWS ECS + RDS + S3 + CloudFront · Route 53
+
+**PM tooling:** Notion · Figma · Jira · Slack · Claude Code (shared `.claude` submodule) · n8n

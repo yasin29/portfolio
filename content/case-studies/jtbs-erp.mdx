@@ -1,0 +1,60 @@
+---
+slug: jtbs-erp
+title: "JTBS ERP — Apparel-Industry Customization"
+client: "Kawaii Advanced Technology — for JB TEX BD & Hameem Group"
+role: Project Manager
+period: "Feb 2024 – May 2025"
+status: Delivered
+stack: [Claris FileMaker, PostgreSQL, REST APIs]
+chips:
+  - ERP
+  - B2B
+  - Enterprise
+  - Cross-border (BD-JP-PK)
+hero: /case-studies/jtbs-erp/hero.png
+---
+
+## At a glance
+
+Customised a cloud ERP (originally a Pakistani retail product, built by **Jin Technologies**) for Bangladeshi garment manufacturers — JB TEX BD and Hameem Group. Inventory, accounting, sales, and HR features re-shaped to match apparel-export workflows.
+
+## The problem
+
+Off-the-shelf ERP rarely fits a vertical. Apparel manufacturers track work-in-progress across cutting, sewing, finishing, and shipping; their costing model uses style/colour/size combos; their invoicing has to reconcile against international LCs. JTBS as shipped covered ~70% of this generically — the remaining 30% was the difference between "we use it" and "it sits unused."
+
+## My role
+
+- **PM** between the Japan-based product team, the Pakistan-based core engineering team, and the Bangladeshi client floors.
+- **Requirements translator** — walked factory floors to map the actual workflow (not the org chart), wrote SRS, owned UAT scripts.
+- **Cross-border delivery** — Bangladesh ↔ Japan ↔ Pakistan timezone handoff; sprint cadence had to survive three holidays calendars.
+
+## Approach
+
+- Started with **two factory walk-throughs** before writing any spec. Maps drawn by hand, then digitised.
+- Split customisations into **must-have** (apparel WIP tracking, multi-warehouse with bonded warehouse logic, FBR-equivalent local tax for BD) and **nice-to-have** — and rigidly defended the line.
+- Ran UAT with operators, not managers — managers would say "looks fine"; operators caught the workflow breaks.
+- Built an internal "ERP customisation playbook" for the team — every future apparel client now starts from a documented baseline.
+
+## What shipped
+
+- Apparel-specific BOM and WIP modules
+- Multi-warehouse inventory with bonded-warehouse separation (export compliance)
+- Local tax + invoicing localisation for Bangladesh
+- Operator training materials in Bangla
+- Reporting suite tied to the manufacturing cadence (daily output, monthly cost)
+
+## Outcome
+
+- Two enterprise clients onboarded (JB TEX BD, Hameem Group — both significant Bangladeshi apparel exporters).
+- Internal playbook reused for subsequent ERP engagements.
+- Validated Kawaii's "Bangladesh apparel + Japan tech" cross-border model — directly relevant to Findy Job which followed.
+
+## What I'd do differently
+
+Push back harder on **mid-project scope expansion**. Both clients tried to add HR & payroll modules mid-build; we partially agreed and slowed delivery. A clearer contract phase would have parked these as Phase 2.
+
+## Stack & tools
+
+**Build:** Claris FileMaker (Apple/FileMaker, Inc.) · PostgreSQL · REST APIs · cloud backups
+
+**PM tooling:** Jira · MS Project · Lucidchart (process maps) · Notion

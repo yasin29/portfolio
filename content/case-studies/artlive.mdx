@@ -1,0 +1,63 @@
+---
+slug: artlive
+title: "Artlive — Art Appraisal Marketplace"
+client: Potential Inc.
+role: Project Manager
+period: "2025 – present"
+status: Active
+stack: [Next.js, Django, PostgreSQL, Stripe Connect, PayPal, AWS, Cloudflare R2]
+chips:
+  - Marketplace
+  - Two-sided platform
+  - Payments
+  - International
+summary: "A two-sided art-appraisal marketplace I delivered end-to-end — three service flows and a Stripe Connect + PayPal payment architecture."
+hero: /case-studies/artlive/hero.png
+---
+
+## At a glance
+
+A two-sided marketplace where collectors get their art appraised, bought, or commissioned by vetted experts. I joined as the project manager owning end-to-end delivery — three distinct service flows and a payment architecture spanning Stripe Connect and PayPal authorization holds.
+
+## The problem
+
+Art appraisal is gated by who-you-know. Collectors with one piece can't access the experts who price million-dollar lots, and most appraisal happens through opaque, fee-heavy intermediaries. Artlive's bet: turn appraisal, buyer support, and bespoke commission into productized services with transparent pricing and a platform that handles escrow, refunds, and milestone-based payouts.
+
+## My role
+
+- **Product lead** for the platform: PRD ownership, sprint planning, and backlog grooming across the full platform scope.
+- **Liaison** between the Korean client team, a Bangladesh-based engineering team, and external payment providers (Stripe, PayPal).
+- **Payment-flow architect**: defined authorization-hold logic, refund decision rules, and the 8% platform fee model in writing before a single line of Stripe code went in.
+
+## Approach
+
+- Split the surface area into **three service flows** — Online Valuation, Buyer Support, Bespoke commission — and ran each as a parallel epic so we could ship the simplest (Online Valuation) first and learn from real expert behaviour before unlocking the more complex Bespoke path.
+- Modelled the state machine for orders explicitly: payment authorized → expert assigned → review submitted → release / refund. Every button in the dashboard maps to a single transition, which made QA scope brutally honest.
+- Stood up a category taxonomy and onboarding journey for both expert and collector personas so the matching algorithm had clean inputs from day one.
+- Built an admin console mirror of every collector + expert action so support could resolve disputes without engineering involvement.
+
+## What shipped
+
+- Collector + Expert onboarding (KYC tier, category preferences, portfolio review)
+- Online Valuation flow with structured review form
+- Buyer Support flow (pre-purchase opinion service)
+- Bespoke commission flow with quote + milestone payments
+- Stripe Connect payouts (expert side) + PayPal fallback
+- Refund flows: full pre-authorization, partial milestone, dispute-driven
+- Admin dashboard: users, orders, activities, payment, automation, calendar, and access settings
+
+## Outcome
+
+- Platform live to expert and collector beta.
+- 8% platform fee model validated against expert price elasticity.
+- Refund volume kept low by routing high-risk orders through Buyer Support before Bespoke commitment — a flow I lobbied for during PRD review.
+
+## What I'd do differently
+
+Front-load the **dispute** path. We modelled the happy refund flow well, but contested refunds (collector unhappy with appraisal) needed a tighter SLA than we baked in. A formal arbitration tier would have saved 2 sprints of patching.
+
+## Stack & tools
+
+**Build:** Next.js · Django · PostgreSQL · Stripe Connect · PayPal · AWS (ECS, RDS, S3) · Cloudflare Worker + R2 (image pipeline) · Scrape.do · urlpreview.com
+
+**PM tooling:** Notion · Figma · Jira · Slack · Claude Code · n8n
