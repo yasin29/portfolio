@@ -153,19 +153,27 @@ export const education: Education[] = [
 
 export const principles = [
   {
-    title: 'Kickoff with budget + stack',
-    body: 'I scope budget and tech stack at kickoff, so delivery starts from a realistic plan instead of a guess.',
+    title: 'Ownership',
+    body: 'I take each project as my own — I learn the client’s business and goals, then shape scope and trade-offs to get the best outcome, not just ship tickets.',
+  },
+  {
+    title: 'Central orchestrator',
+    body: 'I’m the hub across team and stakeholders: I give developers cover and confidence, pull delivery out of trouble when it slips, and steer clients in the right direction.',
+  },
+  {
+    title: 'Product sense',
+    body: 'I know what makes a product good — design and function — which sharpens client communication, cuts revision cycles, and makes my feedback to designers and developers actually improve the build.',
   },
   {
     title: 'AI-augmented delivery',
     body: 'AI workflows I build in Claude Code, n8n, and Notion cut average client delivery from three months to one — without dropping the quality bar.',
   },
   {
-    title: 'PM + QA dual ownership',
+    title: 'PM + QA dual hat',
     body: 'I own both the plan and the quality bar: I run UAT and QA hands-on, plus release management and app-store submission.',
   },
   {
-    title: 'Reporting that says what shipped',
-    body: 'Weekly stakeholder and executive reports that track real delivery — variance, escalations, and change control — not activity theatre.',
+    title: 'Kickoff with budget + stack',
+    body: 'I scope budget and tech stack at kickoff, so delivery starts from a realistic plan instead of a guess.',
   },
 ];
