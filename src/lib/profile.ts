@@ -169,11 +169,11 @@ export const principles = [
     body: 'AI workflows I build in Claude Code, n8n, and Notion cut average client delivery from three months to one — without dropping the quality bar.',
   },
   {
-    title: 'PM + QA dual hat',
+    title: 'PM & QA dual hat',
     body: 'I own both the plan and the quality bar: I run UAT and QA hands-on, plus release management and app-store submission.',
   },
   {
-    title: 'Kickoff with budget + stack',
+    title: 'Kickoff with budget & stack',
     body: 'I scope budget and tech stack at kickoff, so delivery starts from a realistic plan instead of a guess.',
   },
 ];

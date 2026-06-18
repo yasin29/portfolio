@@ -5,7 +5,6 @@ export default function Timeline({ items }: { items: Experience[] }) {
     <div className="timeline space-y-10">
       {items.map((job) => (
         <div key={job.company} className="relative">
-          <span className="timeline-dot" />
           <div className="flex flex-wrap items-baseline justify-between gap-x-4">
             <h3 className="text-lg font-semibold tracking-tight">{job.role}</h3>
             <span className="text-xs font-medium text-[var(--muted-2)]">{job.period}</span>

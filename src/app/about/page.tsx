@@ -32,7 +32,7 @@ export default function About() {
         <h2>How I work</h2>
         <ul>
           <li>
-            <strong>Kickoff with budget + stack.</strong> I scope budget and tech stack at kickoff,
+            <strong>Kickoff with budget & stack.</strong> I scope budget and tech stack at kickoff,
             so delivery starts from a realistic plan.
           </li>
           <li>
@@ -40,7 +40,7 @@ export default function About() {
             cut average client delivery 3x — from three months to one.
           </li>
           <li>
-            <strong>PM + QA dual ownership.</strong> I own both the plan and the quality bar — UAT,
+            <strong>PM & QA dual ownership.</strong> I own both the plan and the quality bar — UAT,
             release management, and app-store submission included.
           </li>
           <li>

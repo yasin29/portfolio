@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-t border-[var(--border)] bg-[var(--surface)]">
       <div className="container-page flex flex-col gap-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
         <span>
-          © {year} {profile.name} · Built with Next.js + Tailwind
+          © {year} {profile.name} · Built with Next.js & Tailwind
         </span>
         <div className="flex gap-5">
           <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
