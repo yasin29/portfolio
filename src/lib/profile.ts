@@ -26,7 +26,7 @@ export const profile = {
   currentlyAt: {
     company: 'Potential Inc.',
     url: 'https://potentialai.com',
-    note: 'a South Korea-based software studio',
+    note: 'a South Korea-based software farm',
   },
   availability: 'Open to senior Technical PM roles',
   languages: 'English — Fluent · Bengali — Native',
@@ -54,7 +54,7 @@ export const experience: Experience[] = [
     company: 'Potential Inc.',
     role: 'Project Manager',
     period: 'Jun 2025 – Present',
-    context: 'South Korea-based software studio',
+    context: 'South Korea-based software farm',
     bullets: [
       'Ran every project end-to-end — from pre-sale kickoff with prospects through to product launch — bridging business strategy and engineering execution for cross-functional teams of engineers, designers, and QA.',
       'Built AI workflows in Claude Code (with n8n and Notion) that cut average client delivery from 3 months to 1 month, shipping 6 web and mobile products in 11 months for Japanese, Korean, US, and European clients — including a dental-restoration lab platform that generated $138K in US & Canada sales in H1 2026, an AI artwork-recognition app, an art-appraisal marketplace, a TCG marketplace app, a B2B Premier League ticket platform, and a Korea social-discovery app.',
