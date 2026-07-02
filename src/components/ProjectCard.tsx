@@ -7,48 +7,44 @@ import Cover from './Cover';
 export default function ProjectCard({ study }: { study: CaseStudyMeta }) {
   return (
     <Link href={`/case-studies/${study.slug}`} className="card group flex flex-col">
-      {/* preview: real screenshot if present, otherwise a branded gradient cover */}
+      {/* animated illustration cover; real screenshot if one exists */}
       <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-[var(--border)]">
         {study.preview ? (
           <Image
             src={`${basePath}${study.preview}`}
-            alt={`${study.title} preview`}
+            alt={`${study.solution} preview`}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
           />
         ) : (
-          <Cover study={study} className="h-full w-full transition-transform duration-300 group-hover:scale-[1.03]" />
+          <Cover study={study} className="h-full w-full" />
         )}
+        {/* corner plus, Pratik-style */}
+        <span className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-md border border-white/20 bg-black/30 text-sm leading-none text-white/80 backdrop-blur-sm transition-colors group-hover:border-[var(--accent)] group-hover:text-[var(--accent)]">
+          +
+        </span>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-baseline justify-between gap-3">
-          <h3 className="font-semibold tracking-tight transition-colors group-hover:text-[var(--accent)]">
-            {study.title.split(' — ')[0]}
-          </h3>
-          <span className="shrink-0 text-xs text-[var(--muted-2)]">{study.period}</span>
-        </div>
-
-        <p className="mt-1 text-xs text-[var(--muted)]">
-          {study.client.split(' — ')[0]} · {study.role}
+        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--muted-2)]">
+          {study.category}
         </p>
 
-        {study.summary && (
-          <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--muted)]">
-            {study.summary}
-          </p>
+        <h3 className="mt-2 font-semibold leading-snug tracking-tight transition-colors group-hover:text-[var(--accent)]">
+          {study.solution}
+        </h3>
+
+        {study.metrics && (
+          <p className="mt-2 text-xs leading-relaxed text-[var(--muted)]">{study.metrics}</p>
         )}
 
-        {study.chips && (
-          <div className="mt-4 flex flex-wrap gap-1.5">
-            {study.chips.slice(0, 3).map((c) => (
-              <span key={c} className="chip">
-                {c}
-              </span>
-            ))}
-          </div>
-        )}
+        <p className="mt-auto pt-4 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-[var(--foreground)] transition-colors group-hover:text-[var(--accent)]">
+          View case study{' '}
+          <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">
+            →
+          </span>
+        </p>
       </div>
     </Link>
   );

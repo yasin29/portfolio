@@ -19,7 +19,7 @@ export async function generateMetadata({
   const study = getCaseStudyBySlug(slug);
   if (!study) return {};
   return {
-    title: `${study.title} — Yasin Billah`,
+    title: `${study.solution} — Yasin Billah`,
     description: study.summary || `${study.client} · ${study.role} · ${study.period}`,
   };
 }
@@ -63,10 +63,10 @@ export default async function CaseStudyPage({
             />
           )}
           <p className="text-xs uppercase tracking-wider text-[var(--muted-2)]">
-            {study.period} · {study.status ?? 'In progress'}
+            {study.category} · {study.period} · {study.status ?? 'In progress'}
           </p>
-          <h1 className="mt-2 text-3xl font-bold leading-tight tracking-tight md:text-4xl">
-            {study.title}
+          <h1 className="mt-2 font-serif text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+            {study.solution}
           </h1>
           <p className="mt-3 text-[var(--muted)]">
             {study.client} · {study.role}
@@ -111,7 +111,7 @@ export default async function CaseStudyPage({
           </Link>
           {next && next.slug !== study.slug && (
             <Link href={`/case-studies/${next.slug}`} className="text-[var(--accent)] hover:underline">
-              Next: {next.title.split(' — ')[0]} →
+              Next: {next.solution} →
             </Link>
           )}
         </footer>

@@ -11,9 +11,9 @@ export default function About() {
         <h1 className="text-3xl font-semibold tracking-tight">About</h1>
 
         <p>
-          I&apos;m a Technical Project Manager based in Dhaka, Bangladesh (GMT+6), with 4 years of
-          experience shipping web and mobile products end-to-end. I started in software as a front-end
-          developer, moved through QA, and grew into project management — so I can read the code,
+          I&apos;m a Technical Project Manager based in ECB, Dhaka, Bangladesh (GMT+6), with 4 years
+          in the software industry — the last 3 running projects end-to-end. I started as a
+          front-end developer, moved through QA, and grew into project management — so I can read the code,
           debate scope with engineers, and translate cleanly between technical and non-technical
           stakeholders.
         </p>
@@ -60,8 +60,9 @@ export default function About() {
 
         <h2>What I&apos;m looking for</h2>
         <p>
-          A senior Technical PM seat at a team shipping a product I&apos;d use. Comfortable
-          across US, EU, JP, and KR timezones.
+          A Technical Project Manager or Technical Product Manager seat at a team shipping a
+          product I&apos;d use — on-site or remote. Comfortable across US, EU, JP, and KR
+          timezones; especially at home in AI-native products and workflows.
         </p>
 
         <p>

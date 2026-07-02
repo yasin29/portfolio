@@ -2,10 +2,11 @@ import Link from 'next/link';
 import { profile } from '@/lib/profile';
 
 const links = [
+  { href: '/#story', label: 'Story' },
   { href: '/#work', label: 'Work' },
-  { href: '/#experience', label: 'Experience' },
+  { href: '/#experience', label: 'Journey' },
+  { href: '/#capabilities', label: 'Capabilities' },
   { href: '/#skills', label: 'Skills' },
-  { href: '/case-studies', label: 'Case studies' },
   { href: '/#contact', label: 'Contact' },
 ];
 

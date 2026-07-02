@@ -19,6 +19,58 @@ export type CaseStudyMeta = {
   preview?: string;
   /** Short blurb shown on cards — first paragraph of the body if not given. */
   summary: string;
+  /** Solution-oriented display title (what was built, not the client brand). */
+  solution: string;
+  /** Card eyebrow, e.g. "B2B SAAS · DENTAL TECH". */
+  category: string;
+  /** One-line defensible outcome/metrics string for cards. */
+  metrics: string;
+};
+
+// Display-level naming: cards and headings lead with what the solution IS,
+// not the client's brand name (per owner preference). Client names stay in
+// frontmatter/body for the detail context. All metrics defensible from case studies.
+const DISPLAY: Record<string, { solution: string; category: string; metrics: string }> = {
+  ivory: {
+    solution: 'Dental-Restoration Production Lab & Management Platform',
+    category: 'B2B SaaS · Dental Tech',
+    metrics: '$138K US & Canada sales in H1 2026 · kickoff → launch ownership',
+  },
+  artlive: {
+    solution: 'Art-Appraisal Marketplace',
+    category: 'Marketplace · Payments',
+    metrics: 'Two-sided platform · 3 service flows · Stripe Connect + PayPal architecture',
+  },
+  bside: {
+    solution: 'AI Artwork-Recognition & Exhibition App',
+    category: 'Mobile · AI / Computer Vision',
+    metrics: 'iOS & Android · PyTorch recognition pipeline on AWS ECS',
+  },
+  'jtbs-erp': {
+    solution: 'Apparel-Industry ERP Customization',
+    category: 'ERP · Enterprise',
+    metrics: 'Apparel manufacturing group · cross-border BD–JP–PK delivery',
+  },
+  'lifeark-nihongo': {
+    solution: 'Gamified Language-Learning LMS',
+    category: 'EdTech · SaaS',
+    metrics: '+25% MAU after relaunch · JLPT-mapped · multilingual',
+  },
+  'det-bridge': {
+    solution: 'English-Test Prep SaaS',
+    category: 'EdTech · AI',
+    metrics: 'Japan-market first for DET prep · 1 of 2 SaaS launches',
+  },
+  'findy-job': {
+    solution: 'Cross-Border Talent-Placement Platform',
+    category: 'HR-Tech · Marketplace',
+    metrics: 'Public–private partnership · enterprise & institutional partners',
+  },
+  insidemaps: {
+    solution: '3D Real-Estate Tour QA',
+    category: 'QA · 3D / Spatial',
+    metrics: 'Nightly regression sweeps on a 3D capture pipeline',
+  },
 };
 
 export type CaseStudy = CaseStudyMeta & {
@@ -81,9 +133,13 @@ export function getAllCaseStudies(): CaseStudy[] {
     const raw = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(raw);
     const slug = (data.slug as string) || file.replace(/\.mdx?$/, '');
+    const display = DISPLAY[slug];
     return {
       slug,
       title: data.title ?? slug,
+      solution: display?.solution ?? ((data.title as string) ?? slug).split(' — ')[0],
+      category: display?.category ?? (data.chips?.[0] as string) ?? '',
+      metrics: display?.metrics ?? '',
       client: data.client ?? '',
       role: data.role ?? '',
       period: data.period ?? '',

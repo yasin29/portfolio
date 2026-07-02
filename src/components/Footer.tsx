@@ -4,22 +4,13 @@ export default function Footer() {
   const year = 2026; // build-time constant; avoids hydration drift
 
   return (
-    <footer className="border-t border-[var(--border)] bg-[var(--surface)]">
-      <div className="container-page flex flex-col gap-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-        <span>
-          © {year} {profile.name} · Built with Next.js & Tailwind
+    <footer className="border-t border-[var(--border)]">
+      <div className="container-page flex flex-col items-center gap-4 py-9 text-sm text-[var(--muted)] sm:flex-row sm:justify-between">
+        <span className="font-serif text-base text-[var(--foreground)]">{profile.name}</span>
+        <span className="text-center text-[var(--muted-2)]">
+          {profile.role} · {profile.focus} · {profile.location}
         </span>
-        <div className="flex gap-5">
-          <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
-            LinkedIn
-          </a>
-          <a href={profile.socials.github} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
-            GitHub
-          </a>
-          <a href={`mailto:${profile.email}`} className="hover:text-[var(--accent)]">
-            Email
-          </a>
-        </div>
+        <span className="text-[var(--muted-2)]">© {year} · Built with intent</span>
       </div>
     </footer>
   );
