@@ -43,6 +43,9 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Re-enable Pages via the API if it was disabled/unlinked on the repo.
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
