@@ -8,7 +8,7 @@ type Result = {
   letter: string;
   words: number;
   tailored: boolean;
-  pdf: string;
+  pdf: string | null;
   filename: string;
 };
 
@@ -31,7 +31,7 @@ export default function CoverLetter({ onClose }: { onClose: () => void }) {
   const [preview, setPreview] = useState(false);
 
   useEffect(() => {
-    if (!result) return;
+    if (!result?.pdf) return;
     const bytes = Uint8Array.from(atob(result.pdf), (c) => c.charCodeAt(0));
     const url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
     setPdfUrl(url);
@@ -76,7 +76,11 @@ export default function CoverLetter({ onClose }: { onClose: () => void }) {
 
         <div className="cl-letter">{result.letter}</div>
 
-        <div className="chat-file-actions">
+        {!result.pdf && (
+          <p className="adm-note">PDF export is not available on this host — copy the text above.</p>
+        )}
+
+        <div className="chat-file-actions" hidden={!result.pdf}>
           <button type="button" onClick={() => setPreview((v) => !v)} disabled={!pdfUrl}>
             {preview ? 'Hide preview' : 'Preview PDF'}
           </button>
