@@ -120,8 +120,8 @@ export default function CoverLetter({ onClose }: { onClose: () => void }) {
     <form className="cl-panel" onSubmit={submit}>
       <div className="cl-head">
         <span>
-          Cover letter
-          <em>Paste the job post and it will be tailored to it</em>
+          Cover letter for Yasin
+          <em>Paste the job post and the letter is tailored to it</em>
         </span>
         <button type="button" className="adm-mini" onClick={onClose}>
           Close
@@ -142,7 +142,7 @@ export default function CoverLetter({ onClose }: { onClose: () => void }) {
           rows={4}
           value={jobDescription}
           onChange={(e) => setJobDescription(e.target.value)}
-          placeholder="Paste the description — it decides which proof points get used."
+          placeholder="Paste the job description — it decides which of Yasin's proof points are used."
         />
       </label>
 

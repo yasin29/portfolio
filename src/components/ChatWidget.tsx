@@ -7,10 +7,10 @@ type Attachment = { kind: 'resume'; title: string; subtitle: string; url: string
 type Msg = { role: 'user' | 'model'; text: string; attachment?: Attachment };
 
 const SUGGESTIONS = [
-  'What has he actually shipped?',
+  'What has Yasin actually shipped?',
   'How big were the teams he managed?',
-  'What does "AI-native delivery" mean here?',
-  'Write a cover letter for my role',
+  'What does "AI-native delivery" mean?',
+  'Write a cover letter for Yasin',
 ];
 
 /** Asking for a cover letter opens the form rather than answering in prose. */
@@ -161,7 +161,7 @@ export default function ChatWidget() {
         <header className="chat-head">
           <div>
             <p className="chat-title">Ask about Yasin</p>
-            <p className="chat-sub">Answers come from his case studies and CV</p>
+            <p className="chat-sub">Answers come from Yasin&apos;s case studies and CV</p>
           </div>
           <button type="button" onClick={() => setOpen(false)} className="chat-close" aria-label="Close">
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -174,8 +174,9 @@ export default function ChatWidget() {
           {msgs.length === 0 && (
             <div className="chat-intro">
               <p>
-                Ask anything about his work — projects, process, team sizes, stack. If it is not in
-                his case studies, the assistant will say so rather than guess.
+                Ask about Yasin&apos;s work — projects, process, team sizes, stack, or how to reach
+                him. Questions outside his portfolio are not answered. If something is not in his
+                case studies, the assistant says so rather than guessing.
               </p>
               <div className="chat-suggestions">
                 {SUGGESTIONS.map((s) => (
@@ -218,7 +219,7 @@ export default function ChatWidget() {
             ref={inputRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask a question…"
+            placeholder="Ask about Yasin…"
             maxLength={500}
             aria-label="Your question"
             disabled={busy}
