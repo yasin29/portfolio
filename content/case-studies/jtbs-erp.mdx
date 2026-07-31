@@ -1,60 +1,100 @@
 ---
 slug: jtbs-erp
-title: "JTBS ERP — Apparel-Industry Customization"
-client: "JB TEX BD & Hameem Group — via Kawaii Advanced Technology"
+title: "JTBS ERP — Apparel-Industry ERP on a Low-Code Platform"
+client: "Kawaii Advanced Technology — for JB TEX BD & Hameem Group"
 role: Project Manager
 period: "Feb 2024 – May 2025"
 status: Delivered
-stack: [Claris FileMaker, PostgreSQL, REST APIs]
+stack: [Claris FileMaker, Windows POS, FBR tax integration]
 chips:
   - ERP
-  - B2B
-  - Enterprise
-  - Cross-border (BD-JP-PK)
-hero: /case-studies/jtbs-erp/hero.png
+  - Apparel manufacturing
+  - Low-code platform
+  - Cross-border (BD–JP–PK)
+link: https://jtbs.jintech.com/home/
+hero: /case-studies/jtbs-erp/screen-1.webp
 ---
 
 ## At a glance
 
-Customised a cloud ERP (originally a Pakistani retail product, built by **Jin Technologies**) for Bangladeshi garment manufacturers — JB TEX BD and Hameem Group. Inventory, accounting, sales, and HR features re-shaped to match apparel-export workflows.
+Jintech Business Suite is an apparel-industry ERP: purchase orders, inventory across a warehouse network, a Windows point-of-sale client, and a double-entry accounting system — all built on **Claris FileMaker**, a low-code platform owned by an Apple subsidiary.
+
+I ran the customisation as Project Manager for apparel-manufacturing clients, across a Bangladesh–Japan–Pakistan delivery chain. This case study is less about the feature list than about two decisions worth arguing over: how you model apparel inventory, and what you actually buy when you build an ERP on low-code.
+
+<Figure
+  src="/case-studies/jtbs-erp/screen-1.webp"
+  alt="Jintech Business Suite platform overview showing accounting, inventory, supply chain and POS modules"
+  caption="One suite, four systems: ordering, inventory and warehousing, accounting, and point of sale."
+/>
 
 ## The problem
 
-Off-the-shelf ERP rarely fits a vertical. Apparel manufacturers track work-in-progress across cutting, sewing, finishing, and shipping; their costing model uses style/colour/size combos; their invoicing has to reconcile against international LCs. JTBS as shipped covered ~70% of this generically — the remaining 30% was the difference between "we use it" and "it sits unused."
+Generic ERP breaks on apparel for a reason software people routinely underestimate: **a product is not a thing you can count.**
+
+"Comfortable polo shirt for men" is an *article*. What a warehouse actually holds is that article multiplied by colour and by size — white/M, white/L, white/XL, white/XXL, black/M, and onward. One article routinely becomes thirty or more stock-keeping items. Childrenswear is worse, because sizes are age bands: Newborn, 0–3 months, 4–6 months, 6–9 months, 12 months, then 5–6 years through 11–12 years.
+
+Get that hierarchy wrong and every number downstream is wrong. Stock is wrong because you counted articles instead of items. Purchase orders are wrong because a supplier ships an assortment, not a quantity. Reports are wrong in a way nobody notices until a season closes.
+
+Three constraints stack on top of it:
+
+- **Inventory lives in a network, not a building.** The clients ran a dispatching unit, a receiving store, a main warehouse, a retail warehouse and a set of regional godowns. The same item exists in several places at once, so "stock" means nothing without asking *where*.
+- **One item carries several prices.** Cost, retail, wholesale rate, a maximum permitted selling discount, and a per-customer discount that varies *by supplier*. Pricing is a matrix, not a field.
+- **Most B2B sales are credit sales.** Customers carry a credit limit, credit days and a running balance — so inventory cannot be separated from the ledger.
 
 ## My role
 
-- **PM** between the Japan-based product team, the Pakistan-based core engineering team, and the Bangladeshi client floors.
-- **Requirements translator** — walked factory floors to map the actual workflow (not the org chart), wrote SRS, owned UAT scripts.
-- **Cross-border delivery** — Bangladesh ↔ Japan ↔ Pakistan timezone handoff; sprint cadence had to survive three holidays calendars.
+Project Manager for the customisation, across a cross-border delivery chain:
+
+- **Requirements and documentation** — PRD, BRD and SRS, run through Jira and Confluence.
+- **Delivery cadence** — sprint planning, daily standups, and weekly meetings with Japanese stakeholders.
+- **Domain translation** — turning trade vocabulary (article, assortment, godown, MRN, cash memo) into specifications an engineer who has never worked in apparel can build from.
+- **UAT and release** — acceptance testing with client staff, and release management through to live.
 
 ## Approach
 
-- Started with **two factory walk-throughs** before writing any spec. Maps drawn by hand, then digitised.
-- Split customisations into **must-have** (apparel WIP tracking, multi-warehouse with bonded warehouse logic, FBR-equivalent local tax for BD) and **nice-to-have** — and rigidly defended the line.
-- Ran UAT with operators, not managers — managers would say "looks fine"; operators caught the workflow breaks.
-- Built an internal "ERP customisation playbook" for the team — every future apparel client now starts from a documented baseline.
+**Settle the article/item split before anything else.** The most consequential decision was making *article* and *item* separate first-class entities, with items generated from the colour × size matrix rather than typed in one at a time. Everything downstream — stock, transfers, barcodes, reports, the POS — reads at item level and rolls up to article for humans. Specifying that early is what stopped "how many polo shirts do we have?" from becoming an unanswerable question.
+
+**Be honest about what low-code buys.** Claris FileMaker is an unusual foundation for an ERP, and the trade runs in both directions.
+
+*What it buys:* the client can edit existing reports and build new ones without a developer. For a business whose reporting needs shift every season, that is not a convenience — it deletes an entire category of change request from the backlog. Iteration during UAT was fast enough to adjust a layout in the room while the client watched.
+
+*What it costs:* you inherit the platform's ceiling. Interface conventions are FileMaker's rather than yours, you are bound to its licensing and deployment model, and the pool of engineers who know it is small next to a conventional web stack. That last one is a delivery risk, not a technical one, and it belongs in a resourcing plan rather than an architecture diagram.
+
+The honest summary: low-code moved the constraint. It did not remove it.
+
+**Treat the modules as one system with three faces.** Inventory, accounting and the POS are separate applications that must agree. A counter sale reduces stock, posts to the ledger, and moves a customer's balance. A godown-to-godown transfer changes nothing financially but changes availability everywhere. Writing down what each module *owns* versus what it only *reads* mattered more to delivery than any individual screen did.
+
+**Permissions were a requirement, not an afterthought.** The finished system carries more than ten privilege sets: full access, data-entry only, read-only, report-print users, finance groups split by which accounts they may touch, and a closed-accounting-year group that can read a locked period but not post into it. In a business where the person entering stock must not be the person adjusting the ledger, access control *is* a feature. It was specified alongside the modules rather than bolted on before release.
+
+**Specify for a room you are not in.** Requirements arrived through Japanese stakeholders for Pakistani and Bangladeshi operations, and demos were subtitled in Japanese. The person approving a requirement was frequently not the person who discussed it — which raises the bar on documentation. A PRD that works as a reminder of a conversation is useless to a reader who was never in that conversation.
 
 ## What shipped
 
-- Apparel-specific BOM and WIP modules
-- Multi-warehouse inventory with bonded-warehouse separation (export compliance)
-- Local tax + invoicing localisation for Bangladesh
-- Operator training materials in Bangla
-- Reporting suite tied to the manufacturing cadence (daily output, monthly cost)
+- **Ordering and inquiry** — purchase orders per supplier with transporter and shipping detail, plus full purchase history.
+- **Inventory** — MRNs, inter-warehouse transfers, invoices, cash memos, credit notes, stock adjustments, return items, head-office returns and stock returns, across the godown network.
+- **Setup and master data** — brands, categories, sub-categories, colours, sizes, articles, items, regions, customers, suppliers and warehouses, with the article-to-item matrix and barcode and label generation.
+- **Financial accounting** — journal vouchers, payable vouchers, bank payments, official and bank receipts, and customer adjustment notes, over a chart of accounts with general ledger, trial balance and customer statements.
+- **Windows POS** — sale, stock in, stock return, inter-store transfer, expenses, employees, cashout, and an end-of-day reconciliation covering opening cash, cash and card sales, settled and unsettled amounts, refunds, discount, sales tax, net sales, closing cash, excess and shortage, and carry forward. Integrated with **FBR**, Pakistan's tax authority.
+- **Reporting** — warehouse, sales and stock report families, all editable by the client as a direct consequence of the platform choice.
 
 ## Outcome
 
-- Two enterprise clients onboarded (JB TEX BD, Hameem Group — both significant Bangladeshi apparel exporters).
-- Internal playbook reused for subsequent ERP engagements.
-- Validated Kawaii's "Bangladesh apparel + Japan tech" cross-border model — directly relevant to Findy Job which followed.
+- Delivered and live for apparel-manufacturing clients, with accounting and POS operating against the same inventory data rather than a nightly reconciliation.
+- Reporting shifted from a development request to a client-side task — the clearest return the platform choice produced.
+- The article/item model held. Stock, purchase orders, barcodes and reports all resolve to one definition of an item, which is precisely where apparel systems usually diverge.
 
 ## What I'd do differently
 
-Push back harder on **mid-project scope expansion**. Both clients tried to add HR & payroll modules mid-build; we partially agreed and slowed delivery. A clearer contract phase would have parked these as Phase 2.
+**Pin the platform decision to a written trade-off, not a stack list.** FileMaker was chosen before I arrived and it was defensible — but the reasoning lived in people's heads. When a stakeholder later asked why the interface behaves as it does, the answer was a platform constraint nobody had recorded. I would write a one-page note: what the platform gives, what it costs, and what would trigger revisiting it.
+
+**Instrument the reports.** We shipped three report families and handed the client the ability to build more. I never learned which ones they actually opened. For a system whose headline benefit is reporting, that is the measurement I most regret leaving out.
+
+**Design the end-of-day screen with a cashier, not from a spec.** It is correct, and it is dense — sixteen fields presented at the moment a tired person wants to go home. A week spent behind the counter at closing time would have produced a better screen than any requirements session did.
 
 ## Stack & tools
 
-**Build:** Claris FileMaker (Apple/FileMaker, Inc.) · PostgreSQL · REST APIs · cloud backups
+**Platform:** Claris FileMaker (low-code) · Windows POS client · FBR tax integration
 
-**PM tooling:** Jira · MS Project · Lucidchart (process maps) · Notion
+**Delivery:** Agile/Scrum · Jira · Confluence · PRD / BRD / SRS · UAT & release management
+
+**Context:** Bangladesh–Japan–Pakistan delivery chain, Japanese-language stakeholder demos

@@ -1,0 +1,90 @@
+---
+slug: cart-traders
+title: "Cart Traders — Trading-Card Marketplace App"
+client: Potential Inc.
+role: Project Manager
+period: "2025 – 2026"
+status: Delivered
+stack: [React Native, Django, PostgreSQL, AWS]
+chips:
+  - Mobile (iOS / Android)
+  - Marketplace
+  - Consumer
+  - Payments
+link: https://potentialai.com/portfolio/card-traders-app
+hero: /case-studies/cart-traders/screen-1.webp
+---
+
+## At a glance
+
+Cart Traders is a mobile marketplace for trading cards — listing, discovery, and transactions between collectors, on iOS and Android.
+
+I ran it as Project Manager from kickoff to handover with a team of three, on the legacy delivery model.
+
+## The problem
+
+<Figure
+  src="/case-studies/cart-traders/screen-1.webp"
+  alt="Cart Traders mobile app showing the trading-card marketplace feed"
+  caption="Condition is the price - discovery has to make it legible at a glance."
+/>
+
+Collectible marketplaces live or die on two things: whether a listing accurately represents the item, and whether both sides trust the transaction. Trading cards make both harder than usual, because condition is the price — the same card in two grades is effectively two different products.
+
+The build had to make condition and authenticity legible inside a mobile listing flow that stays fast enough for someone photographing a stack of cards. Get the listing flow wrong and there is no marketplace, because there is no inventory.
+
+## My role
+
+Project Manager end-to-end, managing three team members:
+
+- **Requirements and specification** — requirement gathering, user stories, PRD and SRS.
+- **Technical and design direction** — technical decisions, design requirements and guidelines, and the UI/UX review loop.
+- **Delivery process** — Agile/Scrum with daily standups, sprint planning, sprint review, and retrospectives.
+- **Client communication** — weekly client meetings and daily written updates.
+- **Quality** — wrote the test cases and ran the SQA pass.
+- **Release** — deployment plan, app-store submission, and handover documentation.
+
+## Approach
+
+<Figure
+  src="/case-studies/cart-traders/screen-3.webp"
+  alt="Cart Traders listing flow capturing card details and structured condition"
+  caption="Camera-first listing with condition captured as structured data."
+/>
+
+**Optimise the listing flow above everything.** In a two-sided market the supply side is the bottleneck at launch. I specified the listing path as the highest-priority experience — fewest steps, camera-first, condition captured as structured data rather than free text.
+
+**Structure condition, don't describe it.** Free-text condition notes are unsearchable and unenforceable. Making grade a structured field was the specification decision that let discovery, pricing, and dispute handling all work off the same source.
+
+**Legacy model, documented the same way.** Three people on the three-month cycle, with the full artefact set — PRD, SRS, test cases, deployment plan, handover — so the client owns the system after delivery rather than depending on the build team.
+
+## What shipped
+
+<Figure
+  src="/case-studies/cart-traders/screen-4.webp"
+  alt="Cart Traders app running on iOS after app-store submission"
+  caption="Shipped to iOS and Android."
+/>
+
+- A **React Native** marketplace app for iOS and Android.
+- A camera-first listing flow with structured condition capture.
+- Discovery, search, and transaction flows between collectors.
+- Full delivery artefacts: PRD, SRS, test cases, deployment plan, and handover documentation.
+
+## Outcome
+
+- Delivered and handed over with complete documentation.
+- Structured condition data meant discovery and pricing worked from the same source of truth rather than from prose.
+- Delivered with three people on the legacy three-month model.
+
+## What I'd do differently
+
+Specify the dispute path at the same time as the happy path. We built listing, discovery, and transaction thoroughly; what happens when a buyer disagrees with a stated grade is exactly the scenario that defines trust in a collectibles marketplace, and it deserved the same specification attention as the flows that go right.
+
+## Stack & tools
+
+**Mobile:** React Native
+
+**Backend:** Django · PostgreSQL · AWS
+
+**Delivery:** Agile/Scrum · Jira · Notion · UAT & SQA · App-store submission

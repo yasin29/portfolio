@@ -1,62 +1,100 @@
 ---
 slug: bside
-title: "Bside — Mobile Art Exhibition + AI Artwork Recognition"
-client: "Bside — via Potential Inc."
+title: "Bside — AI Artwork-Recognition & Exhibition App"
+client: Potential Inc.
 role: Project Manager
-period: "2025 – present"
-status: Active
+period: "2025 – 2026"
+status: Live
 stack: [React Native, Expo, Django, FastAPI, PyTorch, PostgreSQL, AWS ECS]
 chips:
   - Mobile (iOS / Android)
   - AI / Computer Vision
   - Consumer
+  - AI-native delivery
 logo: /case-studies/bside/logo.png
 link: https://www.bside.art/
-hero: /case-studies/bside/hero.png
+hero: /case-studies/bside/screen-1.webp
 ---
 
 ## At a glance
 
-A mobile-first art exhibition app — point your phone at a piece in a gallery, the app recognises it, and adds it to your private collection. I PM the build across mobile, backend, and an external AI vision service.
+Bside is a mobile art-exhibition app with AI artwork recognition: point a camera at a piece and get the work, the artist, and the context behind it. It shipped to both the App Store and Google Play.
+
+I ran it as Project Manager with a team of three in total — one designer, one mobile developer, and me. On this project I did design work and fixed issues directly alongside running delivery, and I owned app-store submission for both platforms.
 
 ## The problem
 
-Most gallery-goers leave with no record of what moved them — just a phone full of badly-lit photos. Bside's bet: if recognition is fast and accurate enough, the camera becomes the primary save action, and a collection emerges by accident. That requires sub-second on-device capture, a vision model that handles partial-frame and oblique-angle shots, and a backend that scales when a single exhibition opening sends a few thousand recognitions per hour.
+<Figure
+  src="/case-studies/bside/screen-1.webp"
+  alt="Bside mobile app home screen showing the artwork feed"
+  caption="The app opens on the feed — recognition is one tap away."
+/>
+
+Standing in front of a piece of art, the information you want is immediate and the patience you have is short. A gallery placard gives you a title; a search engine gives you fifty results for the wrong painting. The gap is recognition — turning a phone camera into the thing that identifies the work in front of you.
+
+That puts a hard technical dependency at the centre of the product. A recognition pipeline that is accurate but slow fails the moment of use just as completely as one that is fast and wrong. Everything else in the app is downstream of getting that trade-off right.
 
 ## My role
 
-- **End-to-end PM** across three workstreams: React Native mobile (Expo SDK 54), Django backend, and the **Dunamis** FastAPI AI service (artwork recognition + bounding-box detection).
-- **Integration owner** for the AI contract: input shape (base64 image), output shape (ArtworkDTO + coordinates), latency budget, fallback when recognition fails.
-- Coordinated the **Claude Code submodule workflow** that the team uses across all Potential Inc. projects — same `.claude` configuration, project-specific knowledge base.
+Project Manager end-to-end, on a team of three:
+
+- **Requirements and specification** — requirement gathering, user stories, PRD and SRS.
+- **Technical direction** — technical decisions across the mobile client and the recognition service.
+- **Design** — wrote the design requirements and guidelines, and contributed design work directly rather than only reviewing it.
+- **Delivery process** — Agile/Scrum with daily standups, sprint planning, sprint review, and retrospectives.
+- **Client communication** — weekly client meetings and daily written updates.
+- **Quality and fixes** — wrote the test cases, ran the SQA pass, and fixed issues hands-on.
+- **Release** — deployment plan, **app-store submission for iOS and Android**, and handover documentation.
 
 ## Approach
 
-- Locked the AI service contract *first*. Before mobile or backend committed to flows, Dunamis had to commit to a stable schema and latency SLA. This let mobile build optimistic UI assuming the API would respond in under 2s.
-- Split mobile into capture, recognition, and collection screens — each a separate epic with its own QA pass.
-- Used the AWS ECS + S3 + CloudFront stack we'd standardised on for other Potential projects, so DevOps could reuse pipelines.
-- Wrote the PRD as a state machine on the user side: pre-capture → captured → recognised → confirmed → saved. Each transition has an unambiguous trigger.
+<Figure
+  src="/case-studies/bside/screen-3.webp"
+  alt="Bside artwork detail view showing the recognised work and its artist context"
+  caption="Recognition result — the work, the artist, and the context behind it."
+/>
+
+**Separate the recognition service from the app.** The mobile client and the PyTorch recognition pipeline were built as separate services, with the model served from AWS ECS. That let recognition work iterate on its own cadence without blocking the app, and kept the client thin enough to ship to two stores on schedule.
+
+**Three people meant no handoff slack.** With one designer and one developer, there is no room for a specification that needs interpreting. Written user stories, a PRD, and an SRS mattered more on a small team, not less — the documentation is what let three people work in parallel rather than in sequence.
+
+**Do the work where it is faster to do it.** Where a design tweak or a defect fix was quicker for me to make directly than to specify, escalate, and re-review, I made it. That is a judgement call rather than a policy, and it works because I read the code — but on a three-person team it removed real round-trip time.
+
+**Store submission is a project, not a step.** Both stores have review requirements that are cheaper to design for than to retrofit, so submission went into the schedule rather than being treated as what happens after "done".
 
 ## What shipped
 
-- Capture screen with on-device camera + crop
-- Recognition flow with confidence threshold + "this isn't right" fallback
-- Personal collection with grouping by exhibition / artist
-- Artist gallery + art feed (social discovery)
-- Camera check-in tied to physical exhibitions
-- WIP frames (in-progress shots) — drives engagement during gallery visits
+<Figure
+  src="/case-studies/bside/screen-2.webp"
+  alt="Bside exhibition browsing screen on iOS"
+  caption="Exhibition browsing built around the recognition moment."
+/>
+
+<Figure
+  src="/case-studies/bside/screen-4.webp"
+  alt="Bside app running on iOS, shipped to both the App Store and Google Play"
+  caption="Shipped to both stores by a team of three."
+/>
+
+- A **React Native (Expo)** app live on **iOS and Android**.
+- An **AI artwork-recognition pipeline** in PyTorch, served via FastAPI on AWS ECS.
+- Exhibition and artwork browsing built around the recognition moment.
+- Full delivery artefacts: PRD, SRS, test cases, deployment plan, and handover documentation.
 
 ## Outcome
 
-- App in active build, mobile + backend + AI service all in production environments.
-- Recognition contract held under load testing.
-- Knowledge base and PRD reused as the template for new Potential Inc. mobile projects.
+- Live on both app stores at [bside.art](https://www.bside.art/), shipped by a team of three.
+- Delivered on the AI-native approach, carrying more scope per person than the legacy model allowed.
+- Both store submissions cleared review without a rejection cycle, because requirements were designed in rather than patched afterwards.
 
 ## What I'd do differently
 
-Push for an **offline-first** capture model earlier. Gallery wifi is often dead — captures should queue and sync on-network, not fail. We're adding this now; it would have been cheaper to design in from the start.
+Set an explicit accuracy and latency bar for the recognition model before build, and test against it continuously. We evaluated recognition quality as it improved, which was workable, but a written threshold — this confidence level, under this many seconds — would have made "is it good enough to ship" a measurement rather than a conversation.
 
 ## Stack & tools
 
-**Build:** React Native (Expo SDK 54) · Django 6 · FastAPI · PyTorch / TensorFlow · PostgreSQL 16 · AWS ECS + RDS + S3 + CloudFront · Route 53
+**Mobile:** React Native · Expo
 
-**PM tooling:** Notion · Figma · Jira · Slack · Claude Code (shared `.claude` submodule) · n8n
+**Backend & AI:** Django · FastAPI · PyTorch · PostgreSQL · AWS ECS
+
+**Delivery:** Agile/Scrum · Notion · Claude Code · n8n · UAT & SQA · App Store & Google Play submission

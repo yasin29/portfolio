@@ -1,64 +1,96 @@
 ---
 slug: artlive
-title: "Artlive — Art Appraisal Marketplace"
-client: "Artlive — via Potential Inc."
+title: "Artlive — Art-Appraisal Marketplace"
+client: Potential Inc.
 role: Project Manager
-period: "2025 – present"
-status: Active
+period: "2025 – 2026"
+status: Live
 stack: [Next.js, Django, PostgreSQL, Stripe Connect, PayPal, AWS, Cloudflare R2]
 chips:
   - Marketplace
   - Two-sided platform
   - Payments
-  - International
-summary: "A two-sided art-appraisal marketplace I delivered end-to-end — three service flows and a Stripe Connect + PayPal payment architecture."
-link: https://www.artlive.com/#events
-hero: /case-studies/artlive/hero.png
+  - AI-native delivery
+link: https://www.artlive.com/
+hero: /case-studies/artlive/screen-1.webp
 ---
 
 ## At a glance
 
-A two-sided marketplace where collectors get their art appraised, bought, or commissioned by vetted experts. I joined as the project manager owning end-to-end delivery — three distinct service flows and a payment architecture spanning Stripe Connect and PayPal authorization holds.
+Artlive is a two-sided marketplace connecting art collectors with certified appraisal experts — three distinct service flows, a Stripe Connect and PayPal payment architecture, and expert discovery at the centre of the experience.
+
+I ran it as Project Manager from kickoff to handover with a team of three. It is a larger build than Ivorymade delivered by a smaller team, because this was the first project I ran on the AI-native delivery approach rather than the legacy three-month model.
 
 ## The problem
 
-Art appraisal is gated by who-you-know. Collectors with one piece can't access the experts who price million-dollar lots, and most appraisal happens through opaque, fee-heavy intermediaries. Artlive's bet: turn appraisal, buyer support, and bespoke commission into productized services with transparent pricing and a platform that handles escrow, refunds, and milestone-based payouts.
+<Figure
+  src="/case-studies/artlive/screen-1.webp"
+  alt="Artlive landing experience — connect with certified art experts and choose a service"
+  caption="Discovery leads with certified experts and an explicit service choice."
+/>
+
+Art appraisal is a trust transaction before it is a commercial one. A collector handing over a valuation request needs to believe the expert is genuinely qualified; the expert needs to be paid reliably without chasing invoices. A marketplace that gets either half wrong does not get a second attempt.
+
+The structural challenge was that "an appraisal" is not one thing. Different service types carry different scopes, turnaround expectations, and price structures — so the payment architecture could not assume a single transaction shape. Money had to split correctly between platform and expert, across two providers, for every flow.
 
 ## My role
 
-- **Product lead** for the platform: PRD ownership, sprint planning, and backlog grooming across the full platform scope.
-- **Liaison** between the Korean client team, a Bangladesh-based engineering team, and external payment providers (Stripe, PayPal).
-- **Payment-flow architect**: defined authorization-hold logic, refund decision rules, and the 8% platform fee model in writing before a single line of Stripe code went in.
+Project Manager end-to-end, managing three team members:
+
+- **Requirements and specification** — requirement gathering, user stories, PRD and SRS.
+- **Technical and design direction** — technical decisions, design requirements and guidelines, and the UI/UX review loop.
+- **Delivery process** — Agile/Scrum with daily standups, sprint planning, sprint review, and retrospectives.
+- **Client communication** — weekly client meetings and daily written updates.
+- **Quality** — wrote the test cases and ran the SQA pass.
+- **Release** — deployment plan and handover documentation through to delivery.
 
 ## Approach
 
-- Split the surface area into **three service flows** — Online Valuation, Buyer Support, Bespoke commission — and ran each as a parallel epic so we could ship the simplest (Online Valuation) first and learn from real expert behaviour before unlocking the more complex Bespoke path.
-- Modelled the state machine for orders explicitly: payment authorized → expert assigned → review submitted → release / refund. Every button in the dashboard maps to a single transition, which made QA scope brutally honest.
-- Stood up a category taxonomy and onboarding journey for both expert and collector personas so the matching algorithm had clean inputs from day one.
-- Built an admin console mirror of every collector + expert action so support could resolve disputes without engineering involvement.
+<Figure
+  src="/case-studies/artlive/screen-3.webp"
+  alt="Artlive expert profile showing online valuation, buyer support, and bespoke service pricing tiers"
+  caption="Each of the three service flows carries its own scope, turnaround, and price shape."
+/>
+
+**Model the money first.** Payments were the constraint everything else had to fit, so the payment architecture was settled before feature work began. Stripe Connect handles the split between platform and expert; PayPal covers collectors who will not use anything else. Deciding this at specification time rather than mid-build is what kept three service flows from becoming three separate payment implementations.
+
+**Make expertise legible.** Discovery leads with credentials, specialisms, and previously reviewed objects, because in this market the expert profile is the product. That shaped the design guidelines I wrote for the team.
+
+**AI-native delivery.** This is where the approach changed. Workflows built in Claude Code, n8n, and Notion absorbed the documentation drafting, ticket scaffolding, and status-reporting overhead that previously consumed a large share of PM time. The result was a bigger scope than Ivorymade shipped with three people instead of five — the same process, run faster, without dropping standups, reviews, retrospectives, or the SQA pass.
 
 ## What shipped
 
-- Collector + Expert onboarding (KYC tier, category preferences, portfolio review)
-- Online Valuation flow with structured review form
-- Buyer Support flow (pre-purchase opinion service)
-- Bespoke commission flow with quote + milestone payments
-- Stripe Connect payouts (expert side) + PayPal fallback
-- Refund flows: full pre-authorization, partial milestone, dispute-driven
-- Admin dashboard: users, orders, activities, payment, automation, calendar, and access settings
+<Figure
+  src="/case-studies/artlive/screen-4.webp"
+  alt="Artlive expert search on a map, showing rated appraisers by location and specialism"
+  caption="Expert search by location, rating, and specialism."
+/>
+
+<Figure
+  src="/case-studies/artlive/screen-5.webp"
+  alt="Artlive collector dashboard showing appraisal requests and reviewed objects"
+  caption="The collector side — requests, reviewed objects, and expert responses."
+/>
+
+- A two-sided marketplace with **three service flows**, each with its own scope and pricing shape.
+- Expert discovery and profiles built around credentials and reviewed objects.
+- A **Stripe Connect and PayPal** payment architecture handling platform-and-expert splits.
+- Full delivery artefacts: PRD, SRS, test cases, deployment plan, and handover documentation.
 
 ## Outcome
 
-- Platform live to expert and collector beta.
-- 8% platform fee model validated against expert price elasticity.
-- Refund volume kept low by routing high-risk orders through Buyer Support before Bespoke commitment — a flow I lobbied for during PRD review.
+- Live at [artlive.com](https://www.artlive.com/), with collectors and certified experts transacting on the platform.
+- Delivered with **three people on a scope larger than a five-person project** — the clearest evidence I have that the AI-native workflow is a multiplier rather than a label.
+- The documentation template established on Ivorymade carried over directly, so specification time went into the hard parts instead of the format.
 
 ## What I'd do differently
 
-Front-load the **dispute** path. We modelled the happy refund flow well, but contested refunds (collector unhappy with appraisal) needed a tighter SLA than we baked in. A formal arbitration tier would have saved 2 sprints of patching.
+Pilot one service flow end-to-end before specifying all three. We designed the flows in parallel, which was efficient on paper but meant assumptions about pricing and turnaround were validated late. Shipping one flow first would have tested the payment model against real behaviour while the other two were still cheap to change.
 
 ## Stack & tools
 
-**Build:** Next.js · Django · PostgreSQL · Stripe Connect · PayPal · AWS (ECS, RDS, S3) · Cloudflare Worker + R2 (image pipeline) · Scrape.do · urlpreview.com
+**Build:** Next.js · Django · PostgreSQL · AWS · Cloudflare R2
 
-**PM tooling:** Notion · Figma · Jira · Slack · Claude Code · n8n
+**Payments:** Stripe Connect · PayPal
+
+**Delivery:** Agile/Scrum · Notion · Claude Code · n8n · UAT & SQA

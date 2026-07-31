@@ -172,20 +172,23 @@ export default function Story() {
               </div>
             </div>
 
-            {/* how I operate */}
-            <div className="mt-12" data-reveal data-reveal-delay="80">
-              <p className="eyebrow">— How I operate</p>
-              <div className="mt-6 grid gap-5 sm:grid-cols-3">
-                {howIOperate.map((p, i) => (
-                  <div key={p.title} className={`op-card op-g${i + 1}`}>
-                    <div className="op-card-inner">
-                      <h3>{p.title}</h3>
-                      <p>{p.body}</p>
-                    </div>
-                  </div>
-                ))}
+          </div>
+        </div>
+
+        {/* How I operate breaks out to full width: the sticky profile card
+            leaves the left column empty once you scroll past it, and four cards
+            in a three-wide grid strands the fourth on its own row. */}
+        <div className="mt-12 lg:mt-14" data-reveal data-reveal-delay="80">
+          <p className="eyebrow">— How I operate</p>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {howIOperate.map((p, i) => (
+              <div key={p.title} className={`op-card op-g${(i % 3) + 1}`}>
+                <div className="op-card-inner">
+                  <h3>{p.title}</h3>
+                  <p>{p.body}</p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

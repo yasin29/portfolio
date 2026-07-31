@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/sync-case-studies.mjs",
+    "predev": "node scripts/sync-case-studies.mjs && node scripts/build-knowledge-base.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/sync-case-studies.mjs",
+    "prebuild": "node scripts/sync-case-studies.mjs && node scripts/build-knowledge-base.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "kb": "node scripts/build-knowledge-base.mjs",
+    "images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@next/mdx": "^15.0.0",

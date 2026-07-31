@@ -3,16 +3,16 @@ import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
 import Story from '@/components/Story';
 import Section from '@/components/Section';
-import ProjectCard from '@/components/ProjectCard';
-import Journey from '@/components/Journey';
-import CountUp from '@/components/CountUp';
+import WorkGrid from '@/components/WorkGrid';
+import WorkProcess from '@/components/WorkProcess';
+import JourneyRail from '@/components/JourneyRail';
+import Competencies from '@/components/Competencies';
+import Impact from '@/components/Impact';
 import { WhatsAppIcon } from '@/components/Story';
 import CopyButton from '@/components/CopyButton';
-import { getAllCaseStudies } from '@/lib/case-studies';
 import {
   profile,
   capabilities,
-  numbers,
   skillGroups,
   certifications,
   education,
@@ -25,16 +25,10 @@ function GradIcon({ children }: { children: React.ReactNode }) {
 }
 
 export default function Home() {
-  const studies = getAllCaseStudies();
-  const featured = studies.slice(0, 6);
-
   return (
     <>
       <Hero />
       <Marquee />
-
-      {/* ---------- The story ---------- */}
-      <Story />
 
       {/* ---------- Selected work ---------- */}
       <Section
@@ -42,10 +36,10 @@ export default function Home() {
         eyebrow="— Selected work"
         title={
           <>
-            Case studies that <em>compound.</em>
+            Products built on <em>shipped decisions.</em>
           </>
         }
-        intro="Problem, approach, outcome — products I owned end-to-end, named by what they are, not who they're for. Tap any card for the full story."
+        intro="Client builds, products I owned, internal tooling, and my own. Open any card for the short version — the full case study is one click further."
         action={
           <Link
             href="/case-studies"
@@ -55,25 +49,39 @@ export default function Home() {
           </Link>
         }
       >
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((s) => (
-            <ProjectCard key={s.slug} study={s} />
-          ))}
-        </div>
+        <WorkGrid />
       </Section>
 
-      {/* ---------- The journey ---------- */}
+      {/* ---------- The story ---------- */}
+      <Story />
+
+      {/* ---------- Process & journey ---------- */}
       <Section
         id="experience"
-        eyebrow="— The journey"
+        eyebrow="— How I work"
         title={
           <>
-            Experience that <em>compounds.</em>
+            A process, and the <em>road that built it.</em>
           </>
         }
         intro="Four years, four companies, one throughline — developer to QA to project manager, shipping software the whole way."
       >
-        <Journey />
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-10">
+          <div>
+            <div className="lg:sticky lg:top-24">
+              <WorkProcess />
+            </div>
+          </div>
+
+          <div>
+            <p className="jr-label">
+              Journey
+              <span className="sep">·</span>
+              <span className="cue">Tap to expand</span>
+            </p>
+            <JourneyRail />
+          </div>
+        </div>
       </Section>
 
       {/* ---------- Capabilities ---------- */}
@@ -82,23 +90,14 @@ export default function Home() {
         eyebrow="— Capabilities"
         title={
           <>
-            Built to take products from <em>kickoff → launch.</em>
+            Core <em>competencies.</em>
           </>
         }
         intro={capabilities.intro}
       >
-        <div className="grid gap-5 lg:grid-cols-3">
-          {/* expertise */}
-          <div className="bento-card lg:row-span-2">
-            <p className="eyebrow mb-4">Expertise</p>
-            {capabilities.expertise.map((g) => (
-              <div key={g.title} className="bento-group">
-                <h4>{g.title}</h4>
-                <p>{g.detail}</p>
-              </div>
-            ))}
-          </div>
+        <Competencies />
 
+        <div className="mt-5 grid gap-5 lg:grid-cols-3">
           {/* philosophy */}
           <div className="bento-card bento-sage lg:col-span-2">
             <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.14em] opacity-70">
@@ -109,18 +108,6 @@ export default function Home() {
               {capabilities.philosophy.name}
               <span className="font-normal opacity-70">, {capabilities.philosophy.role}</span>
             </p>
-          </div>
-
-          {/* toolkit */}
-          <div className="bento-card">
-            <p className="eyebrow mb-4">Toolkit</p>
-            <div className="flex flex-wrap gap-1.5">
-              {capabilities.toolkit.map((t) => (
-                <span key={t} className="chip">
-                  {t}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* open to */}
@@ -140,28 +127,18 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* ---------- By the numbers ---------- */}
+      {/* ---------- Impact by the numbers ---------- */}
       <Section
         id="numbers"
-        eyebrow="— By the numbers"
+        eyebrow="— Quantified results"
         title={
           <>
-            Outcomes, <em>not output.</em>
+            Impact by the <em>numbers.</em>
           </>
         }
+        intro="Outcomes, not output — every figure below is one I can walk through end-to-end."
       >
-        <div className="numbers-panel">
-          <dl className="numbers-grid">
-            {numbers.map((n) => (
-              <div key={n.label} className="numbers-cell">
-                <dt className="numbers-value">
-                  <CountUp value={n.value} />
-                </dt>
-                <dd className="numbers-label">{n.label}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
+        <Impact />
       </Section>
 
       {/* ---------- Skills ---------- */}
@@ -311,13 +288,12 @@ export default function Home() {
             Have a role or product <em>worth shipping?</em>
           </h2>
           <p className="mx-auto mt-6 max-w-xl leading-relaxed text-[var(--muted)]">
-            I&apos;m exploring Technical Project Manager and Technical Product Manager roles —
-            on-site or remote, with teams shipping internationally. Recruiters, founders,
-            engineers — let&apos;s talk.
+            I&apos;m exploring Technical Project Manager roles — on-site or remote, with
+            teams shipping internationally. Recruiters, founders, engineers — let&apos;s talk.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <span className="inline-flex items-center gap-1.5">
-              <a href={`mailto:${profile.email}`} className="btn-dark btn-dark-primary">
+              <a href={`mailto:${profile.email}`} className="btn-pill btn-pill-solid">
                 {profile.email}
               </a>
               <CopyButton text={profile.email} label="email address" />
@@ -325,7 +301,7 @@ export default function Home() {
             <span className="inline-flex items-center gap-1.5">
               <a
                 href={`tel:${profile.phone.replace(/\s+/g, '')}`}
-                className="btn-dark btn-dark-ghost"
+                className="btn-pill btn-pill-outline"
               >
                 {profile.phone}
               </a>
@@ -345,7 +321,7 @@ export default function Home() {
               href={profile.socials.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="btn-dark btn-dark-ghost"
+              className="btn-pill btn-pill-outline"
             >
               LinkedIn
             </a>
@@ -353,7 +329,7 @@ export default function Home() {
               href={profile.socials.github}
               target="_blank"
               rel="noreferrer"
-              className="btn-dark btn-dark-ghost"
+              className="btn-pill btn-pill-outline"
             >
               GitHub
             </a>

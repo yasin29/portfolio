@@ -34,7 +34,7 @@ const DISPLAY: Record<string, { solution: string; category: string; metrics: str
   ivory: {
     solution: 'Dental-Restoration Production Lab & Management Platform',
     category: 'B2B SaaS · Dental Tech',
-    metrics: '$138K US & Canada sales in H1 2026 · kickoff → launch ownership',
+    metrics: '$138K US & Canada sales in H1 2026 · two phases, kickoff → handover',
   },
   artlive: {
     solution: 'Art-Appraisal Marketplace',
@@ -47,9 +47,9 @@ const DISPLAY: Record<string, { solution: string; category: string; metrics: str
     metrics: 'iOS & Android · PyTorch recognition pipeline on AWS ECS',
   },
   'jtbs-erp': {
-    solution: 'Apparel-Industry ERP Customization',
-    category: 'ERP · Enterprise',
-    metrics: 'Apparel manufacturing group · cross-border BD–JP–PK delivery',
+    solution: 'Apparel-Industry ERP on a Low-Code Platform',
+    category: 'ERP · Apparel · Low-Code',
+    metrics: 'Claris FileMaker · 4 integrated modules · 10+ privilege sets',
   },
   'lifeark-nihongo': {
     solution: 'Gamified Language-Learning LMS',
@@ -65,6 +65,51 @@ const DISPLAY: Record<string, { solution: string; category: string; metrics: str
     solution: 'Cross-Border Talent-Placement Platform',
     category: 'HR-Tech · Marketplace',
     metrics: 'Public–private partnership · enterprise & institutional partners',
+  },
+  trustix: {
+    solution: 'Sports-Ticket Supplier Management Dashboard',
+    category: 'B2B · Operations Dashboard',
+    metrics: 'Supplier, inventory & fulfilment in one system · team of 4',
+  },
+  thrll: {
+    solution: 'Personalised Adventure Platform',
+    category: 'Mobile · Consumer',
+    metrics: 'iOS & Android · personalised matching on a short onboarding',
+  },
+  'cart-traders': {
+    solution: 'Trading-Card Marketplace App',
+    category: 'Mobile · Marketplace',
+    metrics: 'Camera-first listing flow · structured condition data',
+  },
+  elite4print: {
+    solution: 'Print-Production Commerce Platform',
+    category: 'E-commerce · Project Recovery',
+    metrics: 'Inherited mid-flight · stabilised quality & scope control',
+  },
+  ktalk: {
+    solution: 'Korean Language-Learning Platform',
+    category: 'EdTech · Product Ownership',
+    metrics: 'Product Manager · owned direction through a mid-flight handover',
+  },
+  'pm-dashboard': {
+    solution: 'In-House AI Delivery-Ops Platform',
+    category: 'Internal Tooling · AI Ops',
+    metrics: 'Product Owner · Slack, Meet, GitHub & Notion in one source of truth',
+  },
+  brandaid: {
+    solution: 'AI Campaign Simulation Engine',
+    category: 'Personal · AI / RAG / ML',
+    metrics: 'Built solo in one week · 7-stage AI pipeline with RAG & ML forecasting',
+  },
+  futurenation: {
+    solution: 'National Skills & Employment Platform',
+    category: 'GovTech · EdTech',
+    metrics: 'UNDP & ICT Division partnership · live national platform',
+  },
+  takapay: {
+    solution: 'Social-Listening Dashboard with an AI Assistant',
+    category: 'Personal · AI Product',
+    metrics: '660 posts audited · 37 mislabels caught · assistant computes, never estimates',
   },
   insidemaps: {
     solution: '3D Real-Estate Tour QA',
@@ -85,10 +130,19 @@ const ORDER = [
   'ivory',
   'artlive',
   'bside',
+  'brandaid',
+  'takapay',
+  'pm-dashboard',
+  'trustix',
+  'thrll',
+  'cart-traders',
+  'elite4print',
   'jtbs-erp',
   'lifeark-nihongo',
   'det-bridge',
+  'ktalk',
   'findy-job',
+  'futurenation',
   'insidemaps',
 ];
 

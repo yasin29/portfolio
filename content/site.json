@@ -1,0 +1,2421 @@
+{
+  "profile": {
+    "name": "Yasin Billah",
+    "role": "Technical Project Manager",
+    "roleSecondary": "AI-Native Delivery",
+    "tagline": "I take software products from kickoff to launch and own everything in between — scope, sprints, QA, and release. 6 shipped in the last 11 months for clients in Korea, Japan, the US, and Europe.",
+    "location": "ECB, Dhaka, Bangladesh",
+    "timezone": "GMT+6",
+    "workMode": "On-site & remote",
+    "focus": "Web, mobile & AI product delivery",
+    "email": "yasinbillah46@gmail.com",
+    "phone": "+880 1784 468706",
+    "whatsapp": "https://wa.me/8801784468706",
+    "resume": "/Technical_project_manager_Yasin_Billah.pdf",
+    "photo": "/yasin-billah.png",
+    "photoCutout": "/yasin-billah-cutout.png",
+    "socials": {
+      "linkedin": "https://linkedin.com/in/yasin-billah",
+      "github": "https://github.com/yasin29"
+    },
+    "currentlyAt": {
+      "company": "Potential Inc.",
+      "url": "https://potentialai.com",
+      "note": "a South Korea-based software farm"
+    },
+    "availability": "Open to new opportunities",
+    "languages": "English — Fluent · Bengali — Native"
+  },
+  "languages": [
+    {
+      "name": "Bengali",
+      "level": "Native",
+      "pct": 100
+    },
+    {
+      "name": "English",
+      "level": "Fluent",
+      "pct": 90
+    }
+  ],
+  "highlights": [
+    {
+      "value": "$138K",
+      "label": "Platform sales — dental-lab client (H1 2026)"
+    },
+    {
+      "value": "6",
+      "label": "Products shipped end-to-end in 11 months"
+    },
+    {
+      "value": "3x",
+      "label": "Faster delivery after going AI-native (3 months → 1)"
+    },
+    {
+      "value": "2",
+      "label": "SaaS products launched"
+    },
+    {
+      "value": "3 yrs",
+      "label": "Of those as project manager"
+    },
+    {
+      "value": "4 yrs",
+      "label": "In the software industry"
+    }
+  ],
+  "marqueeCompanies": [
+    "Ivorymade",
+    "Artlive",
+    "Bside",
+    "Trustix",
+    "Thrll",
+    "Cart Traders",
+    "Ktalk",
+    "Elite4print",
+    "NTT Docomo",
+    "Persol Group",
+    "Findy Team+",
+    "Futurenation",
+    "UNDP",
+    "ICT Division (BD)",
+    "Achieve Japan",
+    "LifeArk",
+    "JTBS ERP",
+    "DET Bridge",
+    "Hameem Group",
+    "JB TEX BD",
+    "Care-box"
+  ],
+  "story": {
+    "statementLead": "Most projects do not fail on the plan. They fail in the gap between ",
+    "statementEm": "what a client asked for and what a developer heard",
+    "statementTail": " — and closing that gap, every day, is the job.",
+    "chips": [
+      "End-to-End Delivery",
+      "AI-Native Workflows",
+      "Web & Mobile",
+      "Agile / Scrum",
+      "QA & UAT Ownership",
+      "Release Management"
+    ],
+    "paragraphs": [
+      "Four years in the software industry — I started as a front-end developer, moved through QA, and have spent the last three running delivery. That path is why the gap is narrower on my projects: I read the code, so I can argue scope with an engineer instead of relaying messages, and I ran QA, so I know which \"small change\" is actually small.",
+      "The other half of the job is people. A stalled sprint is rarely a planning problem — it is a developer who is blocked and has not said so, or a client whose real objection has not surfaced yet. I get both into the open early, give the team cover to work, and take the difficult conversation myself rather than passing it down.",
+      "I have shipped marketplaces, mobile-AI apps, ERP, and SaaS for clients across Japan, Korea, the US, and the EU. The AI-native workflows I build in Claude Code, n8n, and Notion cut average client delivery from three months to one — with the same ceremonies, documentation, and QA pass still in place."
+    ]
+  },
+  "howIOperate": [
+    {
+      "title": "The hard conversation is mine",
+      "body": "When a date is going to slip or a request is out of scope, the client hears it from me — early, with options. Bad news travels badly when it is delegated, and a client who finds out late stops trusting the next update."
+    },
+    {
+      "title": "Cover for the team",
+      "body": "Developers do their best work when they are not fielding status questions. I absorb the reporting, unblock quietly, and make sure a stuck engineer can say so without it costing them anything."
+    },
+    {
+      "title": "AI as leverage, not as an excuse",
+      "body": "The workflows I build in Claude Code, n8n, and Notion cut average client delivery from three months to one — with standups, reviews, retrospectives, and the SQA pass all still in place."
+    },
+    {
+      "title": "PM and QA, same person",
+      "body": "I write the test cases and run the SQA pass myself. Owning both the schedule and the quality bar means I cannot quietly trade one for the other."
+    }
+  ],
+  "pmProcess": [
+    {
+      "title": "Kickoff & scoping",
+      "caption": "Turn the ask into a plan",
+      "body": "I start at pre-sale kickoff: learn the client’s business and what they are actually trying to achieve, then translate that into a deliverable-oriented WBS with man-hour estimation, resource and budget plans, and a risk assessment — before development starts. Scoping the budget and tech stack this early is what keeps delivery off a guess.",
+      "methods": [
+        "Requirement translation",
+        "WBS & man-hour estimation",
+        "Budget & stack scoping",
+        "Risk assessment"
+      ]
+    },
+    {
+      "title": "Plan & setup",
+      "caption": "Make the plan visible",
+      "body": "Communication strategy, sprint plan, and one source of truth everyone works from. At Potential I architected the company’s end-to-end Agile/Scrum delivery system in Notion, so every project runs the same way from kickoff through to closure rather than depending on who is running it.",
+      "methods": [
+        "Agile / Scrum",
+        "Sprint planning",
+        "Communication strategy",
+        "Notion delivery system"
+      ]
+    },
+    {
+      "title": "Execution & control",
+      "caption": "Hold the line day to day",
+      "body": "Daily standups in Notion and the PM Dashboard ticket system, variance analysis against the plan, and escalation while there is still time to act. Change goes through change control with stakeholder buy-in, never by drift. The AI workflows I build in Claude Code and n8n are what cut average client delivery from three months to one.",
+      "methods": [
+        "Daily standups",
+        "Variance analysis",
+        "Change control",
+        "AI & n8n automation"
+      ]
+    },
+    {
+      "title": "QA, UAT & release",
+      "caption": "Own the quality bar, not just the date",
+      "body": "I run QA and UAT hands-on rather than handing the quality bar to someone else — it comes from starting in QA. Then app-store submission and release management through to launch, so \"shipped\" means live in front of users, not merged.",
+      "methods": [
+        "Hands-on QA",
+        "UAT cycles",
+        "Release management",
+        "App-store submission"
+      ]
+    }
+  ],
+  "capabilities": {
+    "intro": "I pair project leadership with the technical depth to ship, not just spec. Four years turning ambiguous requirements into launched products across marketplaces, EdTech, ERP, mobile-AI, and HR-tech.",
+    "philosophy": {
+      "quote": "I am the hub between the team and the stakeholders. I give developers cover and confidence, pull delivery out of trouble when it slips, and steer clients away from decisions they will regret. Hand me a difficult client and a fixed date; I will hand back a shipped product and a team that would work with me again.",
+      "name": "Yasin Billah",
+      "role": "Technical Project Manager"
+    },
+    "openTo": {
+      "body": "Technical Project Manager roles — on-site or remote, with teams shipping internationally. Especially at home where delivery is the constraint: AI-native workflows, cross-border teams, and products that have to actually launch.",
+      "chips": [
+        "Technical Project Manager",
+        "AI-Native Delivery",
+        "Remote or on-site"
+      ]
+    }
+  },
+  "coreCompetencies": [
+    {
+      "title": "Project & Program Delivery",
+      "items": "End-to-end delivery, Agile & Scrum, WBS & man-hour estimation, sprint planning, cross-functional stakeholder management"
+    },
+    {
+      "title": "Governance & Risk",
+      "items": "Change control with stakeholder buy-in, proactive risk assessment, variance analysis, escalation management, weekly stakeholder reporting"
+    },
+    {
+      "title": "Platform & Technical",
+      "items": "Web & mobile platforms, React, Next.js, React Native, Node.js, Python, API integration, GitHub Actions"
+    },
+    {
+      "title": "Quality Management",
+      "items": "Hands-on QA, UAT cycles, automation testing, release management, app-store submission"
+    },
+    {
+      "title": "AI & Automation",
+      "items": "AI-native workflow design, Claude Code, Cursor, n8n, Notion-based delivery systems"
+    },
+    {
+      "title": "Tools",
+      "items": "Jira, Confluence, Notion, Slack, Figma, Lucidchart"
+    }
+  ],
+  "impact": [
+    {
+      "category": "Delivery",
+      "icon": "delivery",
+      "blurb": "Predictable execution from first scoping call to store release, on legacy and AI-native timelines alike.",
+      "metrics": [
+        {
+          "label": "Faster client delivery",
+          "value": "3x",
+          "detail": "AI-native workflows in Claude Code, n8n, and Notion cut average delivery from three months to one."
+        },
+        {
+          "label": "Products shipped end-to-end",
+          "value": "6",
+          "detail": "Web and mobile products launched in the last 11 months at Potential Inc."
+        }
+      ]
+    },
+    {
+      "category": "Product & growth",
+      "icon": "growth",
+      "blurb": "Products measured by what they earn and retain, not by tickets closed.",
+      "metrics": [
+        {
+          "label": "Platform sales, dental-lab client",
+          "value": "$138K",
+          "detail": "US & Canada sales through the Ivorymade platform in H1 2026."
+        },
+        {
+          "label": "MAU after gamified LMS relaunch",
+          "value": "+25%",
+          "detail": "Monthly active users following the JLPT-mapped LifeArk relaunch."
+        },
+        {
+          "label": "SaaS products launched",
+          "value": "2",
+          "detail": "Including DET Bridge — Japan’s first Duolingo English Test prep platform."
+        }
+      ]
+    },
+    {
+      "category": "Scale & reach",
+      "icon": "scale",
+      "blurb": "Cross-border teams and stakeholders across four client regions.",
+      "metrics": [
+        {
+          "label": "Offshore engineering teams led",
+          "value": "3",
+          "detail": "Bangladesh–Japan cross-border delivery with Japanese stakeholders."
+        },
+        {
+          "label": "Client regions worldwide",
+          "value": "4",
+          "detail": "Japan, Korea, the US, and the EU."
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Potential Inc.",
+      "url": "https://potentialai.com/",
+      "role": "Project Manager",
+      "period": "Jun 2025 – Present",
+      "context": "South Korea-based software farm",
+      "blurb": "Running every project end-to-end — pre-sale scoping through to store release. 6 products shipped in 11 months: 4 on legacy 3-month timelines, 2 with AI-native project management.",
+      "current": true,
+      "chips": [
+        {
+          "label": "Ivorymade",
+          "href": "/case-studies/ivory"
+        },
+        {
+          "label": "Artlive",
+          "href": "/case-studies/artlive"
+        },
+        {
+          "label": "Bside",
+          "href": "/case-studies/bside"
+        },
+        {
+          "label": "Cart Traders"
+        }
+      ],
+      "stats": [
+        {
+          "value": "6",
+          "label": "Products shipped"
+        },
+        {
+          "value": "3x",
+          "label": "Delivery speed"
+        },
+        {
+          "value": "$138K",
+          "label": "Platform sales"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Ivorymade",
+          "tagline": "Dental-restoration lab platform",
+          "detail": "$138K US & Canada sales in H1 2026. Owned kickoff through launch as Project Manager."
+        },
+        {
+          "name": "Artlive",
+          "tagline": "Art-appraisal marketplace",
+          "detail": "Two-sided platform, 3 service flows, Stripe Connect & PayPal payment architecture."
+        },
+        {
+          "name": "Bside",
+          "tagline": "AI artwork-recognition app",
+          "detail": "iOS & Android. React Native front end, PyTorch recognition pipeline on AWS ECS."
+        },
+        {
+          "name": "Cart Traders",
+          "tagline": "TCG marketplace app",
+          "detail": "Shipped with AI-native project management in Claude Code, n8n, and Notion — a 3-month scope delivered in 1."
+        },
+        {
+          "name": "PM Dashboard",
+          "tagline": "In-house AI ops platform",
+          "detail": "Product Owner. Centralises Slack, Google Meet, GitHub, and Notion; I also architected Potential’s Agile/Scrum delivery system in Notion."
+        }
+      ],
+      "portfolio": [
+        {
+          "label": "Project Manager",
+          "items": "Ivorymade · Artlive · Bside (app) · Trustix · Thrll (app) · Cart Traders (app)"
+        },
+        {
+          "label": "Product Manager",
+          "items": "Ktalk — Korean LMS app (took over)"
+        },
+        {
+          "label": "Took over as PM",
+          "items": "Elite4print · Activity Coaching"
+        }
+      ],
+      "bullets": [
+        "Ran every project end-to-end — from pre-sale kickoff with prospects through to product launch — bridging business strategy and engineering execution for cross-functional teams of engineers, designers, and QA.",
+        "Shipped 6 web and mobile products in 11 months: 4 delivered on legacy-system 3-month timelines, and 2 (Bside, Cart Traders) with AI-native project management built in Claude Code, n8n, and Notion — cutting delivery from 3 months to 1.",
+        "Project Manager for Ivorymade (dental-restoration lab platform, $138K US & Canada sales in H1 2026), Artlive (art-appraisal marketplace), Bside (AI artwork-recognition app), Trustix, Thrll, and Cart Traders (TCG marketplace app); took over Elite4print and Activity Coaching as PM, and Ktalk (Korean LMS app) as Product Manager.",
+        "Owned planning and scope from kickoff: communication strategy, requirement translation, a deliverable-oriented WBS with man-hour estimation, resource and budget plans, and proactive risk assessment before development began.",
+        "Ran execution and delivery: daily standups in Notion and the internal PM Dashboard ticket system as single source of truth, variance analysis and timely escalations, change control with stakeholder buy-in, weekly stakeholder reports, hands-on QA and UAT cycles, plus app-store submission and release management.",
+        "Architected Potential’s end-to-end Agile/Scrum delivery system in Notion and served as Product Owner of PM Dashboard — the in-house AI ops platform centralizing Slack, Google Meet, GitHub, and Notion."
+      ]
+    },
+    {
+      "company": "Kawaii Advanced Technology & Solution Ltd.",
+      "url": "https://kawaiibd.com/",
+      "role": "Project Manager",
+      "period": "Feb 2024 – May 2025",
+      "context": "Japan–Bangladesh joint venture",
+      "blurb": "Led 3 offshore engineering teams across cross-border delivery — ERP, SaaS, and full-stack engagements with Japanese stakeholders.",
+      "chips": [
+        {
+          "label": "DET Bridge",
+          "href": "/case-studies/det-bridge"
+        },
+        {
+          "label": "LifeArk",
+          "href": "/case-studies/lifeark-nihongo"
+        },
+        {
+          "label": "JTBS ERP",
+          "href": "/case-studies/jtbs-erp"
+        },
+        {
+          "label": "Findy Team+",
+          "href": "/case-studies/findy-job"
+        }
+      ],
+      "stats": [
+        {
+          "value": "3",
+          "label": "Offshore teams"
+        },
+        {
+          "value": "2",
+          "label": "SaaS launched"
+        },
+        {
+          "value": "+25%",
+          "label": "MAU uplift"
+        }
+      ],
+      "projects": [
+        {
+          "name": "DET Bridge",
+          "tagline": "Duolingo English Test prep SaaS",
+          "detail": "Japan’s first DET prep platform. Product Manager from concept through launch."
+        },
+        {
+          "name": "LifeArk",
+          "tagline": "Gamified JLPT-mapped LMS",
+          "detail": "+25% monthly active users after the gamified relaunch."
+        },
+        {
+          "name": "JTBS ERP",
+          "tagline": "Apparel-industry ERP",
+          "detail": "Customisation for JB TEX BD and Hameem Group across the production workflow."
+        },
+        {
+          "name": "Findy Team+ & Futurenation",
+          "tagline": "BD–JP talent bridge",
+          "detail": "Partners: NTT Docomo, Persol Group, UNDP, and Bangladesh’s ICT Division."
+        }
+      ],
+      "portfolio": [
+        {
+          "label": "Project Manager",
+          "items": "Futurenation · Findy Team+ · JTBS ERP · Japanese-language LMS (ICT Division)"
+        },
+        {
+          "label": "Product Manager",
+          "items": "DET Bridge (Duolingo test prep app) · LifeArk LMS app · Achieve Japan LMS · JP–BD cross-border e-commerce marketplace"
+        }
+      ],
+      "bullets": [
+        "Ran 3 offshore engineering teams across Bangladesh–Japan delivery, leading sprint planning in Jira, daily standups, and weekly client meetings with Japanese stakeholders.",
+        "Owned requirements and feedback cycles in Jira and Confluence, documentation across PRD / BRD / SRS, plus UAT and release management for ERP, SaaS, and full-stack engagements.",
+        "Project Manager for Futurenation, Findy Team+, JTBS ERP (apparel — JB TEX BD & Hameem Group), and a Japanese-language LMS for Bangladesh’s ICT Division. Partners: NTT Docomo, Persol Group, UNDP.",
+        "Product Manager for DET Bridge (Japan’s first Duolingo English Test prep SaaS), LifeArk LMS, Achieve Japan LMS (Japanese language, SSW training, IT-engineer training), and a JP–BD cross-border e-commerce marketplace."
+      ]
+    },
+    {
+      "company": "InsideMaps Dhaka",
+      "url": "https://www.insidemaps.com/",
+      "role": "Quality Control Analyst",
+      "period": "May 2023 – Dec 2023",
+      "context": "Real-estate 3D virtual-tour platform · US team",
+      "blurb": "Authored test cases and ran nightly regression sweeps on a real-estate 3D-tour pipeline for a Redwood City, CA team.",
+      "chips": [
+        {
+          "label": "InsideMaps",
+          "href": "/case-studies/insidemaps"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Virtual tour pipeline",
+          "tagline": "Real-estate 3D tour QA",
+          "detail": "Authored test cases and ran nightly regression sweeps for the Redwood City, CA team — where the QA habit behind my PM work started."
+        }
+      ],
+      "bullets": [
+        "Authored test cases and ran nightly regression sweeps on a real-estate 3D-tour pipeline."
+      ]
+    },
+    {
+      "company": "Care-box Ltd.",
+      "url": "https://www.care-box.com/",
+      "role": "Front-End Web Developer",
+      "period": "Aug 2022 – May 2023",
+      "context": "eHealth product · Dhaka",
+      "blurb": "Shipped React and Next.js front-ends for an eHealth product — the production-code habit that still informs how I work as a PM.",
+      "projects": [
+        {
+          "name": "Care-box eHealth",
+          "tagline": "Front-end delivery",
+          "detail": "Shipped React and Next.js front-ends in production — the code-reading habit that still informs how I debate scope with engineers."
+        }
+      ],
+      "bullets": [
+        "Shipped React and Next.js front-ends for an eHealth product — built the production-code reading habit that still informs how I work as a PM today."
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Project Management",
+      "items": [
+        "Agile / Scrum",
+        "WBS",
+        "Sprint planning",
+        "Communication strategy",
+        "Requirement translation",
+        "UAT",
+        "Release management",
+        "App-store submission",
+        "Automation testing"
+      ]
+    },
+    {
+      "title": "AI & Automation",
+      "items": [
+        "AI workflow design",
+        "Claude Code",
+        "Cursor",
+        "n8n",
+        "Notion"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Jira",
+        "Confluence",
+        "Slack",
+        "Figma",
+        "Lucidchart",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "title": "Technical fluency",
+      "items": [
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "React Native",
+        "Node.js"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Scrum Fundamentals Certified",
+      "issuer": "SCRUMstudy",
+      "id": "1088542",
+      "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1088542"
+    },
+    {
+      "name": "Scrum Foundation Professional (SFPC)",
+      "issuer": "CertiProf",
+      "id": "84114373",
+      "url": "https://free.certiprof.com/products/2148816897"
+    },
+    {
+      "name": "Atlassian Agile Project Management Professional",
+      "issuer": "Atlassian",
+      "url": "https://www.linkedin.com/learning/browse/certifications"
+    },
+    {
+      "name": "Product Analytics Micro-Certification (PAC™)",
+      "id": "cert_y93jppgk"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Information & Communication Engineering",
+      "school": "Bangladesh University of Professionals",
+      "period": "2017 – 2021",
+      "note": "CGPA 3.14/4.0",
+      "url": "https://bup.edu.bd/"
+    },
+    {
+      "degree": "Higher Secondary Certificate",
+      "school": "Notre Dame College, Dhaka",
+      "period": "2013 – 2015",
+      "note": "GPA 5.00/5.00",
+      "url": "https://ndc.edu.bd/"
+    }
+  ],
+  "publication": {
+    "title": "\"Aspect-Based Sentiment Analysis (ABSA) in the Bangla Language\"",
+    "venue": "B.Sc. research publication · Bangladesh University of Professionals"
+  },
+  "principles": [
+    {
+      "title": "Ownership",
+      "body": "I take each project as my own — I learn the client’s business and goals, then shape scope and trade-offs to get the best outcome, not just ship tickets."
+    },
+    {
+      "title": "Central orchestrator",
+      "body": "I’m the hub across team and stakeholders: I give developers cover and confidence, pull delivery out of trouble when it slips, and steer clients in the right direction."
+    },
+    {
+      "title": "Product sense",
+      "body": "I know what makes a product good — design and function — which sharpens client communication, cuts revision cycles, and makes my feedback to designers and developers actually improve the build."
+    },
+    {
+      "title": "AI-augmented delivery",
+      "body": "AI workflows I build in Claude Code, n8n, and Notion cut average client delivery from three months to one — without dropping the quality bar."
+    },
+    {
+      "title": "PM & QA dual hat",
+      "body": "I own both the plan and the quality bar: I run UAT and QA hands-on, plus release management and app-store submission."
+    },
+    {
+      "title": "Kickoff with budget & stack",
+      "body": "I scope budget and tech stack at kickoff, so delivery starts from a realistic plan instead of a guess."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "ivory",
+      "name": "Ivorymade",
+      "solution": "Dental-Restoration Production Lab & Management Platform",
+      "category": "client",
+      "domain": "B2B SaaS · Dental Tech",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "Legacy",
+      "team": "5 team members",
+      "summary": "A production-lab platform for dental restorations — delivered in two phases, from an order-functional MVP to roles, payment terms, and multi-office support.",
+      "contribution": [
+        "Delivered in two phases: Phase 1 took the platform to an MVP where every order was functional end-to-end; Phase 2 added role-based access, multiple payment terms, and multi-office support.",
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "Managed a team of 5 through both phases, on the legacy three-month delivery model."
+      ],
+      "stats": [
+        {
+          "value": "2",
+          "label": "Delivery phases"
+        },
+        {
+          "value": "5",
+          "label": "Team members"
+        },
+        {
+          "value": "Live",
+          "label": "In production"
+        }
+      ],
+      "caseStudy": "ivory",
+      "preview": "/case-studies/ivory/feature3.webp",
+      "livePreview": {
+        "src": "/case-studies/ivory/feature3.webp",
+        "alt": "Ivorymade order detail with order information, tracking, and order actions"
+      },
+      "sections": [
+        {
+          "title": "Phase 1 - every order functional",
+          "body": "Phase 1 was a genuine MVP, not a demo: a case could be submitted, designed, reviewed against the 3D model, produced, and invoiced without leaving the platform. Anything not required to make an order work was deliberately deferred.",
+          "quote": "Make the order the unit of truth before adding who is allowed to do what.",
+          "image": {
+            "src": "/case-studies/ivory/feature3.webp",
+            "alt": "Ivorymade order detail screen showing order information, tracking, and order actions",
+            "caption": "Order detail - submission, tracking, and actions in one place."
+          }
+        },
+        {
+          "title": "Phase 2 - roles, terms, offices",
+          "body": "Once the order flow was stable, the platform grew into how labs are actually structured: role-based access so technicians, reviewers, and administrators see different things; multiple payment terms rather than one billing assumption; and multi-office support for groups running several locations.",
+          "chips": [
+            "Role-based access",
+            "Payment terms",
+            "Multi-office"
+          ]
+        },
+        {
+          "title": "3D model review",
+          "body": "Restoration review runs on the exocad viewer inside the platform, so the technician and the reviewing dentist look at the same model rather than exchanging files.",
+          "image": {
+            "src": "/case-studies/ivory/feature2.webp",
+            "alt": "Ivorymade 3D design model review using the embedded exocad viewer",
+            "caption": "3D design model review - exocad viewer embedded in the order flow."
+          }
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "Team & approach",
+          "body": "Five team members across both phases, on the legacy three-month delivery model. Artlive shipped a larger scope afterwards with three people, once the AI-native workflow was in place.",
+          "chips": [
+            "5 team members",
+            "Legacy model"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "artlive",
+      "name": "Artlive",
+      "solution": "Art-Appraisal Marketplace",
+      "category": "client",
+      "domain": "Marketplace · Payments",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "AI-native",
+      "team": "3 team members",
+      "summary": "A two-sided art-appraisal marketplace with three service flows and a Stripe Connect and PayPal payment architecture — a larger scope than Ivorymade, delivered by a smaller team.",
+      "contribution": [
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "A bigger build than Ivorymade delivered with 3 people instead of 5, because this one ran on the AI-native delivery approach rather than the legacy model."
+      ],
+      "stats": [
+        {
+          "value": "3",
+          "label": "Service flows"
+        },
+        {
+          "value": "3",
+          "label": "Team members"
+        },
+        {
+          "value": "AI-native",
+          "label": "Delivery approach"
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "Django",
+        "PostgreSQL",
+        "Stripe Connect",
+        "PayPal",
+        "AWS"
+      ],
+      "live": "https://www.artlive.com/",
+      "caseStudy": "artlive",
+      "preview": "/case-studies/artlive/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/artlive/screen-2.webp",
+        "alt": "Artlive marketplace showing expert discovery and service selection"
+      },
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Art appraisal is a trust transaction before it is a commercial one. A collector needs to believe the expert is qualified; the expert needs to be paid without chasing invoices. Get either half wrong and there is no second attempt.",
+          "image": {
+            "src": "/case-studies/artlive/screen-1.webp",
+            "alt": "Artlive landing experience - connect with certified art experts and choose a service",
+            "caption": "Discovery leads with certified experts and a clear service choice."
+          }
+        },
+        {
+          "title": "Model the money first",
+          "body": "Payments were the constraint everything else had to fit, so the architecture was settled before feature work began. Stripe Connect splits platform and expert; PayPal covers collectors who will not use anything else. Deciding this at specification time kept three service flows from becoming three payment implementations.",
+          "quote": "Three service flows, one payment model - decided before the first sprint.",
+          "chips": [
+            "Stripe Connect",
+            "PayPal",
+            "3 service flows"
+          ],
+          "image": {
+            "src": "/case-studies/artlive/screen-3.webp",
+            "alt": "Artlive expert profile showing online valuation, buyer support, and bespoke service pricing",
+            "caption": "Each service carries its own scope, turnaround, and price shape."
+          }
+        },
+        {
+          "title": "Make expertise legible",
+          "body": "Discovery leads with credentials, specialisms, and previously reviewed objects, because in this market the expert profile is the product. That shaped the design guidelines I wrote for the team.",
+          "image": {
+            "src": "/case-studies/artlive/screen-4.webp",
+            "alt": "Artlive expert search on a map showing rated appraisers by location and specialism",
+            "caption": "Expert search by location, rating, and specialism."
+          }
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "AI-native delivery",
+          "body": "This was the first project I ran on the AI-native approach. Workflows in Claude Code, n8n, and Notion absorbed the documentation drafting, ticket scaffolding, and status-reporting overhead, so a bigger scope than Ivorymade shipped with three people instead of five - without dropping standups, reviews, retrospectives, or the SQA pass.",
+          "quote": "A larger build than Ivorymade, delivered by three people instead of five.",
+          "chips": [
+            "Claude Code",
+            "n8n",
+            "Notion",
+            "3 team members"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bside",
+      "name": "Bside",
+      "solution": "AI Artwork-Recognition & Exhibition App",
+      "category": "client",
+      "domain": "Mobile · AI / Computer Vision",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "AI-native",
+      "team": "2 team members",
+      "summary": "A mobile art-exhibition app with AI artwork recognition, shipped to both stores by a team of three — one designer, one mobile developer, and me.",
+      "contribution": [
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "Shipped with a team of three in total: one designer, one mobile developer, and me. I did design work and fixed issues directly alongside running the project.",
+        "Owned app-store submission and release for both platforms."
+      ],
+      "stats": [
+        {
+          "value": "2",
+          "label": "App stores"
+        },
+        {
+          "value": "3",
+          "label": "Total on project"
+        },
+        {
+          "value": "AI-native",
+          "label": "Delivery approach"
+        }
+      ],
+      "live": "https://www.bside.art/",
+      "caseStudy": "bside",
+      "preview": "/case-studies/bside/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/bside/screen-2.webp",
+        "alt": "Bside mobile app showing the artwork feed and exhibition browsing"
+      },
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Standing in front of a piece of art, the information you want is immediate and the patience you have is short. A placard gives you a title; a search engine gives you fifty results for the wrong painting. The gap is recognition.",
+          "image": {
+            "src": "/case-studies/bside/screen-1.webp",
+            "alt": "Bside mobile app home screen showing the artwork feed",
+            "caption": "The app opens on the feed - recognition is one tap away."
+          }
+        },
+        {
+          "title": "Recognition as a separate service",
+          "body": "The mobile client and the PyTorch recognition pipeline were built as separate services, with the model served from AWS ECS. Recognition could iterate on its own cadence without blocking the app, and the client stayed thin enough to ship to two stores on schedule.",
+          "quote": "A pipeline that is accurate but slow fails the moment of use as completely as one that is fast and wrong.",
+          "chips": [
+            "PyTorch",
+            "FastAPI",
+            "AWS ECS"
+          ],
+          "image": {
+            "src": "/case-studies/bside/screen-3.webp",
+            "alt": "Bside artwork detail view with the recognised work and artist context",
+            "caption": "Recognition result - the work, the artist, and the context."
+          }
+        },
+        {
+          "title": "Three people, no handoff slack",
+          "body": "One designer, one mobile developer, and me. With a team that size there is no room for a specification that needs interpreting, so written user stories, a PRD, and an SRS mattered more, not less. Where a design tweak or a fix was faster for me to make directly, I made it.",
+          "chips": [
+            "1 designer",
+            "1 developer",
+            "PM who also builds"
+          ]
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "App-store submission",
+          "body": "Both stores have review requirements that are cheaper to design for than to retrofit, so submission went into the schedule rather than being what happens after the build is called done. Both cleared review without a rejection cycle.",
+          "chips": [
+            "App Store",
+            "Google Play",
+            "No rejection cycle"
+          ],
+          "image": {
+            "src": "/case-studies/bside/screen-4.webp",
+            "alt": "Bside app running on iOS, shipped to both the App Store and Google Play",
+            "caption": "Shipped to both stores by a team of three."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cart-traders",
+      "name": "Cart Traders",
+      "solution": "Trading-Card Marketplace App",
+      "category": "client",
+      "domain": "Mobile · Marketplace",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "Legacy",
+      "team": "3 team members",
+      "summary": "A trading-card marketplace mobile app, run through the full delivery cycle with a team of three.",
+      "contribution": [
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "Managed a team of 3 on the legacy delivery model."
+      ],
+      "stats": [
+        {
+          "value": "3",
+          "label": "Team members"
+        }
+      ],
+      "caseStudy": "cart-traders",
+      "preview": "/case-studies/cart-traders/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/cart-traders/screen-2.webp",
+        "alt": "Cart Traders app showing trading-card listings and discovery"
+      },
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Collectible marketplaces live or die on whether a listing represents the item accurately and whether both sides trust the transaction. Trading cards make both harder, because condition is the price - the same card in two grades is effectively two different products.",
+          "image": {
+            "src": "/case-studies/cart-traders/screen-1.webp",
+            "alt": "Cart Traders mobile app showing the trading-card marketplace feed",
+            "caption": "Discovery has to make condition and price legible at a glance."
+          }
+        },
+        {
+          "title": "Listing flow above everything",
+          "body": "In a two-sided market the supply side is the bottleneck at launch, so I specified the listing path as the highest-priority experience: fewest steps, camera-first, and condition captured as structured data rather than free text.",
+          "quote": "Free-text condition notes are unsearchable and unenforceable. Grade had to be a field.",
+          "chips": [
+            "Camera-first",
+            "Structured condition",
+            "Supply-side priority"
+          ],
+          "image": {
+            "src": "/case-studies/cart-traders/screen-3.webp",
+            "alt": "Cart Traders listing flow capturing card details and condition",
+            "caption": "Structured condition capture, so discovery and pricing share one source."
+          }
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "Team & approach",
+          "body": "Three team members on the legacy three-month delivery model, with app-store submission planned into the schedule rather than treated as a final step.",
+          "chips": [
+            "3 team members",
+            "Legacy model",
+            "App-store submission"
+          ],
+          "image": {
+            "src": "/case-studies/cart-traders/screen-4.webp",
+            "alt": "Cart Traders app running on iOS after store submission",
+            "caption": "Shipped to iOS and Android."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "trustix",
+      "name": "Trustix",
+      "solution": "Sports-Ticket Supplier Management Dashboard",
+      "category": "client",
+      "domain": "B2B · Operations Dashboard",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "Legacy",
+      "team": "4 team members",
+      "summary": "A supplier-management dashboard for sports-ticket operations, delivered end-to-end with a team of four.",
+      "contribution": [
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "Managed a team of 4 on the legacy delivery model."
+      ],
+      "stats": [
+        {
+          "value": "4",
+          "label": "Team members"
+        }
+      ],
+      "caseStudy": "trustix",
+      "preview": "/case-studies/trustix/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/trustix/screen-2.webp",
+        "alt": "Trustix supplier-management dashboard showing inventory and fulfilment state"
+      },
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Sports-ticket supply is fast and high-variance: inventory changes value by the hour, every supplier has its own terms, and a mistake is immediately visible to a customer holding a ticket that does not work. Operations teams run on spreadsheets plus relationships until volume makes that untenable.",
+          "quote": "The failure mode is not dramatic - it is small reconciliation errors nobody has time to chase.",
+          "image": {
+            "src": "/case-studies/trustix/screen-1.webp",
+            "alt": "Trustix dashboard overview showing supplier and inventory state",
+            "caption": "Supplier state made observable rather than remembered."
+          }
+        },
+        {
+          "title": "Start from the operator day",
+          "body": "For an internal tool the specification that matters is the sequence a person actually performs between opening the dashboard and closing it. I wrote the user stories from that sequence, which kept the build focused on reducing clicks in high-frequency paths rather than covering every theoretical case.",
+          "image": {
+            "src": "/case-studies/trustix/screen-3.webp",
+            "alt": "Trustix supplier detail view with terms and fulfilment history",
+            "caption": "The high-frequency paths got the design attention."
+          }
+        },
+        {
+          "title": "Supplier terms as data",
+          "body": "Each supplier has different arrangements. Encoding those as configuration rather than special-case logic was the technical decision with the longest tail - it determines whether adding a supplier later is a form entry or a development ticket.",
+          "chips": [
+            "Configurable terms",
+            "No special-case logic"
+          ],
+          "image": {
+            "src": "/case-studies/trustix/screen-4.webp",
+            "alt": "Trustix supplier configuration screen showing per-supplier terms",
+            "caption": "Adding a supplier is a form entry, not a release."
+          }
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "Team & approach",
+          "body": "Four team members on the legacy three-month model. This is the useful contrast to Artlive and Bside: identical PM process, meaningfully more people for the scope, because the AI-native workflow was not yet in place.",
+          "chips": [
+            "4 team members",
+            "Legacy model"
+          ],
+          "image": {
+            "src": "/case-studies/trustix/screen-5.webp",
+            "alt": "Trustix reporting view used for daily operational decisions",
+            "caption": "Reporting for the decisions the team makes daily."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "thrll",
+      "name": "Thrll",
+      "solution": "Personalised Adventure Platform",
+      "category": "client",
+      "domain": "Mobile · Consumer",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager",
+      "approach": "Legacy",
+      "team": "3 team members",
+      "summary": "A personalised adventure-booking mobile app, run through the full delivery cycle with a team of three.",
+      "contribution": [
+        "Ran the project from kickoff: requirement gathering, user stories, PRD and SRS, technical decisions, and design requirements and guidelines.",
+        "Owned the design loop — wrote the UI/UX direction, reviewed and fed back on screens, and signed off before build.",
+        "Ran Agile/Scrum to the letter: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and daily written updates.",
+        "Wrote the test cases and did the SQA pass myself rather than handing the quality bar off.",
+        "Owned the deployment plan and the handover documentation through to delivery.",
+        "Managed a team of 3 on the legacy delivery model, adapted for mobile release."
+      ],
+      "stats": [
+        {
+          "value": "3",
+          "label": "Team members"
+        }
+      ],
+      "caseStudy": "thrll",
+      "preview": "/case-studies/thrll/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/thrll/screen-2.webp",
+        "alt": "Thrll app showing personalised adventure recommendations"
+      },
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Discovery apps in the experiences space tend to optimise for inventory breadth and leave the user to filter. The result is a catalogue, and a catalogue puts the work back on the person who came looking for a recommendation.",
+          "image": {
+            "src": "/case-studies/thrll/screen-1.webp",
+            "alt": "Thrll mobile app onboarding, asking the user to pick an adventure style",
+            "caption": "Matching starts with signal, not with a filter panel."
+          }
+        },
+        {
+          "title": "Budget the onboarding",
+          "body": "Every question asked before a user sees value is a chance to lose them. I specified onboarding as a fixed budget of interactions rather than an open list of preferences to collect, which forced the team to decide which signals genuinely improved matching.",
+          "quote": "Personalisation needs signal before the user has given you much. That is the design problem.",
+          "chips": [
+            "Fixed interaction budget",
+            "Signal over preference lists"
+          ],
+          "image": {
+            "src": "/case-studies/thrll/screen-3.webp",
+            "alt": "Thrll personalised recommendations feed after onboarding",
+            "caption": "A short onboarding feeding a personalised feed."
+          }
+        },
+        {
+          "title": "Kickoff & scoping",
+          "body": "Requirement gathering, user stories, PRD and SRS, technical decisions, and the design requirements and guidelines — all before development started. Scoping the budget and stack this early is what keeps delivery off a guess.",
+          "chips": [
+            "User stories",
+            "PRD",
+            "SRS",
+            "Technical decisions"
+          ]
+        },
+        {
+          "title": "Design direction",
+          "body": "I wrote the UI/UX direction rather than waiting for screens to review, then ran the feedback loop with the designers and signed off before build. Owning the design brief is what keeps revision cycles short.",
+          "chips": [
+            "Design guidelines",
+            "UI/UX feedback",
+            "Sign-off"
+          ]
+        },
+        {
+          "title": "Delivery process",
+          "body": "Agile/Scrum run properly: daily standups, sprint planning, sprint review, and retrospectives, with weekly client meetings and a written update every day. The cadence is the product — it is what makes status a fact instead of an opinion.",
+          "chips": [
+            "Daily standups",
+            "Sprint planning",
+            "Sprint review",
+            "Retrospective"
+          ]
+        },
+        {
+          "title": "Quality & SQA",
+          "body": "I wrote the test cases and ran the SQA pass myself rather than handing the quality bar to someone else. That comes from starting in QA, and it means I find the problems before the client does.",
+          "quote": "I own both the plan and the quality bar — not just the date.",
+          "chips": [
+            "Test cases",
+            "SQA",
+            "UAT"
+          ]
+        },
+        {
+          "title": "Release & handover",
+          "body": "Deployment plan and handover documentation through to delivery, so the client owns a system they can run rather than one that depends on the build team’s memory.",
+          "chips": [
+            "Deployment plan",
+            "Handover docs"
+          ]
+        },
+        {
+          "title": "Team & approach",
+          "body": "Three team members on the legacy three-month model. The Scrum cadence stayed identical for mobile, but the schedule accounted for store review as a dependency with its own lead time.",
+          "chips": [
+            "3 team members",
+            "Legacy model",
+            "Store review planned in"
+          ],
+          "image": {
+            "src": "/case-studies/thrll/screen-4.webp",
+            "alt": "Thrll booking flow for an adventure experience",
+            "caption": "Discovery through to booking."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "elite4print",
+      "name": "Elite4print",
+      "solution": "Print-Production Commerce Platform",
+      "category": "client",
+      "domain": "E-commerce · Print",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Project Manager (took over)",
+      "summary": "A platform already six months into build when I joined — I took it over mid-flight and stabilised delivery.",
+      "contribution": [
+        "Took the project over months after joining; it had been in build for six months before I arrived, so the first job was understanding a codebase and a scope I had not set.",
+        "Picked up client communication and became the single point of contact.",
+        "Ran QA on an existing build and drove the defect list to closure.",
+        "Managed the developers day to day and translated incoming change requests into written feature requirements."
+      ],
+      "caseStudy": "elite4print",
+      "preview": "/case-studies/elite4print/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/elite4print/screen-2.webp",
+        "alt": "Elite4print product configuration and quotation flow"
+      },
+      "sections": [
+        {
+          "title": "Inheriting a live build",
+          "body": "The platform had been in build for six months before I joined the company, and I took it over months after that. The codebase encoded decisions I was not part of, and there was no document explaining why things were the way they were.",
+          "quote": "The temptation is to rewrite. That spends the client money re-litigating settled decisions.",
+          "image": {
+            "src": "/case-studies/elite4print/screen-1.webp",
+            "alt": "Elite4print storefront showing print products and templates",
+            "caption": "A working platform I did not scope, stack, or kick off."
+          }
+        },
+        {
+          "title": "Read before changing anything",
+          "body": "The first work was not planning, it was reading - the code, the existing tickets, and the client correspondence, until I could explain the current state without asking anyone. A PM who needs a developer to translate the system cannot make credible commitments about it.",
+          "chips": [
+            "Codebase orientation",
+            "Ticket archaeology"
+          ]
+        },
+        {
+          "title": "Stabilise quality first",
+          "body": "An inherited build with an open defect list has no reliable baseline, so running QA myself and closing defects came before new feature work. Until the current state is known, every estimate is a guess.",
+          "chips": [
+            "Hands-on QA",
+            "Defect triage"
+          ],
+          "image": {
+            "src": "/case-studies/elite4print/screen-3.webp",
+            "alt": "Elite4print order and production workflow screen",
+            "caption": "The production workflow I inherited and stabilised."
+          }
+        },
+        {
+          "title": "Own the client channel",
+          "body": "Handover is the moment a client is most likely to lose confidence, so I moved quickly to being their single point of contact rather than letting communication run through two people during the transition.",
+          "chips": [
+            "Single point of contact"
+          ]
+        },
+        {
+          "title": "Write the change requests down",
+          "body": "Requests arriving mid-project as conversation are the fastest route to disputed scope. Every incoming change became a written feature requirement, which made scope decisions explicit rather than remembered.",
+          "chips": [
+            "Written change control"
+          ],
+          "image": {
+            "src": "/case-studies/elite4print/screen-4.webp",
+            "alt": "Elite4print solution overview after stabilisation",
+            "caption": "Delivery continued through a PM change without a scope reset."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "jtbs-erp",
+      "name": "JTBS ERP",
+      "solution": "Apparel-Industry ERP on a Low-Code Platform",
+      "category": "client",
+      "domain": "ERP · Apparel · Low-Code",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024 – 2025",
+      "role": "Project Manager",
+      "summary": "An apparel ERP on Claris FileMaker — purchase orders, a multi-godown inventory network, double-entry accounting and a Windows POS, customised for apparel manufacturers.",
+      "contribution": [
+        "Ran requirements and feedback cycles in Jira and Confluence across a multi-module ERP.",
+        "Owned documentation across PRD, BRD, and SRS for the customised modules.",
+        "Ran UAT and release management with the client through cross-border delivery."
+      ],
+      "live": "https://jtbs.jintech.com/home/",
+      "caseStudy": "jtbs-erp",
+      "preview": "/case-studies/jtbs-erp/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/jtbs-erp/screen-1.webp",
+        "alt": "Jintech Business Suite marketing site showing the ERP module suite"
+      },
+      "sections": [
+        {
+          "title": "A product you cannot count",
+          "body": "Generic ERP breaks on apparel because a product is not a countable thing. \"Polo shirt for men\" is an article; what a warehouse holds is that article multiplied by colour and size — often thirty or more items. Childrenswear is worse, because sizes are age bands from Newborn to 11–12 years.",
+          "quote": "Count articles instead of items and every number downstream is quietly wrong.",
+          "chips": [
+            "Article vs item",
+            "Colour × size matrix",
+            "Seasonal ranges"
+          ],
+          "image": {
+            "src": "/case-studies/jtbs-erp/screen-1.webp",
+            "alt": "Jintech Business Suite platform overview showing its integrated modules",
+            "caption": "Four systems that have to agree: ordering, inventory, accounting, POS."
+          }
+        },
+        {
+          "title": "Stock lives in a network",
+          "body": "A dispatching unit, a receiving store, a main warehouse, a retail warehouse and regional godowns. The same item sits in several places at once, so \"stock\" is meaningless without asking where — and transfers between them change availability without touching the ledger.",
+          "chips": [
+            "Multi-godown",
+            "Transfers",
+            "MRNs"
+          ]
+        },
+        {
+          "title": "What low-code actually buys",
+          "body": "Claris FileMaker lets the client edit and build their own reports without a developer — which deletes a whole category of change request for a business whose reporting shifts every season. The cost is the platform ceiling: its interface conventions, its licensing, and a much smaller pool of engineers. That last one is a resourcing risk, not a technical one.",
+          "quote": "Low-code moved the constraint. It did not remove it.",
+          "chips": [
+            "Client-editable reports",
+            "Platform ceiling",
+            "Resourcing risk"
+          ]
+        },
+        {
+          "title": "Permissions as a feature",
+          "body": "More than ten privilege sets: data-entry only, read-only, report-print users, finance groups split by which accounts they may touch, and a closed-accounting-year group that can read a locked period but not post into it. Where the person entering stock must not be the person adjusting the ledger, access control is the product, not configuration.",
+          "chips": [
+            "10+ privilege sets",
+            "Segregation of duties",
+            "Locked periods"
+          ]
+        },
+        {
+          "title": "Specifying for a room you are not in",
+          "body": "Requirements arrived through Japanese stakeholders for Pakistani and Bangladeshi operations, with demos subtitled in Japanese. The person approving a requirement was often not the person who discussed it, which raises the bar on written specification: a PRD that only reminds you of a conversation is useless to someone who was never in it.",
+          "chips": [
+            "PRD / BRD / SRS",
+            "BD–JP–PK chain",
+            "UAT with client staff"
+          ]
+        }
+      ],
+      "stack": [
+        "Claris FileMaker",
+        "Windows POS",
+        "FBR tax integration",
+        "Jira",
+        "Confluence"
+      ],
+      "stats": [
+        {
+          "value": "4",
+          "label": "Integrated modules"
+        },
+        {
+          "value": "10+",
+          "label": "Privilege sets"
+        },
+        {
+          "value": "3",
+          "label": "Countries in the chain"
+        }
+      ]
+    },
+    {
+      "slug": "findy-team",
+      "name": "Findy Team+",
+      "solution": "Engineering-Organisation Analytics Platform",
+      "category": "client",
+      "domain": "HR-Tech · Analytics",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024 – 2025",
+      "role": "Project Manager",
+      "summary": "Offshore delivery on a Japanese engineering-analytics platform, with Japanese stakeholders.",
+      "contribution": [
+        "Led sprint planning in Jira, daily standups, and weekly client meetings with Japanese stakeholders.",
+        "Owned requirements and feedback cycles across Jira and Confluence.",
+        "Ran UAT and release management for the offshore engineering team."
+      ],
+      "live": "https://en.findy-team.io/",
+      "caseStudy": "findy-job",
+      "preview": "/case-studies/findy-job/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/findy-job/screen-1.webp",
+        "alt": "Findy Team+ engineering analytics platform dashboard"
+      },
+      "sections": [
+        {
+          "title": "Engineering analytics for Japanese teams",
+          "body": "Findy Team+ turns development data into the insights engineering leaders use to run their organisations. I ran offshore delivery on it, working directly with Japanese stakeholders.",
+          "image": {
+            "src": "/case-studies/findy-job/screen-1.webp",
+            "alt": "Findy Team+ platform showing engineering delivery analytics for software teams",
+            "caption": "Development data turned into organisational insight."
+          }
+        },
+        {
+          "title": "Requirements & documentation",
+          "body": "Requirements and feedback cycles run in Jira and Confluence, with documentation across PRD, BRD, and SRS. On cross-border work the person approving a requirement is often not the person who discussed it, which raises the bar on documentation standing on its own.",
+          "chips": [
+            "Jira",
+            "Confluence",
+            "PRD / BRD / SRS"
+          ]
+        },
+        {
+          "title": "Offshore delivery cadence",
+          "body": "Sprint planning in Jira, daily standups, and weekly client meetings with Japanese stakeholders. A fixed cadence is what stops a cross-border project fragmenting into parallel conversations across time zones.",
+          "chips": [
+            "Sprint planning",
+            "Daily standups",
+            "Weekly client meetings"
+          ]
+        },
+        {
+          "title": "UAT & release",
+          "body": "UAT run as a real checkpoint rather than a formality before release - it is where stated requirements meet what stakeholders actually expected, and the only place to catch the gap while it is still fixable.",
+          "chips": [
+            "UAT",
+            "Release management"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "futurenation",
+      "name": "Futurenation",
+      "solution": "National Skills & Employment Platform",
+      "category": "client",
+      "domain": "GovTech · EdTech",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024 – 2025",
+      "role": "Project Manager",
+      "summary": "A national skills-and-employment platform delivered with UNDP, the ICT Division, and private-sector partners.",
+      "contribution": [
+        "Project Manager across a public–private partnership involving UNDP and Bangladesh’s ICT Division.",
+        "Ran sprint planning, standups, and stakeholder reporting across institutional partners.",
+        "Owned requirements documentation, UAT, and release management."
+      ],
+      "live": "https://platform.futurenation.gov.bd/",
+      "caseStudy": "futurenation",
+      "preview": "/case-studies/futurenation/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/futurenation/screen-1.webp",
+        "alt": "Futurenation national skills and employment platform"
+      },
+      "sections": [
+        {
+          "title": "A multi-stakeholder mandate",
+          "body": "A government department, a UN agency, and private-sector partners each arrive with a legitimate and different definition of success: policy outcomes, development targets, and commercial viability. None is wrong, and a delivery team cannot optimise for all three at once.",
+          "quote": "The PM work here is making the trade-offs explicit before they surface as late-stage disagreement.",
+          "image": {
+            "src": "/case-studies/futurenation/screen-1.webp",
+            "alt": "Futurenation platform offering online training and job placement for Bangladesh",
+            "caption": "National skills and employment infrastructure, live."
+          },
+          "chips": [
+            "UNDP",
+            "ICT Division",
+            "Private sector"
+          ]
+        },
+        {
+          "title": "Report on a cadence, not on demand",
+          "body": "With multiple institutional stakeholders, ad-hoc reporting means the loudest partner gets the most information. A fixed reporting rhythm meant everyone saw the same picture at the same time.",
+          "chips": [
+            "Fixed reporting cadence"
+          ]
+        },
+        {
+          "title": "Requirements & documentation",
+          "body": "Requirements and feedback cycles run in Jira and Confluence, with documentation across PRD, BRD, and SRS. On cross-border work the person approving a requirement is often not the person who discussed it, which raises the bar on documentation standing on its own.",
+          "chips": [
+            "Jira",
+            "Confluence",
+            "PRD / BRD / SRS"
+          ]
+        },
+        {
+          "title": "Offshore delivery cadence",
+          "body": "Sprint planning in Jira, daily standups, and weekly client meetings with Japanese stakeholders. A fixed cadence is what stops a cross-border project fragmenting into parallel conversations across time zones.",
+          "chips": [
+            "Sprint planning",
+            "Daily standups",
+            "Weekly client meetings"
+          ]
+        },
+        {
+          "title": "UAT & release",
+          "body": "UAT run as a real checkpoint rather than a formality before release - it is where stated requirements meet what stakeholders actually expected, and the only place to catch the gap while it is still fixable.",
+          "chips": [
+            "UAT",
+            "Release management"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "insidemaps",
+      "name": "InsideMaps",
+      "solution": "3D Real-Estate Tour QA",
+      "category": "client",
+      "domain": "QA · 3D / Spatial",
+      "org": "InsideMaps Dhaka",
+      "period": "May 2023 – Dec 2023",
+      "role": "Quality Control Analyst",
+      "summary": "Test authoring and nightly regression sweeps on a real-estate 3D-tour pipeline for a Redwood City, CA team — where the QA habit behind my PM work started.",
+      "contribution": [
+        "Authored test cases against a 3D capture and virtual-tour pipeline.",
+        "Ran nightly regression sweeps and reported defects to a US-based engineering team.",
+        "Built the hands-on QA habit I still apply as a PM rather than delegating the quality bar."
+      ],
+      "caseStudy": "insidemaps",
+      "sections": [
+        {
+          "title": "Testing a 3D pipeline",
+          "body": "Authored test cases against a real-estate 3D capture and virtual-tour pipeline, where a defect is usually visual rather than a thrown error - which makes written, repeatable test cases matter more, not less.",
+          "chips": [
+            "Test authoring",
+            "3D capture pipeline"
+          ]
+        },
+        {
+          "title": "Nightly regression",
+          "body": "Ran nightly regression sweeps and reported defects to a Redwood City, CA engineering team across a full time-zone gap, which meant a defect report had to be complete enough to action without a conversation.",
+          "chips": [
+            "Nightly regression",
+            "US team",
+            "Async reporting"
+          ]
+        },
+        {
+          "title": "Where the QA habit came from",
+          "body": "This is the role that made me a PM who writes the test cases and runs the SQA pass rather than delegating the quality bar. The habit shows up in every project since.",
+          "quote": "I own both the plan and the quality bar - that started here."
+        }
+      ]
+    },
+    {
+      "slug": "det-bridge",
+      "name": "DET Bridge",
+      "solution": "Duolingo English Test Prep SaaS",
+      "category": "owned",
+      "domain": "EdTech · SaaS",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024",
+      "role": "Product Manager",
+      "summary": "Japan’s first Duolingo English Test prep platform — owned end-to-end as Product Manager.",
+      "contribution": [
+        "Product Manager end-to-end: owned the product direction, not just the delivery schedule.",
+        "Took a first-to-market position in Japan for DET preparation, defining the feature set from scratch.",
+        "Ran requirements, UAT, and release through to launch."
+      ],
+      "live": "https://det-bridge.com/",
+      "caseStudy": "det-bridge",
+      "preview": "/case-studies/det-bridge/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/det-bridge/screen-1.webp",
+        "alt": "DET Bridge Duolingo English Test preparation platform for the Japanese market"
+      },
+      "sections": [
+        {
+          "title": "First to market in Japan",
+          "body": "Japan had no dedicated Duolingo English Test preparation platform. As Product Manager I defined the feature set from scratch rather than adapting an existing product, which meant owning what the product should be, not just its schedule.",
+          "image": {
+            "src": "/case-studies/det-bridge/screen-1.webp",
+            "alt": "DET Bridge homepage showing Duolingo English Test preparation for Japanese learners",
+            "caption": "Japan first for DET preparation - an official partner platform."
+          },
+          "chips": [
+            "Product Manager",
+            "First to market",
+            "Japan"
+          ]
+        },
+        {
+          "title": "Owning direction end-to-end",
+          "body": "One of two SaaS products I launched at Kawaii. Product Manager from concept through launch: requirements, the release cycle, and the decisions about what stayed out of scope.",
+          "chips": [
+            "Concept to launch",
+            "1 of 2 SaaS launches"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lifeark",
+      "name": "LifeArk",
+      "solution": "Gamified JLPT-Mapped Language LMS",
+      "category": "owned",
+      "domain": "EdTech · SaaS",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024 – 2025",
+      "role": "Product Manager",
+      "summary": "A gamified Japanese-language LMS mapped to JLPT levels — +25% monthly active users after relaunch.",
+      "contribution": [
+        "Product Manager end-to-end across the relaunch.",
+        "Drove the gamification direction that lifted monthly active users by 25%.",
+        "Owned the JLPT-level content mapping and the release cycle."
+      ],
+      "stats": [
+        {
+          "value": "+25%",
+          "label": "MAU after relaunch"
+        }
+      ],
+      "live": "https://www.lifeark-nihongo.com/",
+      "caseStudy": "lifeark-nihongo",
+      "preview": "/case-studies/lifeark-nihongo/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/lifeark-nihongo/screen-1.webp",
+        "alt": "LifeArk gamified Japanese language learning platform mapped to JLPT levels"
+      },
+      "sections": [
+        {
+          "title": "Retention is the product",
+          "body": "Language-learning products have no shortage of content and a chronic shortage of retention. The hard problem is not teaching Japanese; it is being the thing a learner opens on the day they do not feel like studying.",
+          "image": {
+            "src": "/case-studies/lifeark-nihongo/screen-1.webp",
+            "alt": "LifeArk platform teaching Japanese through games, with JLPT-mapped beginner lessons",
+            "caption": "Learn Japanese through games - lessons mapped to JLPT levels."
+          },
+          "quote": "Gamification is not decoration here. It is the retention mechanism."
+        },
+        {
+          "title": "The relaunch",
+          "body": "As Product Manager I drove the gamification direction through a relaunch that lifted monthly active users by 25%, and owned the JLPT-level content mapping alongside the release cycle.",
+          "chips": [
+            "+25% MAU",
+            "JLPT-mapped",
+            "Product Manager"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "achieve-japan",
+      "name": "Achieve Japan",
+      "solution": "SSW & IT-Engineer Training LMS",
+      "category": "owned",
+      "domain": "EdTech · Workforce",
+      "org": "Kawaii Advanced Technology",
+      "period": "2024 – 2025",
+      "role": "Product Manager",
+      "summary": "An LMS for Japanese-language, Specified Skilled Worker, and IT-engineer training tracks.",
+      "contribution": [
+        "Product Manager across three training tracks: Japanese language, SSW, and IT-engineer preparation.",
+        "Owned requirements and the release cycle for each track."
+      ],
+      "sections": [
+        {
+          "title": "Three tracks, one platform",
+          "body": "Japanese language, Specified Skilled Worker preparation, and IT-engineer training run as separate learner journeys on shared infrastructure. As Product Manager I owned what each track needed to contain and where they could share.",
+          "chips": [
+            "Japanese language",
+            "SSW",
+            "IT-engineer training"
+          ]
+        },
+        {
+          "title": "Product ownership",
+          "body": "Requirements and the release cycle for each track, with the same delivery discipline as the client projects: written requirements, a real release cadence, and stakeholder communication on a fixed rhythm.",
+          "chips": [
+            "Product Manager",
+            "Written requirements",
+            "Release cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ktalk",
+      "name": "Ktalk",
+      "solution": "Korean Language-Learning Platform",
+      "category": "owned",
+      "domain": "EdTech · Mobile",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Product Manager (took over)",
+      "summary": "A Korean language-learning app I took over as Product Manager.",
+      "contribution": [
+        "Took the product over as Product Manager mid-flight and owned direction from there.",
+        "Ran the requirement and release cycle through to delivery."
+      ],
+      "caseStudy": "ktalk",
+      "preview": "/case-studies/ktalk/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/ktalk/screen-1.webp",
+        "alt": "Ktalk Korean language-learning platform on desktop"
+      },
+      "sections": [
+        {
+          "title": "Product, not project",
+          "body": "I took this over as Product Manager rather than Project Manager, which meant owning what the product should be, not only whether it shipped on time. The distinction is whether you are accountable for the plan or for the product.",
+          "quote": "Here it was the product - which meant saying no to requests that would have shipped fine but pulled it sideways.",
+          "image": {
+            "src": "/case-studies/ktalk/screen-1.webp",
+            "alt": "Ktalk Korean language-learning platform interface",
+            "caption": "Taken over mid-flight, with direction owned from that point."
+          }
+        },
+        {
+          "title": "Inherited decisions vs inherited assumptions",
+          "body": "A decision made deliberately and a habit nobody ever questioned look identical in a codebase. Sorting one from the other was the first product work, because it determined what was safe to change.",
+          "chips": [
+            "Roadmap audit",
+            "Product direction"
+          ]
+        },
+        {
+          "title": "Keep the delivery discipline",
+          "body": "The PM discipline did not change because the title did - written requirements, a real release cycle, and stakeholder communication on a fixed cadence, delivered through a mid-flight handover without a roadmap reset.",
+          "chips": [
+            "Written requirements",
+            "Release cycle",
+            "Fixed reporting cadence"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pm-dashboard",
+      "name": "PM Dashboard",
+      "solution": "In-House AI Delivery-Ops Platform",
+      "category": "inhouse",
+      "domain": "Internal Tooling · AI Ops",
+      "org": "Potential Inc.",
+      "period": "2025 – 2026",
+      "role": "Product Owner",
+      "approach": "AI-native",
+      "summary": "The internal platform the whole company delivers through — centralising Slack, Google Meet, GitHub, and Notion.",
+      "contribution": [
+        "Product Owner end-to-end for the company’s own delivery-ops platform.",
+        "Centralised Slack, Google Meet, GitHub, and Notion into one ticket system used as the single source of truth on every project.",
+        "Built AI-native into both the product and the way it was delivered.",
+        "Alongside it, architected Potential’s end-to-end Agile/Scrum delivery system in Notion, from kickoff through to closure."
+      ],
+      "caseStudy": "pm-dashboard",
+      "sections": [
+        {
+          "title": "The reporting tax",
+          "body": "A company running several client projects has its delivery state scattered across four tools: conversation in Slack, decisions in meetings, work in GitHub, documentation in Notion. No single view answers what the status actually is, so the answer comes from asking a person.",
+          "quote": "The most expensive recurring cost in delivery management is the same information re-entered into three places.",
+          "chips": [
+            "Slack",
+            "Google Meet",
+            "GitHub",
+            "Notion"
+          ]
+        },
+        {
+          "title": "Internal tools compete with the workaround",
+          "body": "An internal product competes with just asking in Slack. If the platform is slower than the habit it replaces, it does not get used regardless of how correct it is. That shaped prioritisation more than any feature list."
+        },
+        {
+          "title": "Ship the process alongside the tool",
+          "body": "A dashboard without a defined process is a database. I architected the company end-to-end Agile/Scrum delivery system in Notion - kickoff through closure - which is what makes the states in the ticket system mean something.",
+          "chips": [
+            "Agile/Scrum system design",
+            "Kickoff to closure"
+          ]
+        },
+        {
+          "title": "Product Owner, AI-native",
+          "body": "Owned direction, requirements, and prioritisation for the platform the whole company now delivers through, including the client projects in this portfolio. Built AI-native in both what it does and how it was delivered.",
+          "chips": [
+            "Product Owner",
+            "AI-native"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "portfolio-site",
+      "name": "Portfolio Site",
+      "solution": "This Site",
+      "category": "inhouse",
+      "domain": "Web · Static",
+      "org": "Independent",
+      "period": "2026",
+      "role": "Design & build",
+      "approach": "AI-native",
+      "summary": "The site you are reading — designed and built end-to-end, deployed as a static export.",
+      "contribution": [
+        "Designed and built end-to-end: content model, design system, and build pipeline.",
+        "Next.js with MDX case studies, static export, deployed through GitHub Actions."
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "MDX",
+        "GitHub Actions"
+      ],
+      "live": "https://yasin29.github.io/portfolio/",
+      "sections": [
+        {
+          "title": "Content model first",
+          "body": "The site is driven by structured data and MDX rather than hand-written pages, so a new project or case study is a content change, not a build change. That decision is why this roster can grow without the site degrading.",
+          "chips": [
+            "MDX case studies",
+            "Typed content model"
+          ]
+        },
+        {
+          "title": "Design system",
+          "body": "One set of design tokens drives both light and dark themes - every colour is a custom property, so a theme is a token block rather than a parallel stylesheet. Theme is applied before first paint, so light mode never flashes dark.",
+          "chips": [
+            "Design tokens",
+            "Light & dark",
+            "No flash of wrong theme"
+          ]
+        },
+        {
+          "title": "Built and deployed by me",
+          "body": "Next.js static export deployed through GitHub Actions, with image optimisation and SEO - sitemap, canonical URLs, Open Graph, and structured data - built into the pipeline rather than bolted on.",
+          "chips": [
+            "Static export",
+            "GitHub Actions",
+            "SEO pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "brandaid",
+      "name": "BrandAid",
+      "solution": "AI Campaign Simulation Engine",
+      "category": "personal",
+      "domain": "Personal · AI Product",
+      "org": "Independent",
+      "period": "2026",
+      "role": "Product & build",
+      "approach": "AI-native",
+      "team": "Solo",
+      "summary": "A personal build taken from idea to working product in one week, solo, using the AI-native approach.",
+      "contribution": [
+        "Owned both the product and the build — solo, end to end.",
+        "Idea to working product in one week, which is the point: the AI-native approach applied without a team behind it."
+      ],
+      "sections": [
+        {
+          "title": "The problem",
+          "body": "Testing an ad campaign means spending money to find out it does not work. The feedback loop is expensive, slow, and only tells you the result - not which part of the creative caused it. Brand-AId simulates the campaign against a synthetic market first.",
+          "quote": "Not to replace measurement - to catch the campaigns that were obviously going to underperform."
+        },
+        {
+          "title": "A pipeline, not a prompt",
+          "body": "Seven distinct stages: campaign analysis, audience research, persona generation, forecasting, recommendations, re-simulation, and a QA review. Separating them makes each stage independently inspectable, which is what makes the output arguable rather than a black box.",
+          "chips": [
+            "7 stages",
+            "Multimodal analysis",
+            "Re-simulation"
+          ]
+        },
+        {
+          "title": "Ground the numbers",
+          "body": "A forecast produced entirely by a language model is a guess with good grammar. The forecast engine uses a Random Forest trained on a real dataset to anchor click-through and return-on-spend, with RAG retrieval pulling benchmarks from a knowledge base. The LLM explains and recommends; the model predicts.",
+          "chips": [
+            "scikit-learn",
+            "ChromaDB",
+            "RAG"
+          ]
+        },
+        {
+          "title": "Audit the AI with AI",
+          "body": "The final stage is an independent LLM review with function calling, checking the pipeline’s own output for arithmetic errors and internal contradictions. Building a QA step into the product came straight from running SQA on client projects.",
+          "chips": [
+            "QA reviewer stage",
+            "Function calling"
+          ]
+        },
+        {
+          "title": "One week, solo",
+          "body": "Product decisions and code, both mine, start to finish in a week. That scope is not a one-week scope on a legacy workflow - it is what the AI-native approach looks like with no team as a variable.",
+          "quote": "The strongest answer I have to \"can you actually build, or do you just manage people who do\".",
+          "chips": [
+            "1 week",
+            "Solo",
+            "FastMCP"
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "7",
+          "label": "Stage AI pipeline"
+        },
+        {
+          "value": "1 week",
+          "label": "Idea to product"
+        },
+        {
+          "value": "Solo",
+          "label": "Team size"
+        }
+      ],
+      "caseStudy": "brandaid"
+    },
+    {
+      "slug": "takapay",
+      "name": "TakaPay Pulse",
+      "solution": "Social-Listening Dashboard with an AI Assistant",
+      "category": "personal",
+      "domain": "Personal · AI / Data Product",
+      "org": "Independent",
+      "period": "2026",
+      "role": "Product & build (solo)",
+      "approach": "AI-native",
+      "team": "Solo",
+      "summary": "A social-listening dashboard that turns 660 raw posts into what a brand manager should do next — an auditable cleaning pipeline, a bilingual sentiment audit, and an assistant whose numbers are computed by code, not estimated by a model.",
+      "contribution": [
+        "Built the product and the code solo, end to end.",
+        "Designed an ingestion pipeline where nothing reaches the UI unaudited.",
+        "Shipped an AI assistant that answers with computed figures rather than generated ones."
+      ],
+      "stats": [
+        {
+          "value": "660",
+          "label": "Posts ingested"
+        },
+        {
+          "value": "37",
+          "label": "Mislabels corrected"
+        },
+        {
+          "value": "Solo",
+          "label": "Team size"
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Recharts",
+        "Gemini API",
+        "Vercel"
+      ],
+      "live": "https://takapay-dashboard.vercel.app",
+      "caseStudy": "takapay",
+      "preview": "/case-studies/takapay/screen-1.webp",
+      "livePreview": {
+        "src": "/case-studies/takapay/screen-2.webp",
+        "alt": "TakaPay Pulse dashboard showing sentiment breakdown and topic analysis"
+      },
+      "sections": [
+        {
+          "title": "The real question",
+          "body": "A brand manager does not ask \"what is the sentiment\" — they ask \"what do I do today\". So the headline panel ranks issues by negative volume weighted by the attention each post draws, with a plain-language action per issue. In this data the answer was loud: failed transactions, 215 posts, 100% negative after the audit, and the most engaged theme on the feed.",
+          "quote": "Sentiment is a number. \"Fix this first\" is a product.",
+          "image": {
+            "src": "/case-studies/takapay/screen-1.webp",
+            "alt": "TakaPay Pulse dashboard with the what-needs-attention panel and sentiment charts",
+            "caption": "The dashboard leads with the decision, not the chart."
+          }
+        },
+        {
+          "title": "Nothing renders unaudited",
+          "body": "Every record passes sources → validate → normalize → dedupe → relevance → sentiment audit before the UI sees it. The API returns the cleaned data plus a full quality report: every excluded or corrected record with its evidence. Nothing is changed silently — corrected posts carry a visible marker.",
+          "chips": [
+            "61 off-topic excluded",
+            "10 duplicates merged",
+            "Full audit trail"
+          ]
+        },
+        {
+          "title": "The bilingual catch",
+          "body": "My first cleaning pass was English-only and looked fine. Reviewing the posts table showed Bangla complaints still labeled positive — \"still hasn't arrived\" scored 91. The English-only rules caught 22 mislabels and silently missed 15, and those 15 were exactly the Bangla-script records. Extending the audit took corrections from 22 to 37.",
+          "quote": "An English-first pass on Bangladeshi social data silently under-counts the negative.",
+          "chips": [
+            "22 → 37 corrections",
+            "Bilingual audit"
+          ]
+        },
+        {
+          "title": "The assistant computes, it does not guess",
+          "body": "\"Ask Pulse\" turns plain-language questions into tool calls over the cleaned data, so every number in an answer is calculated by code — a language model never estimates a figure. Answers show which filters produced them, and one click applies those filters to the dashboard.",
+          "chips": [
+            "Tool calls",
+            "No estimated numbers",
+            "Filters carried into the UI"
+          ],
+          "image": {
+            "src": "/case-studies/takapay/screen-3.webp",
+            "alt": "TakaPay Pulse analysis views including topic sentiment split and engagement breakdown",
+            "caption": "Every figure on screen traces back to a record in the posts table."
+          }
+        },
+        {
+          "title": "Where I overrode the AI",
+          "body": "I used Claude Code heavily and the decisions stayed mine. I rejected two drafts of the topics panel that drew every topic the same width, so a 2-post topic looked as large as a 215-post one. When the engagement analysis came back flat, I shipped the flatness as the finding rather than four empty comparisons — flat engagement plus templated wording points at manufactured volume. And a rising negative share is red regardless of which way the arrow points, against the dashboard convention of colouring \"up\" green.",
+          "quote": "The data overruled the template."
+        },
+        {
+          "title": "AI checking AI",
+          "body": "A scripted browser sweep of 29 checks — filters, search, date comparison maths, pagination, click-throughs, and the assistant returning real computed numbers — ran before ship. It caught a deploy-breaking detail (the chat route needs its model key present at build time) before it reached the live demo.",
+          "chips": [
+            "29 automated checks",
+            "Caught a deploy blocker"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "moto-brand",
+      "name": "Motorcycle Brand Site",
+      "solution": "National Motorcycle Brand Website",
+      "category": "client",
+      "domain": "Client project · Automotive",
+      "org": "Client project (name withheld)",
+      "period": "Apr – May 2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "A phased redesign for a national motorcycle distributor — model catalogue, heritage storytelling, test rides, dealer locator and financing, mobile-first for a market where most traffic is on a phone.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "The brief",
+          "body": "Replace a transactional site with something the brief called \"extraordinary\" — a cinematic experience aimed at building excitement, not just processing enquiries. Phase 1 (homepage and bike detail) was set at roughly ten weeks, with full launch at four to five months.",
+          "chips": [
+            "Phased delivery",
+            "Mobile-first",
+            "Design approval gate"
+          ]
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ],
+      "live": "https://sadiasajarun.github.io/Suzuki_Bangladesh/"
+    },
+    {
+      "slug": "apparel-group",
+      "name": "Apparel Group Site",
+      "solution": "Apparel Manufacturing Group Website",
+      "category": "client",
+      "domain": "Client project · Manufacturing",
+      "org": "Client project (name withheld)",
+      "period": "May 2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "A corporate marketing site for one of the country’s largest readymade-garments groups, built to sell capability and sustainability credentials to international sourcing buyers.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "The brief",
+          "body": "The audience is a sourcing manager, not a consumer, so capability and compliance evidence had to lead. The client also asked for a specific visual direction — cinematic but not dark, with green alongside blue to carry the sustainability and water story rather than stating it in copy.",
+          "chips": [
+            "B2B buyers",
+            "Sustainability narrative",
+            "Client-directed art direction"
+          ]
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ],
+      "live": "https://sadiasajarun.github.io/Urmi_group/"
+    },
+    {
+      "slug": "petnest",
+      "name": "PetNest",
+      "solution": "Pet-Shop Storefront",
+      "category": "client",
+      "domain": "Client project · E-commerce",
+      "org": "Client project (name withheld)",
+      "period": "2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "A pet-shop storefront — catalogue, product pages and a customer purchase flow built around repeat buying rather than discovery.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "The brief",
+          "body": "Pet supplies are a repeat purchase, so the flow is built around re-finding the same item quickly rather than browsing a catalogue."
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ],
+      "live": "https://sadiasajarun.github.io/petshop_V1/customer/index.html"
+    },
+    {
+      "slug": "estate-developer",
+      "name": "Property Developer Site",
+      "solution": "Real-Estate Developer Website",
+      "category": "client",
+      "domain": "Client project · Real Estate",
+      "org": "Client project (name withheld)",
+      "period": "2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "A property developer’s project portfolio — active and completed developments, location detail and enquiry capture.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "The brief",
+          "body": "A buyer decides on location and stage of completion, so the project pages lead with both rather than with renders."
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ],
+      "live": "https://sadiasajarun.github.io/jcx/"
+    },
+    {
+      "slug": "hrm-ats",
+      "name": "HRM & Applicant Tracking",
+      "solution": "HR Management & Applicant-Tracking Dashboard",
+      "category": "client",
+      "domain": "Client project · HR-Tech · AI",
+      "org": "Client project (name withheld)",
+      "period": "Jun 2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "An AI-assisted applicant-tracking system for a large consumer-goods manufacturer — weighted screening templates, bulk CV intake, and explainable shortlist recommendations with a human always making the decision.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "AI assists, HR decides",
+          "body": "The system screens CVs in batches of several thousand against position-specific weighted templates, and every score is explainable — it shows which criteria contributed and what CV evidence was used. No candidate is ever rejected automatically. Bangla and English CVs are treated as first-class, which matters because an English-only screen silently under-reads half the applicant pool.",
+          "quote": "A screening score nobody can explain is a liability, not a shortlist.",
+          "chips": [
+            "5,000+ CVs per batch",
+            "Explainable scoring",
+            "Human-in-the-loop",
+            "Bangla + English"
+          ]
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ],
+      "live": "https://sadiasajarun.github.io/Square_ATS/hr/dashboard.page.html"
+    },
+    {
+      "slug": "estate-crm",
+      "name": "Property CRM",
+      "solution": "Real-Estate Management & CRM",
+      "category": "client",
+      "domain": "Client project · Real Estate · Mobile",
+      "org": "Client project (name withheld)",
+      "period": "Jul 2026",
+      "role": "Product & delivery",
+      "team": "Solo",
+      "summary": "A dual-experience property app for a developer selling domestically and overseas — one binary that presents two entirely different products depending on who logs in.",
+      "contribution": [
+        "Owned the brief, the written requirements and the delivery through to handover."
+      ],
+      "sections": [
+        {
+          "title": "One binary, two products",
+          "body": "Buyers get a premium listing and checkout experience; field sales partners get a dense work tool for leads and record-only bookings. The two share only auth, settings, notifications, networking and storage. The hardest rule was commercial, not technical: the app never holds, moves, calculates or promises money — payment runs through a hosted gateway with backend-driven confirmation, and the partner commission ledger is display-only.",
+          "quote": "The app never holds, moves, calculates or promises money. That constraint shaped everything.",
+          "chips": [
+            "Role-split experience",
+            "Hosted gateway only",
+            "Bilingual",
+            "OWASP-MASVS"
+          ]
+        },
+        {
+          "title": "How I worked",
+          "body": "Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.",
+          "chips": [
+            "PRD",
+            "Scope agreed up front",
+            "Design review"
+          ]
+        },
+        {
+          "title": "Why the client is not named",
+          "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
+        }
+      ]
+    }
+  ]
+}

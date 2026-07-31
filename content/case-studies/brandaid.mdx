@@ -1,0 +1,77 @@
+---
+slug: brandaid
+title: "Brand-AId — AI Campaign Simulation Engine"
+client: Personal project
+role: Product & build (solo)
+period: "2026"
+status: Built
+stack: [React 18, Vite, TypeScript, TailwindCSS, FastAPI, Python 3.12, OpenAI, ChromaDB, scikit-learn, FastMCP]
+chips:
+  - Personal project
+  - AI / RAG
+  - Machine learning
+  - MCP
+  - Built solo in one week
+---
+
+## At a glance
+
+Brand-AId is an AI campaign simulation engine: marketers submit ad copy, an image, and funnel context, and it returns a full simulation of how that campaign would perform — before any money is spent.
+
+I built it solo, product and code, in **one week**. It is the clearest demonstration I have of what the AI-native approach actually means, because there was no team to absorb any part of it.
+
+## The problem
+
+Testing an ad campaign means spending money to find out it does not work. The feedback loop is expensive, slow, and only tells you the result — not which part of the creative caused it.
+
+The interesting question was whether a synthetic market could stand in for the real one closely enough to be useful. Not to replace measurement, but to catch the campaigns that are obviously going to underperform before they get a budget.
+
+## My role
+
+Everything — this was a solo build:
+
+- **Product** — the problem framing, the pipeline design, and the decision about what counts as a useful output.
+- **Architecture** — a seven-stage pipeline, retrieval layer, ML forecasting, and an MCP server.
+- **Build** — frontend, backend, model training, and integration.
+- **Delivery** — scoped and shipped in a week using the same AI-native workflow I run on client projects.
+
+## Approach
+
+**Design the pipeline as stages, not as one prompt.** The system runs seven distinct stages: campaign analysis, audience research, persona generation, forecasting, recommendations, re-simulation, and a QA review. Separating them means each stage is independently inspectable, which is what makes the output arguable rather than a black box.
+
+**Ground the numbers in something real.** A forecast produced entirely by a language model is a guess with good grammar. The forecast engine uses a Random Forest trained on a real dataset to anchor click-through and return-on-spend, with retrieval pulling benchmarks from a knowledge base. The LLM explains and recommends; the model predicts.
+
+**Research live, not from templates.** Persona generation runs off live web search through an MCP server rather than static templates, so personas reflect current audience data instead of assumptions frozen at build time.
+
+**Audit the AI with AI.** The final stage is an independent LLM review with function calling, checking the pipeline's own output for arithmetic errors and internal contradictions. Building the QA step into the product came directly from running SQA on client projects — the same instinct, applied to a system rather than a build.
+
+**One week, solo.** The scope above is not a one-week scope on a legacy workflow. It is achievable because the AI-native approach removes the overhead between deciding something and having it built.
+
+## What shipped
+
+- A **seven-stage AI pipeline** returning a full campaign simulation in under a minute.
+- **RAG retrieval** over a knowledge base using ChromaDB with cosine similarity.
+- A **Random Forest forecasting model** anchoring CTR and ROAS predictions to real data.
+- A **FastMCP server** exposing tools and resources, plus live web search through an external MCP server.
+- A React and TypeScript frontend with a seven-step campaign wizard, dashboard, and history.
+- Before-and-after comparison from an automatic re-simulation of AI-rewritten copy.
+
+## Outcome
+
+- Built end-to-end, solo, in **one week** — product decisions and code both.
+- Demonstrates the AI-native approach without a team as a variable: the same method that took client delivery from three months to one, applied at the smallest possible scale.
+- The strongest answer I have to "can you actually build, or do you just manage people who do".
+
+## What I'd do differently
+
+Validate the forecast against real campaign outcomes. The model is anchored in a real dataset, which makes it defensible, but a simulation's value is entirely a function of how well it predicts reality. Without a back-test against campaigns that actually ran, accuracy is a claim rather than a measurement — and that is the next thing worth building.
+
+## Stack & tools
+
+**Frontend:** React 18 · Vite · TypeScript · TailwindCSS · shadcn/ui · Chart.js
+
+**Backend:** FastAPI · Python 3.12 · Pydantic v2
+
+**AI & ML:** OpenAI (multimodal, embeddings, Responses API) · ChromaDB · scikit-learn Random Forest · pandas
+
+**Protocol:** FastMCP server · duckduckgo-mcp-server

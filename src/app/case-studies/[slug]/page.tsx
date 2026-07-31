@@ -3,8 +3,10 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Cover from '@/components/Cover';
+import Figure, { FigureRow } from '@/components/Figure';
 import { getAllCaseStudies, getCaseStudyBySlug } from '@/lib/case-studies';
-import { basePath } from '@/lib/profile';
+import { basePath, absoluteUrl } from '@/lib/profile';
+import { JsonLd, caseStudySchema, breadcrumbSchema } from '@/lib/seo';
 
 export async function generateStaticParams() {
   return getAllCaseStudies().map((s) => ({ slug: s.slug }));
@@ -18,9 +20,41 @@ export async function generateMetadata({
   const { slug } = await params;
   const study = getCaseStudyBySlug(slug);
   if (!study) return {};
+
+  const title = `${study.solution} — ${study.role} Case Study`;
+  const description =
+    study.summary || `${study.client} · ${study.role} · ${study.period}`;
+  const url = absoluteUrl(`/case-studies/${study.slug}`);
+  const image = study.preview ? absoluteUrl(study.preview) : undefined;
+
   return {
-    title: `${study.solution} — Yasin Billah`,
-    description: study.summary || `${study.client} · ${study.role} · ${study.period}`,
+    title,
+    description,
+    keywords: [
+      study.solution,
+      study.category,
+      study.role,
+      'Technical Project Manager',
+      'case study',
+      ...(study.chips ?? []),
+      ...(study.stack ?? []),
+    ],
+    alternates: { canonical: url },
+    openGraph: {
+      type: 'article',
+      title,
+      description,
+      url,
+      siteName: 'Yasin Billah',
+      locale: 'en_US',
+      ...(image ? { images: [{ url: image, alt: `${study.solution} preview` }] } : {}),
+    },
+    twitter: {
+      card: image ? 'summary_large_image' : 'summary',
+      title,
+      description,
+      ...(image ? { images: [image] } : {}),
+    },
   };
 }
 
@@ -39,21 +73,58 @@ export default async function CaseStudyPage({
 
   return (
     <article>
-      {/* hero preview */}
-      <div className="relative aspect-[21/8] w-full overflow-hidden border-b border-[var(--border)] bg-[var(--surface)]">
-        {study.preview ? (
-          <Image src={`${basePath}${study.preview}`} alt={`${study.title} preview`} fill priority className="object-cover" sizes="100vw" />
-        ) : (
-          <Cover study={study} className="h-full w-full" />
-        )}
-      </div>
+      <JsonLd
+        data={[
+          caseStudySchema(study),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Case studies', path: '/case-studies' },
+            { name: study.solution, path: `/case-studies/${study.slug}` },
+          ]),
+        ]}
+      />
 
-      <div className="container-prose py-12">
+      <div className="container-prose pt-10">
         <Link href="/case-studies" className="text-sm text-[var(--muted)] hover:text-[var(--accent)]">
           ← All case studies
         </Link>
+      </div>
 
-        <header className="mt-6 mb-8 border-b border-[var(--border)] pb-8">
+      {/* Hero preview: contained and letterboxed rather than full-bleed. These
+          are UI screenshots — cropping one to a 21:8 band shows an unreadable
+          slice of a dashboard. Same framing as the in-body figures. */}
+      <div className="cs-hero">
+        <div className="cs-hero-frame">
+          {study.preview ? (
+            <>
+              {/* Screenshots come in every aspect ratio. Rather than crop them
+                  or leave dead bars, the same image fills the frame blurred
+                  behind the contained one. */}
+              <Image
+                src={`${basePath}${study.preview}`}
+                alt=""
+                aria-hidden="true"
+                fill
+                className="cs-hero-blur object-cover"
+                sizes="(min-width: 1100px) 62rem, 100vw"
+              />
+              <Image
+                src={`${basePath}${study.preview}`}
+                alt={`${study.solution} — product screenshot`}
+                fill
+                priority
+                className="object-contain"
+                sizes="(min-width: 1100px) 62rem, 100vw"
+              />
+            </>
+          ) : (
+            <Cover study={study} className="h-full w-full" />
+          )}
+        </div>
+      </div>
+
+      <div className="container-prose pb-12">
+        <header className="mt-2 mb-8 border-b border-[var(--border)] pb-8">
           {study.logo && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -76,7 +147,7 @@ export default async function CaseStudyPage({
               href={study.link}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-primary mt-5 text-sm"
+              className="btn-pill btn-pill-solid btn-sm mt-5"
             >
               Visit site →
             </a>
@@ -102,7 +173,7 @@ export default async function CaseStudyPage({
         </header>
 
         <div className="prose-custom">
-          <MDXRemote source={study.content} />
+          <MDXRemote source={study.content} components={{ Figure, FigureRow }} />
         </div>
 
         <footer className="mt-16 flex items-center justify-between border-t border-[var(--border)] pt-8 text-sm">

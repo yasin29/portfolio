@@ -1,9 +1,9 @@
 ---
 slug: ivory
 title: "Ivorymade — Dental-Restoration Lab Platform"
-client: "Ivorymade — via Potential Inc."
+client: Potential Inc.
 role: Project Manager
-period: "2025 – present"
+period: "2025 – 2026"
 status: Live
 stack: [Next.js, Django, PostgreSQL, Figma, exocad 3D viewer]
 chips:
@@ -13,47 +13,76 @@ chips:
   - End-to-end delivery
 logo: /case-studies/ivory/logo.svg
 link: https://www.ivorymade.com
-hero: /case-studies/ivory/hero.png
+hero: /case-studies/ivory/feature3.webp
 ---
 
 ## At a glance
 
-Ivorymade is a dental-restoration lab platform for US and Canadian dental labs — order intake, 3D restoration-model review, payments, and referrals. I delivered it end-to-end in two phases: a tight Figma mockup that locked the user journey, then development handoff through to launch.
+Ivorymade is a production-lab and management platform for dental restorations, serving US and Canadian dental labs — order intake, 3D restoration-model review, payments, and referrals. I ran it as Project Manager across two delivery phases with a team of five, on the legacy three-month delivery model.
+
+Phase 1 took the platform to an MVP where every order was functional end to end. Phase 2 built on that with role-based access, multiple payment terms, and multi-office support.
 
 ## The problem
 
-The client wanted certainty before committing engineering budget — totally reasonable, but the usual risk is that a Figma mockup looks decisive while hiding a hundred decisions that engineering has to re-litigate. Phase 1's job wasn't to make a pretty file; it was to remove ambiguity so Phase 2 could ship without backtracking.
+<Figure
+  src="/case-studies/ivory/feature3.webp"
+  alt="Ivorymade order detail screen showing order information, tracking progress, and order actions"
+  caption="Phase 1 made the order the unit of truth — submission, tracking, and actions in one place."
+/>
+
+A dental lab's work is a chain of handoffs: a dentist submits a case, a technician designs the restoration, someone reviews the 3D model, it gets produced, and it gets invoiced. Before the platform, that chain lived across email, phone calls, and files, so the status of any given order depended on whoever last touched it.
+
+The build had to make an order the unit of truth — and it had to do that before adding the complexity of who is allowed to do what, how each lab prefers to pay, and which office a case belongs to. Getting that sequencing wrong would have meant modelling permissions and billing on top of an order flow that was not yet stable.
 
 ## My role
 
-- **Scope owner** across both phases — kept the mockup honest about what was decided versus what was deferred.
-- **Documentation lead** — requirements, screen flows, and design notes captured in a project knowledge base.
-- **Handoff coordinator** — Figma → engineering with annotated specs.
+Project Manager end-to-end across both phases, managing five team members. I owned the process from kickoff to handover rather than a slice of it:
+
+- **Requirements and specification** — requirement gathering, user stories, PRD and SRS.
+- **Technical and design direction** — technical decisions, design requirements and guidelines, and the UI/UX feedback loop with the designers.
+- **Delivery process** — Agile/Scrum with daily standups, sprint planning, sprint review, and retrospectives.
+- **Client communication** — weekly client meetings and daily written updates.
+- **Quality** — wrote the test cases and ran the SQA pass myself.
+- **Release** — deployment plan and handover documentation through to delivery.
 
 ## Approach
 
-- Treated the mockup as a contract, not a canvas: every screen carries a comment thread of decisions and a "what we're deliberately not deciding yet" list.
-- Built a screen index that maps every Figma frame to a documented spec — so during Phase 2 development, engineering doesn't have to guess which frame corresponds to which behaviour.
-- Used Figma credentials in a shared knowledge file so the dev team could read source-of-truth without re-exporting assets.
+**Phase 1 — make every order work.** The goal was a genuine MVP, not a demo: a case could be submitted, designed, reviewed against the 3D model, produced, and invoiced without leaving the platform. Anything that was not required to make an order functional was deliberately deferred, which is what kept a five-person team on a three-month cycle.
+
+**Phase 2 — make it work for a real organisation.** Once the order flow was stable, the platform grew into how labs are actually structured: role-based access so technicians, reviewers, and administrators see different things; multiple payment terms rather than a single billing assumption; and multi-office support so a group operating several locations could keep cases separated.
+
+Running both phases the same way mattered. Each started at kickoff with its own user stories, PRD, and SRS, rather than treating Phase 2 as a change request bolted onto Phase 1.
+
+I owned the design loop directly — writing the design requirements and guidelines, reviewing screens, and giving feedback until they matched the specification. Reading the code meant I could debate technical decisions with the engineers instead of relaying them.
 
 ## What shipped
 
-- **Phase 1**: Complete Figma mockup + specs + screen-flow documentation
-- **Phase 2**: Production platform — order dashboard, 3D restoration-model review (exocad viewer), payments, reports, and a referrals program
-- App-store / launch coordination through to live customers
+<Figure
+  src="/case-studies/ivory/feature2.webp"
+  alt="Ivorymade 3D design model review using the embedded exocad viewer"
+  caption="3D restoration review runs on the exocad viewer inside the order flow, so technician and dentist see the same model."
+/>
+
+- **Phase 1:** order intake and dashboard, 3D restoration-model review through the exocad viewer, production tracking, invoicing, and reports — every order functional end to end.
+- **Phase 2:** role-based access control, multiple payment terms, and multi-office support.
+- Full delivery artefacts alongside the product: PRD, SRS, test cases, deployment plan, and handover documentation.
 
 ## Outcome
 
-- Live with US and Canadian dental labs, generating **$138K in US & Canada sales in the first half of 2026**.
-- Phase 2 began on schedule with zero scope-rework sprints — uncommon when a client validates on mockups.
-- The knowledge structure (PRD, Figma index, and specs in one folder) became a template that I later reused for Artlive and Bside.
+- Live with US and Canadian dental labs, generating **$138K in US and Canada sales in the first half of 2026**.
+- Both phases delivered by a team of five on the legacy three-month model, with the phase split holding — Phase 2 extended the order flow rather than reworking it.
+- The documentation structure I built here — PRD, SRS, and test cases in one place — became the template I reused on Artlive and Bside.
 
 ## What I'd do differently
 
-Lock the **content model** in Phase 1, not Phase 2. We left some entity-relationship questions for engineering to surface — they did surface them, but later than ideal. Modelling data alongside screens during mockup phase pays back ~1.5x in dev velocity.
+Model the permissions and payment terms during Phase 1, even though they were not built until Phase 2. Deferring the *build* was right; deferring the *thinking* meant Phase 2 opened with data-model questions that would have been cheaper to answer while the schema was still soft.
+
+I would also have started the AI-native delivery approach here. Ivorymade ran on the legacy three-month model; Artlive, a larger build, shipped afterwards with three people because the workflow had changed. The contrast is instructive, but Ivorymade paid the older price.
 
 ## Stack & tools
 
-**Design / docs:** Figma · Notion
+**Build:** Next.js · Django · PostgreSQL · exocad 3D viewer
 
-**Build (Phase 2):** Next.js · Django · PostgreSQL
+**Design & docs:** Figma · Notion
+
+**Delivery:** Agile/Scrum · Jira · daily standups · sprint review · retrospectives · UAT & SQA

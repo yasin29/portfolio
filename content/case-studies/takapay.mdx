@@ -1,0 +1,91 @@
+---
+slug: takapay
+title: "TakaPay Pulse — Social-Listening Dashboard with an AI Assistant"
+client: Personal project
+role: Product & build (solo)
+period: "2026"
+status: Live
+stack: [Next.js, TypeScript, Recharts, Gemini API, Vercel]
+chips:
+  - Personal project
+  - AI product
+  - Data pipeline
+  - Bilingual (Bangla / English)
+link: https://takapay-dashboard.vercel.app
+hero: /case-studies/takapay/screen-1.webp
+---
+
+## At a glance
+
+TakaPay Pulse turns 660 raw social posts about a mobile-wallet brand into what a brand manager should do next — not a wall of charts, but a ranked list of what needs attention today, with the receipts behind every number.
+
+I built it solo, product and code, as a self-directed product exercise. Two things make it more than a dashboard: an ingestion pipeline where nothing reaches the screen unaudited, and an assistant whose every figure is computed by code rather than estimated by a language model.
+
+## The problem
+
+Social listening tools are good at telling you the sentiment split and bad at telling you what to do. A brand manager opening a dashboard on Monday morning does not need to know that 34% of mentions are negative; they need to know which issue to escalate before lunch.
+
+There was a second problem underneath the first, and it turned out to be the more interesting one: **the data lied**. The brief warned it was messy. It was messier than "messy" implies — off-topic posts flagged as brand mentions, exact duplicates from different accounts, and sentiment labels that flatly contradicted their own text, in two scripts.
+
+<Figure
+  src="/case-studies/takapay/screen-1.webp"
+  alt="TakaPay Pulse dashboard showing the what-needs-attention panel above sentiment charts"
+  caption="The dashboard leads with the decision — ranked issues and a plain-language action — not with a sentiment donut."
+/>
+
+## My role
+
+Everything. Product decisions and implementation, solo:
+
+- **Product** — deciding that the headline answer is "what to fix first", not "what the sentiment is".
+- **Data architecture** — the ingestion pipeline and its audit trail.
+- **AI design** — a tool-calling assistant constrained so it cannot invent a number.
+- **Build** — Next.js and TypeScript end to end, deployed to Vercel.
+- **Quality** — a scripted browser sweep run before ship.
+
+## Approach
+
+**Rank issues by consequence, not volume.** The headline panel weights negative volume by the attention each post draws, and states an action per issue. In this dataset the answer was unambiguous: failed transactions, 215 posts, 100% negative after the audit, and the most engaged theme on the feed.
+
+**Let nothing render unaudited.** Every record passes through `sources → validate → normalize → dedupe → relevance → sentiment audit` before the UI sees it. Sources are adapters, so adding a live platform API later means writing one adapter rather than changing the pipeline. The API returns the cleaned records *plus a full quality report* — every excluded or corrected record with its evidence. Nothing is changed silently; corrected posts carry a visible marker in the UI.
+
+**Catch your own blind spot.** My first cleaning pass was English-only and looked convincing. Reading the posts table showed Bangla-script complaints still labeled positive — one saying "still hasn't arrived" carried a positivity score of 91. The English rules caught 22 mislabels and silently missed 15, and those 15 were precisely the Bangla records. Extending the audit took corrections from 22 to 37.
+
+That failure mode is the whole point: an English-first pass over Bangladeshi social data does not fail loudly, it quietly under-counts the negative.
+
+<Figure
+  src="/case-studies/takapay/screen-3.webp"
+  alt="Topic sentiment split and engagement analysis views in TakaPay Pulse"
+  caption="Every figure traces back to a record — click any bar to see the posts behind it."
+/>
+
+**Make the assistant compute, not guess.** "Ask Pulse" turns plain-language questions into tool calls over the cleaned data. A language model parses the question and explains the result; it never produces the number. Answers disclose which filters generated them, and one click applies those filters to the dashboard so the manager can verify by eye.
+
+## What shipped
+
+- An **auditable ingestion pipeline** — 61 off-topic posts excluded, 10 duplicates merged, 37 sentiment labels corrected, all with record-level evidence exposed through the API.
+- **"What needs attention first"** — issues ranked by weighted negative volume with an action each.
+- **"What people keep repeating"** — masking template slots in each post exposed near-identical messages from different accounts; the top pattern repeated 44 times, which reads as either a systemic bug or coordinated posting.
+- **Competitor watch, framed honestly** — share of voice rose 11.9% to 18.9% across the month, with each competitor claim tested against what our own posts say on the same theme.
+- **"Ask Pulse"** — a tool-calling assistant with filter disclosure and one-click apply.
+- Shareable URL state, date-range comparison, and Excel and PDF export that match the current view.
+
+## Outcome
+
+- Live at [takapay-dashboard.vercel.app](https://takapay-dashboard.vercel.app), built solo.
+- The audit changed the conclusions rather than decorating them: without the bilingual pass, 15 negative Bangla posts would have been counted as positive, and the top issue would have looked smaller than it is.
+- A scripted browser sweep of 29 checks caught a deploy-breaking detail — the chat route needs its model key present at build time — before it reached the live demo.
+
+## What I'd do differently
+
+Replace the phrase rules in the sentiment audit with a small bilingual classifier calibrated on the corrected set, and keep the phrase rules as regression tests for it. Rules were the right call for a fixed dataset and the wrong one for a live feed.
+
+I would also have designed mobile-first. The layout is desktop-first and overflows on a phone — a brand manager checking sentiment on the way to a meeting is exactly the use case I did not build for.
+
+## Stack & tools
+
+**Build:** Next.js · TypeScript · Recharts · Vercel
+
+**AI:** Gemini through its OpenAI-compatible endpoint · tool calling over cleaned data
+
+**Process:** AI-assisted implementation with Claude Code, decisions and overrides mine

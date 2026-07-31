@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { profile } from '@/lib/profile';
+import ThemeToggle from './ThemeToggle';
+import MobileNav from './MobileNav';
 
 const links = [
-  { href: '/#story', label: 'Story' },
   { href: '/#work', label: 'Work' },
+  { href: '/#story', label: 'Story' },
   { href: '/#experience', label: 'Journey' },
   { href: '/#capabilities', label: 'Capabilities' },
   { href: '/#skills', label: 'Skills' },
@@ -26,9 +28,10 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a href={profile.resume} target="_blank" rel="noreferrer" className="btn btn-primary text-sm">
-          Resume
-        </a>
+        <div className="flex items-center gap-2.5">
+          <ThemeToggle />
+          <MobileNav links={links} />
+        </div>
       </div>
     </header>
   );
