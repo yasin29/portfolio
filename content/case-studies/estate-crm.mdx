@@ -1,0 +1,86 @@
+---
+slug: estate-crm
+title: "Dual-Experience Property App — One Binary, Two Products"
+client: Client project (name withheld)
+role: Product & delivery
+period: "Jul 2026"
+status: Delivered
+stack: [Flutter, Laravel REST API, Hosted payment gateway]
+chips:
+  - Mobile (iOS / Android)
+  - Real estate
+  - Regulated money flows
+  - Bilingual
+---
+
+## At a glance
+
+A property app for a developer selling to buyers at home and overseas. One Flutter binary presents **two completely separate products**, chosen by role at login: a premium listing-and-checkout experience for buyers, and a dense field-sales work tool for partners.
+
+I owned the brief, the requirements and delivery. The defining constraint was not technical — it was a rule about money that shaped every screen.
+
+## The problem
+
+The obvious framing is "a real-estate app". The actual problem is that two audiences with nothing in common had to share one binary.
+
+A **buyer** — often overseas — is making one of the largest purchases of their life from a phone, on trust. That experience needs to feel considered and slow in the right places.
+
+A **sales partner** is in the field, using the app dozens of times a day to work leads and record bookings. That experience needs to be dense, fast, and utterly unglamorous.
+
+Build one interface for both and you get something that serves neither: too heavy for the partner, too utilitarian for the buyer. Build two apps and you double the release, review and support burden for a client who wanted one product.
+
+Underneath that sat a harder constraint. The app touches property sales, deposits and partner commissions, in a market with real regulatory exposure. Every instinct a developer has about making payment "smooth" is, here, a liability.
+
+## My role
+
+- **Requirements** — the PRD, translating a signed engineering scope into product terms for the delivery handoff.
+- **The constraint set** — writing the money and payment rules as product acceptance criteria rather than engineering preferences.
+- **Scope discipline** — identifying the commercial rules that were genuinely undefined and refusing to guess them.
+- **Delivery** — through to build.
+
+## Approach
+
+**Split by role at login, share only the plumbing.** The two experiences share authentication, settings, notifications, networking and storage — and nothing else. Not a shared navigation shell, not a shared component library that slowly converges the two designs. Deciding what the experiences are *allowed* to share was the most consequential architectural call in the spec.
+
+**The app never holds, moves, calculates or promises money.** Written as a hard rule, and enforced everywhere it would be tempting to bend:
+
+- No wallet, stored balance, escrow or in-app credit. No payout button.
+- It never collects bank or mobile-money details, IBANs, routing numbers or merchant credentials.
+- It never calculates commission or investment returns — it displays human-approved numbers only.
+- It never shows guaranteed-return language; the client-approved disclaimer is mandatory UI, not optional copy.
+
+The partner commission ledger is therefore **display-only**. It shows what someone else calculated and approved. That is a worse app in one narrow sense and a far safer product in every other.
+
+**Payment goes through a hosted gateway, and confirmation comes from the backend.** The app never builds a card form — no card number, CVV, expiry or PIN fields exist anywhere in it. And crucially, a booking is **never** confirmed from a client-side gateway callback; only a verified backend webhook confirms. A client-side callback is trivially forgeable, and treating it as truth is how apps end up confirming bookings nobody paid for.
+
+**Refuse to guess the commercial rules.** Several rules — the ones governing commission structure and settlement — were genuinely undefined by the client. Rather than invent plausible defaults, the specification builds the *mechanism* behind an interface driven by configuration, and lists the undefined rules as open questions requiring client confirmation. Guessing here would have produced a product that looked finished and was quietly wrong about money.
+
+**Bilingual with no restart.** English and Bengali, hot-switchable. For an app serving overseas buyers and local field staff, language is not a settings-screen afterthought.
+
+## What shipped
+
+- **One Flutter binary** for iOS and Android, presenting two role-selected experiences against a Laravel REST API.
+- **Buyer experience** — project and unit discovery, server-locked booking, and hosted-gateway checkout with backend-verified confirmation.
+- **Partner experience** — leads, sales kit, record-only bookings, and a display-only commission and settlement ledger.
+- **Hard-rule compliance** — no card form, no stored balances, no client-side payment confirmation, mandatory disclaimers.
+- **Full bilingual support** with hot switching, and an OWASP-MASVS-aligned security posture.
+
+## Outcome
+
+- Delivered against a signed scope, with the money constraints intact rather than eroded during build.
+- The undefined commercial rules were handed back as explicit open questions instead of being silently invented — so the client made those decisions rather than discovering them later.
+- Two genuinely different products ship and update as one release.
+
+## What I'd do differently
+
+**Prototype the partner tool with a partner in the field.** The buyer experience is the one that gets design attention because it is the one that looks good in a review. The partner tool is used far more often, by someone standing outside a building with one hand free, and it was specified from a desk. A day shadowing that work would have changed the screens.
+
+**Write the open questions with a decision deadline attached.** Listing them was right. Listing them without a date meant they stayed open longer than they needed to, and undefined commercial rules are the kind of thing that quietly becomes the last blocker before launch.
+
+## Stack & tools
+
+**Mobile:** Flutter (single binary, iOS + Android)
+
+**Backend:** Laravel REST API · hosted payment gateway with verified webhooks
+
+**Delivery:** PRD from signed scope · hard rules as acceptance criteria · open questions returned rather than guessed

@@ -111,6 +111,36 @@ const DISPLAY: Record<string, { solution: string; category: string; metrics: str
     category: 'Personal · AI Product',
     metrics: '660 posts audited · 37 mislabels caught · assistant computes, never estimates',
   },
+  'hrm-ats': {
+    solution: 'AI-Assisted Applicant Tracking System',
+    category: 'HR-Tech · Explainable AI',
+    metrics: 'Thousands of CVs per batch · every score explainable · no auto-rejection',
+  },
+  'estate-crm': {
+    solution: 'Dual-Experience Property App',
+    category: 'Real Estate · Mobile · Regulated',
+    metrics: 'One Flutter binary, two products · never holds or moves money',
+  },
+  'moto-brand': {
+    solution: 'Motorcycle Brand Platform',
+    category: 'Automotive · Brand + Conversion',
+    metrics: 'Phased launch · mobile-first · brand and conversion as separate paths',
+  },
+  'apparel-group': {
+    solution: 'Apparel Group Marketing Site',
+    category: 'B2B · Manufacturing',
+    metrics: 'Built for sourcing buyers · sustainability carried by the design',
+  },
+  'petnest': {
+    solution: 'Pet-Shop Storefront',
+    category: 'E-commerce · Repeat Purchase',
+    metrics: 'Tuned for re-finding a known product, not for discovery',
+  },
+  'estate-developer': {
+    solution: 'Property Developer Portfolio',
+    category: 'Real Estate · Portfolio',
+    metrics: 'Projects lead with location and completion stage, not renders',
+  },
   insidemaps: {
     solution: '3D Real-Estate Tour QA',
     category: 'QA · 3D / Spatial',
@@ -143,6 +173,12 @@ const ORDER = [
   'ktalk',
   'findy-job',
   'futurenation',
+  'hrm-ats',
+  'estate-crm',
+  'moto-brand',
+  'apparel-group',
+  'petnest',
+  'estate-developer',
   'insidemaps',
 ];
 

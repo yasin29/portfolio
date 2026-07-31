@@ -348,7 +348,7 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - Where I overrode the AI: I used Claude Code heavily and the decisions stayed mine. I rejected two drafts of the topics panel that drew every topic the same width, so a 2-post topic looked as large as a 215-post one. When the engagement analysis came back flat, I shipped the flatness as the finding rather than four empty comparisons — flat engagement plus templated wording points at manufactured volume. And a rising negative share is red regardless of which way the arrow points, against the dashboard convention of colouring "up" green. Key point: "The data overruled the template."
 - AI checking AI: A scripted browser sweep of 29 checks — filters, search, date comparison maths, pagination, click-throughs, and the assistant returning real computed numbers — ran before ship. It caught a deploy-breaking detail (the chat route needs its model key present at build time) before it reached the live demo.
 
-### Motorcycle Brand Site — National Motorcycle Brand Website
+### Motorcycle Brand Site — Motorcycle Brand Platform
 - Category: Client work (delivered for an external client at an employer)
 - Organisation: Client project (name withheld) · Role: Product & delivery · Period: Apr – May 2026
 - Team: Solo
@@ -358,7 +358,7 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - How I worked: Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.
 - Why the client is not named: These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation.
 
-### Apparel Group Site — Apparel Manufacturing Group Website
+### Apparel Group Site — Apparel Group Marketing Site
 - Category: Client work (delivered for an external client at an employer)
 - Organisation: Client project (name withheld) · Role: Product & delivery · Period: May 2026
 - Team: Solo
@@ -378,7 +378,7 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - How I worked: Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.
 - Why the client is not named: These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation.
 
-### Property Developer Site — Real-Estate Developer Website
+### Property Developer Site — Property Developer Portfolio
 - Category: Client work (delivered for an external client at an employer)
 - Organisation: Client project (name withheld) · Role: Product & delivery · Period: 2026
 - Team: Solo
@@ -388,7 +388,7 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - How I worked: Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.
 - Why the client is not named: These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation.
 
-### HRM & Applicant Tracking — HR Management & Applicant-Tracking Dashboard
+### HRM & Applicant Tracking — AI-Assisted Applicant Tracking System
 - Category: Client work (delivered for an external client at an employer)
 - Organisation: Client project (name withheld) · Role: Product & delivery · Period: Jun 2026
 - Team: Solo
@@ -398,7 +398,7 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - How I worked: Requirements first — a written PRD, a page map and an agreed scope before any interface work, then design direction, review and build. Documenting the brief properly is what makes a fixed-date project survive a change request.
 - Why the client is not named: These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation.
 
-### Property CRM — Real-Estate Management & CRM
+### Property CRM — Dual-Experience Property App
 - Category: Client work (delivered for an external client at an employer)
 - Organisation: Client project (name withheld) · Role: Product & delivery · Period: Jul 2026
 - Team: Solo
@@ -440,6 +440,67 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - "Aspect-Based Sentiment Analysis (ABSA) in the Bangla Language" — B.Sc. research publication · Bangladesh University of Professionals
 
 ## Full case studies
+
+### Case study: Apparel Group Site — Selling Capability to Sourcing Buyers
+Client: Client project (name withheld) · Role: Product & delivery · Period: May 2026
+
+## At a glance
+
+A marketing site for one of the country's largest readymade-garments groups — a manufacturer whose buyers are international sourcing managers, not consumers.
+
+I owned the brief, the requirements and delivery. The PRD was written to document the shipped behaviour and, more usefully, to name exactly what stood between "the code is complete" and "this is ready to go live."
+
+## The problem
+
+Manufacturer websites tend to fail in a predictable way: they are built as though the visitor is a customer. The visitor is not. They are a sourcing manager at a brand, evaluating whether this supplier can take an order at a certain volume, to a certain standard, with compliance evidence that will survive their own audit.
+
+That buyer is not browsing. They are screening. They want capability, scale, certifications and proof of practice, and they want it before they read anything about heritage.
+
+The second problem was that the differentiator — being among the first Full-Green groups in the country — is easy to *claim* and hard to *demonstrate*. Sustainability copy on a manufacturer site is background noise; every competitor has a paragraph about it.
+
+Third, and most concretely: the client had a specific and well-articulated visual objection. They wanted the cinematic quality of a premium reference brand **without** the dark-navy dominance that usually comes with it, and they wanted a soothing green working alongside the blue to carry the water-and-sustainability story.
+
+## My role
+
+- **Requirements** — the PRD covering the page flow, module by module, and the shipped behaviour.
+- **Design direction** — synthesising a variation from client feedback rather than re-presenting options.
+- **Gap analysis** — documenting what was still required to move from complete code to production-ready.
+- **Delivery** — through to build.
+
+## Approach
+
+**Lead with capability, not heritage.** The page order follows what a sourcing manager screens on: the pillars of the business, then the numbers, then the product range, then sustainability as demonstrated practice. Company history earns its place after the buyer has decided this supplier is worth considering.
+
+**Put the sustainability story in the palette, not just the copy.** The client's feedback — cinematic but not dark, with a soothing green beside the blue — was translated into a design system where blue reads as the river and green as water cleaned and returned. Large editorial photography sits on light, misted surfaces rather than the dark navy that the reference brands use. The narrative is carried by the design rather than asserted in a paragraph, which is the only way that claim survives a sceptical reader.
+
+**Synthesise the direction rather than re-presenting options.** The client's feedback was specific enough to act on directly, so the next step was a single synthesised variation combining the cinematic photographic language with a lighter base — not another round of three options. When a client tells you precisely what they want, offering choices again reads as not having listened.
+
+**Write the PRD to expose the gap.** The document records the site as shipped *and* names what remains before it is genuinely production-ready — principally real photography in place of placeholders. That distinction matters: "the build is done" and "this can go live" are different states, and conflating them is how a site sits finished-but-unlaunched for a month.
+
+## What shipped
+
+- A single-page marketing homepage built around the sourcing buyer's screening order.
+- A **design system with twin primaries** — brand blue and a lagoon green — on light, airy neutrals, with editorial photography as the dominant visual element.
+- Modules covering the business pillars, the numbers, the product range and sustainability as demonstrated practice.
+- A documented gap list separating complete code from shoot-ready production.
+
+## Outcome
+
+- Delivered with a design direction the client had specifically asked for and could recognise as theirs.
+- The sustainability narrative is expressed structurally rather than claimed in copy, which is what makes it credible to an audience that reads a lot of such claims.
+- The remaining blockers to launch were named explicitly rather than discovered after handover.
+
+## What I'd do differently
+
+**Start the photography commission before the build, not after.** The design depends on large editorial images, and the site reached code-complete with placeholders still in place. The most predictable dependency was the one left latest. On a design this photography-led, the shoot should be commissioned at the same moment the direction is approved.
+
+**Add a capability enquiry path, not just a contact form.** A sourcing manager who is convinced wants to ask a specific question — volume, lead time, certification. A generic contact form makes them compose that question from scratch, which is friction at exactly the point the site has done its job.
+
+## Stack & tools
+
+**Build:** Responsive web · design-token system · editorial photography treatment
+
+**Delivery:** PRD documenting shipped behaviour · client-directed art direction · explicit production-readiness gap list
 
 ### Case study: Artlive — Art-Appraisal Marketplace
 Client: Potential Inc. · Role: Project Manager · Period: 2025 – 2026
@@ -823,6 +884,134 @@ Write the takeover document I wished existed. I reconstructed context by reading
 
 **Delivery:** QA and defect triage · written change control · client communication ownership · Agile/Scrum
 
+### Case study: Dual-Experience Property App — One Binary, Two Products
+Client: Client project (name withheld) · Role: Product & delivery · Period: Jul 2026
+
+## At a glance
+
+A property app for a developer selling to buyers at home and overseas. One Flutter binary presents **two completely separate products**, chosen by role at login: a premium listing-and-checkout experience for buyers, and a dense field-sales work tool for partners.
+
+I owned the brief, the requirements and delivery. The defining constraint was not technical — it was a rule about money that shaped every screen.
+
+## The problem
+
+The obvious framing is "a real-estate app". The actual problem is that two audiences with nothing in common had to share one binary.
+
+A **buyer** — often overseas — is making one of the largest purchases of their life from a phone, on trust. That experience needs to feel considered and slow in the right places.
+
+A **sales partner** is in the field, using the app dozens of times a day to work leads and record bookings. That experience needs to be dense, fast, and utterly unglamorous.
+
+Build one interface for both and you get something that serves neither: too heavy for the partner, too utilitarian for the buyer. Build two apps and you double the release, review and support burden for a client who wanted one product.
+
+Underneath that sat a harder constraint. The app touches property sales, deposits and partner commissions, in a market with real regulatory exposure. Every instinct a developer has about making payment "smooth" is, here, a liability.
+
+## My role
+
+- **Requirements** — the PRD, translating a signed engineering scope into product terms for the delivery handoff.
+- **The constraint set** — writing the money and payment rules as product acceptance criteria rather than engineering preferences.
+- **Scope discipline** — identifying the commercial rules that were genuinely undefined and refusing to guess them.
+- **Delivery** — through to build.
+
+## Approach
+
+**Split by role at login, share only the plumbing.** The two experiences share authentication, settings, notifications, networking and storage — and nothing else. Not a shared navigation shell, not a shared component library that slowly converges the two designs. Deciding what the experiences are *allowed* to share was the most consequential architectural call in the spec.
+
+**The app never holds, moves, calculates or promises money.** Written as a hard rule, and enforced everywhere it would be tempting to bend:
+
+- No wallet, stored balance, escrow or in-app credit. No payout button.
+- It never collects bank or mobile-money details, IBANs, routing numbers or merchant credentials.
+- It never calculates commission or investment returns — it displays human-approved numbers only.
+- It never shows guaranteed-return language; the client-approved disclaimer is mandatory UI, not optional copy.
+
+The partner commission ledger is therefore **display-only**. It shows what someone else calculated and approved. That is a worse app in one narrow sense and a far safer product in every other.
+
+**Payment goes through a hosted gateway, and confirmation comes from the backend.** The app never builds a card form — no card number, CVV, expiry or PIN fields exist anywhere in it. And crucially, a booking is **never** confirmed from a client-side gateway callback; only a verified backend webhook confirms. A client-side callback is trivially forgeable, and treating it as truth is how apps end up confirming bookings nobody paid for.
+
+**Refuse to guess the commercial rules.** Several rules — the ones governing commission structure and settlement — were genuinely undefined by the client. Rather than invent plausible defaults, the specification builds the *mechanism* behind an interface driven by configuration, and lists the undefined rules as open questions requiring client confirmation. Guessing here would have produced a product that looked finished and was quietly wrong about money.
+
+**Bilingual with no restart.** English and Bengali, hot-switchable. For an app serving overseas buyers and local field staff, language is not a settings-screen afterthought.
+
+## What shipped
+
+- **One Flutter binary** for iOS and Android, presenting two role-selected experiences against a Laravel REST API.
+- **Buyer experience** — project and unit discovery, server-locked booking, and hosted-gateway checkout with backend-verified confirmation.
+- **Partner experience** — leads, sales kit, record-only bookings, and a display-only commission and settlement ledger.
+- **Hard-rule compliance** — no card form, no stored balances, no client-side payment confirmation, mandatory disclaimers.
+- **Full bilingual support** with hot switching, and an OWASP-MASVS-aligned security posture.
+
+## Outcome
+
+- Delivered against a signed scope, with the money constraints intact rather than eroded during build.
+- The undefined commercial rules were handed back as explicit open questions instead of being silently invented — so the client made those decisions rather than discovering them later.
+- Two genuinely different products ship and update as one release.
+
+## What I'd do differently
+
+**Prototype the partner tool with a partner in the field.** The buyer experience is the one that gets design attention because it is the one that looks good in a review. The partner tool is used far more often, by someone standing outside a building with one hand free, and it was specified from a desk. A day shadowing that work would have changed the screens.
+
+**Write the open questions with a decision deadline attached.** Listing them was right. Listing them without a date meant they stayed open longer than they needed to, and undefined commercial rules are the kind of thing that quietly becomes the last blocker before launch.
+
+## Stack & tools
+
+**Mobile:** Flutter (single binary, iOS + Android)
+
+**Backend:** Laravel REST API · hosted payment gateway with verified webhooks
+
+**Delivery:** PRD from signed scope · hard rules as acceptance criteria · open questions returned rather than guessed
+
+### Case study: Property Developer Portfolio — Location and Stage First
+Client: Client project (name withheld) · Role: Product & delivery · Period: 2026
+
+## At a glance
+
+A project portfolio site for a property developer — active and completed developments, location detail, and enquiry capture.
+
+I owned the brief, the page map and delivery.
+
+## The problem
+
+Developer websites lead with renders. Renders are the most expensive asset the developer owns, so they get the most space — and they are close to worthless as a decision input, because every development's renders look broadly the same.
+
+A buyer decides on two things first: **where it is**, and **how finished it is**. A beautiful render of a building that is two years from handover, in a location that does not work for them, is a waste of the only attention they were ever going to give it.
+
+The design problem is therefore about ordering, not about visuals: how do you make location and completion stage the first things a visitor resolves, without making the site feel like a spreadsheet?
+
+## My role
+
+- **Requirements** — the brief and the page map.
+- **Information hierarchy** — deciding what a project page leads with.
+- **Delivery** — through to build.
+
+## Approach
+
+**Lead each project with location and stage.** Renders and detail follow. This is a small inversion of the usual layout with an outsized effect: a visitor can disqualify a project in seconds, which sounds like a loss and is actually the point. Fast disqualification means the enquiries that do arrive are from people the development actually suits.
+
+**Make the portfolio scannable across projects.** Active and completed developments are presented so they can be compared at a glance, rather than requiring a visit to each project page to establish the basics.
+
+**Keep enquiry close to the decision.** The enquiry path sits with the project detail rather than on a separate contact page, so a visitor acts at the moment of interest instead of navigating away to find a form.
+
+## What shipped
+
+- A project portfolio covering active and completed developments.
+- Project pages leading with location and completion stage.
+- Enquiry capture positioned alongside project detail.
+
+## Outcome
+
+- Delivered to brief, with the information hierarchy built around how a buyer actually disqualifies options rather than around the client's most expensive assets.
+
+## What I'd do differently
+
+**Add map-based browsing.** Location leads on every project page, but there is no way to browse *by* location — which is the first question a buyer asks. Having identified location as the primary decision input, not giving it a dedicated navigation mode was an omission.
+
+**Track which projects get enquiries.** Enquiry capture exists; attribution does not. Knowing which developments generate interest, and from which entry point, is the feedback the client needs to decide what to build next.
+
+## Stack & tools
+
+**Build:** Responsive web · JavaScript
+
+**Delivery:** Written brief · page map · information hierarchy design
+
 ### Case study: Findy Job & Futurenation — Bangladesh ↔ Japan Talent Bridge
 Client: Kawaii Advanced Technology — partners: Persol Group, NTT Docomo, UNDP, eGrowth Inc., ICT Division (Bangladesh) · Role: Project Manager · Period: 2024 – 2025
 
@@ -927,6 +1116,72 @@ Agree a single success metric with all partners at kickoff. Each stakeholder had
 ## Stack & tools
 
 **Delivery:** Agile/Scrum · Jira · Confluence · PRD / BRD / SRS · UAT & release management
+
+### Case study: AI-Assisted Applicant Tracking System
+Client: Client project (name withheld) · Role: Product & delivery · Period: Jun 2026
+
+## At a glance
+
+An applicant tracking system with AI-assisted CV screening, built for the HR team of a large consumer-goods manufacturer. HR defines a position with a weighted, position-specific screening template, bulk-uploads several thousand CVs, and gets back a ranked shortlist where **every score can be explained**.
+
+I owned the brief, the written requirements and delivery. The interesting decisions here are not about the model — they are about where you deliberately refuse to let it act.
+
+## The problem
+
+Manual CV screening at this volume is slow, and worse, inconsistent: the same CV scores differently depending on who reads it and when. That is the obvious problem, and the one an AI screening tool is usually sold against.
+
+The real problem is what happens after you automate it. An opaque score is a liability. If HR cannot say *why* a candidate ranked where they did, the system cannot survive its first challenged decision — an internal appeal, an audit, or simply a hiring manager asking "why isn't this person on the list?" A screening tool that produces confident numbers nobody can defend is worse than the spreadsheet it replaced.
+
+There was a second constraint that decides the whole design: **CVs arrive in Bangla and in English.** A screening pass built for English does not fail loudly. It quietly under-reads a large share of the applicant pool, and the resulting shortlist looks perfectly reasonable.
+
+## My role
+
+- **Requirements** — the PRD, the module map, and the ten-stage hiring workflow with explicit role ownership at each stage.
+- **Product decisions** — what the AI is allowed to do, what stays with a human, and what must be recorded.
+- **Access model** — four user roles with distinct permissions, and account states.
+- **Delivery** — through to an approved clickable prototype and build.
+
+## Approach
+
+**AI assists, HR decides — and no candidate is ever rejected automatically.** This was written into the requirements as a constraint, not a setting. The system produces recommendations and rankings; a person makes every rejection. That single rule shapes the entire interface: there is no "auto-reject below threshold" anywhere, because the moment that exists, someone will turn it on.
+
+**Every score must show its work.** A recommendation is only useful if it displays which criteria contributed and what CV evidence was used for each. That requirement drove the decision-support views — CV analysis, online presence, and an assessment summary — which exist so a reviewer can audit a ranking rather than trust it.
+
+**Treat Bangla as first-class, not as a fallback.** Both languages are handled as equals in parsing and screening. This is the requirement most likely to be quietly dropped under time pressure, and the one whose absence is hardest to notice, because the output still looks complete.
+
+**Model the workflow as ten stages with named owners.** Screening is a small part of hiring. The specification covers the full path — including a two-part assessment of written exam plus viva — with explicit role ownership per stage, so "who is this waiting on" is answerable from the system rather than from a chase email.
+
+**Separate the four roles properly.** Viewer (read-only, for department heads and internal audit), Hiring Manager (interview feedback, accept or return to HR), HR (the primary operator), and Admin (users, permissions, audit monitoring). Plus account states, so a departed employee is deactivated rather than deleted and the audit trail survives.
+
+**Record everything.** Every screening decision, every human override of an AI recommendation, and every export is logged. The override trail is the most valuable artefact in the system: it is the only way to find out where the model and the humans disagree, which is what tells you whether the templates need adjusting.
+
+## What shipped
+
+- **Position setup** with weighted, position-specific screening templates.
+- **Bulk CV intake and parsing** at several thousand per batch, Bangla and English.
+- **AI screening** producing ranked, explainable recommendations with contributing criteria and CV evidence.
+- **Decision support** — CV analysis, online presence, and assessment summary views.
+- **Assessment module** covering written exam and viva.
+- **A searchable talent pool** with full application history per candidate.
+- **Four roles** with distinct permissions, account states, and a complete audit trail of decisions, overrides and exports.
+
+## Outcome
+
+- Delivered against an approved clickable prototype, with the specification and the prototype kept in agreement rather than drifting.
+- Screening moved from inconsistent manual review to a consistent, auditable process where the reasoning is visible.
+- The rules that matter — no automatic rejection, every score explainable, both languages equal — are written as acceptance constraints, so they cannot be traded away later as a configuration change.
+
+## What I'd do differently
+
+**Specify the override review loop, not just the override.** The system records when a human disagrees with the AI, which is the right instinct. What it does not do is close the loop — nobody is scheduled to look at those overrides and ask whether a screening template is mis-weighted. The data is being collected for a question no one has been assigned to answer.
+
+**Set an accuracy bar per language before build, not after.** "Bangla is first-class" is a principle. "Bangla parsing must reach this measured accuracy on this sample set" is a test. I specified the principle and left the measurement to emerge, which is exactly the gap that lets an English-first system pass review.
+
+## Stack & tools
+
+**Build:** Web application · AI CV screening and ranking · role-based access control
+
+**Delivery:** PRD with module map and ten-stage workflow · clickable prototype approval · written acceptance constraints
 
 ### Case study: InsideMaps — Real-Estate 3D Tour QA
 Client: InsideMaps Dhaka · Role: Quality Control Analyst · Period: May 2023 – Dec 2023
@@ -1216,6 +1471,122 @@ Build the **streak / habit loop** into the data model earlier. We added daily-st
 **Build:** Next.js · Django · PostgreSQL · OpenAI API (feedback + content gen)
 
 **PM tooling:** Notion · Figma · Jira · Lucidchart
+
+### Case study: Motorcycle Brand Platform — Brand Site with a Conversion Job
+Client: Client project (name withheld) · Role: Product & delivery · Period: Apr – May 2026
+
+## At a glance
+
+A redesign of the national web platform for a motorcycle manufacturer and distributor — the full lineup, racing heritage and engine technology, alongside test-ride booking, dealer location, financing applications, service scheduling and a parts shop.
+
+I owned the brief, the requirements and delivery, working to a phased plan: roughly ten weeks to a Phase 1 launch of homepage and bike detail, four to five months to full launch.
+
+## The problem
+
+The brief asked for two things that pull against each other.
+
+The emotional ask was explicit and unusually strong: make the site *extraordinary*, make the brand **shine**, with Tesla-tier and Ultraviolette-tier references. The existing site was transactional and worked; the complaint was that it made a performance motorcycle feel like a form submission.
+
+The commercial ask was equally explicit: drive test-ride bookings, financing applications, dealer footfall, service bookings and shop purchases.
+
+Cinematic brand sites and conversion-optimised sites usually fail in opposite directions. Lean brand and you build something beautiful that nobody books a test ride from. Lean conversion and you rebuild the transactional site they already disliked.
+
+**And three audiences wanted different things.** Aspirational riders aged 18–28 looking at the performance models are the hero audience for storytelling. Daily commuters aged 25–40 are shopping practically, on price and running cost. Existing owners want service, parts and accessories — no storytelling at all. A single homepage has to serve all three without patronising any of them.
+
+The last constraint decided the execution: in this market, **most traffic is on a phone**. Cinematic design that only works on a large screen would have failed the majority of visitors.
+
+## My role
+
+- **Requirements** — the PRD covering the full page map, audiences and conversion paths.
+- **Design direction and approval** — running the variation process to a documented client sign-off before build.
+- **Scope sequencing** — deciding what Phase 1 had to contain to be worth launching.
+- **Delivery** — through to build.
+
+## Approach
+
+**Make the design choice explicit and get it signed.** Rather than one direction to react to, the client reviewed distinct variations and picked one, with the reasoning recorded — that it best matched the brief's "extraordinary" language, that its darker cinematic register matched the reference brands, and that its palette left room to express championship moments without competing with body copy. Recording *why* a direction won is what stops the same debate reopening in week six.
+
+**Mobile-first as a constraint, not a checkbox.** The cinematic treatment had to survive a phone screen first and scale up, rather than being designed wide and squeezed. That inverts the usual order for a brand-led site and it is the single decision most likely to be quietly reversed under deadline pressure.
+
+**Separate the audiences by path, not by page.** Storytelling leads for the aspirational rider; the commuter reaches specification and financing comparison quickly; the owner gets service and parts without passing through brand content at all. One homepage, three deliberate routes out of it.
+
+**Phase on the pages that carry the argument.** Phase 1 is homepage plus bike detail — enough to prove the experience and start converting, not the whole platform. Splitting on "what proves the concept and earns revenue" rather than "what is easiest to finish" is what makes a ten-week milestone meaningful.
+
+**Simplify the role model for the prototype, and write down the production shape.** The prototype uses a single combined admin role to keep scope tight, with the production split — content, service, dealer staff, sales — specified alongside it. Deferring is fine; deferring without writing down what you deferred is how a prototype quietly becomes production.
+
+## What shipped
+
+- A phased redesign with **Phase 1 covering homepage and bike detail**.
+- Full lineup browsing with model detail, specification and engine technology.
+- **Heritage and racing narrative** as a brand differentiator rather than a separate microsite.
+- Conversion paths: test-ride booking, financing applications, dealer locator, service scheduling, parts and accessories.
+- A documented design-approval gate with the reasoning captured, plus a written production role model.
+
+## Outcome
+
+- Delivered to the phased plan, with the design direction approved and recorded before build started.
+- The brand ask and the conversion ask were resolved as separate paths through one page rather than as a compromise that weakened both.
+- The mobile-first constraint held, which for this market decides whether the rest of the work matters.
+
+## What I'd do differently
+
+**Instrument the three audience paths from launch.** The routing assumption — that aspirational, commuter and owner traffic want different first moves — is well-reasoned and untested. Basic path analytics from day one would have turned it from a good argument into a measured one, and it is exactly the kind of instrumentation that never gets added later.
+
+**Agree the asset pipeline before the design gate.** A cinematic direction depends entirely on photography and video of a certain standard. Approving the direction before confirming who produces those assets, and when, puts the most fragile dependency on the critical path.
+
+## Stack & tools
+
+**Build:** Next.js · responsive, mobile-first
+
+**Delivery:** PRD with full page map · design variation review with recorded approval · phased launch plan
+
+### Case study: Pet-Shop Storefront — Built for Repeat Buying
+Client: Client project (name withheld) · Role: Product & delivery · Period: 2026
+
+## At a glance
+
+A storefront for a pet-supplies retailer — catalogue, product pages and a customer purchase flow. A smaller build than most of the work here, and included because the product decision behind it is worth stating.
+
+I owned the brief, the page map and delivery.
+
+## The problem
+
+Most storefront briefs are answered with discovery: browse, filter, recommend, cross-sell. That is the right shape for a category where people are choosing.
+
+Pet supplies are not that category. The same customer buys the same food, the same litter, the same treats, on a cycle measured in weeks. Their goal is almost never to *discover* something — it is to find the thing they already decided on last month and buy it again without thinking about it.
+
+Design for discovery and you make the common case slower in order to optimise the rare one.
+
+## My role
+
+- **Requirements** — the brief and the page map.
+- **Flow design** — deciding what the primary path optimises for.
+- **Delivery** — through to build.
+
+## Approach
+
+**Optimise for re-finding, not for browsing.** The primary path is built around returning to a known product quickly. Discovery still exists, but it is not what the layout is tuned for. This is a small decision that changes navigation, product-page design and the checkout entry point.
+
+**Keep the catalogue structure shallow.** Deep category trees serve a customer who is exploring. A customer who knows what they want experiences every extra level as an obstacle.
+
+## What shipped
+
+- A customer-facing storefront with catalogue, product pages and purchase flow.
+- Navigation and product structure tuned for repeat purchase rather than discovery.
+
+## Outcome
+
+- Delivered to brief, with the purchase flow built around the behaviour that actually dominates this category.
+
+## What I'd do differently
+
+**Build reorder explicitly.** The flow is *tuned* for repeat buying but does not *implement* it — there is no saved basket, order history reorder, or subscription. Having correctly identified that repeat purchase is the dominant behaviour, the obvious next move was to give it a dedicated feature rather than only a faster path. That is the gap I would close first.
+
+## Stack & tools
+
+**Build:** Responsive web storefront
+
+**Delivery:** Written brief · page map · flow design
 
 ### Case study: PM Dashboard — In-House AI Delivery-Ops Platform
 Client: Potential Inc. (internal) · Role: Product Owner · Period: 2025 – 2026

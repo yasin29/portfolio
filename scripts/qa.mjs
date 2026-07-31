@@ -20,6 +20,8 @@ const ROUTES = [
   ...['ivory', 'artlive', 'bside', 'takapay', 'brandaid', 'trustix', 'thrll',
       'cart-traders', 'elite4print', 'ktalk', 'pm-dashboard', 'jtbs-erp',
       'findy-job', 'futurenation', 'det-bridge', 'lifeark-nihongo', 'insidemaps',
+      'hrm-ats', 'estate-crm', 'moto-brand', 'apparel-group', 'petnest',
+      'estate-developer',
      ].map((s) => `/case-studies/${s}/`),
 ];
 

@@ -1,0 +1,77 @@
+---
+slug: hrm-ats
+title: "AI-Assisted Applicant Tracking System"
+client: Client project (name withheld)
+role: Product & delivery
+period: "Jun 2026"
+status: Delivered
+stack: [Web app, AI CV screening, Role-based access]
+chips:
+  - HR-Tech
+  - Explainable AI
+  - Human-in-the-loop
+  - Bangla + English
+---
+
+## At a glance
+
+An applicant tracking system with AI-assisted CV screening, built for the HR team of a large consumer-goods manufacturer. HR defines a position with a weighted, position-specific screening template, bulk-uploads several thousand CVs, and gets back a ranked shortlist where **every score can be explained**.
+
+I owned the brief, the written requirements and delivery. The interesting decisions here are not about the model — they are about where you deliberately refuse to let it act.
+
+## The problem
+
+Manual CV screening at this volume is slow, and worse, inconsistent: the same CV scores differently depending on who reads it and when. That is the obvious problem, and the one an AI screening tool is usually sold against.
+
+The real problem is what happens after you automate it. An opaque score is a liability. If HR cannot say *why* a candidate ranked where they did, the system cannot survive its first challenged decision — an internal appeal, an audit, or simply a hiring manager asking "why isn't this person on the list?" A screening tool that produces confident numbers nobody can defend is worse than the spreadsheet it replaced.
+
+There was a second constraint that decides the whole design: **CVs arrive in Bangla and in English.** A screening pass built for English does not fail loudly. It quietly under-reads a large share of the applicant pool, and the resulting shortlist looks perfectly reasonable.
+
+## My role
+
+- **Requirements** — the PRD, the module map, and the ten-stage hiring workflow with explicit role ownership at each stage.
+- **Product decisions** — what the AI is allowed to do, what stays with a human, and what must be recorded.
+- **Access model** — four user roles with distinct permissions, and account states.
+- **Delivery** — through to an approved clickable prototype and build.
+
+## Approach
+
+**AI assists, HR decides — and no candidate is ever rejected automatically.** This was written into the requirements as a constraint, not a setting. The system produces recommendations and rankings; a person makes every rejection. That single rule shapes the entire interface: there is no "auto-reject below threshold" anywhere, because the moment that exists, someone will turn it on.
+
+**Every score must show its work.** A recommendation is only useful if it displays which criteria contributed and what CV evidence was used for each. That requirement drove the decision-support views — CV analysis, online presence, and an assessment summary — which exist so a reviewer can audit a ranking rather than trust it.
+
+**Treat Bangla as first-class, not as a fallback.** Both languages are handled as equals in parsing and screening. This is the requirement most likely to be quietly dropped under time pressure, and the one whose absence is hardest to notice, because the output still looks complete.
+
+**Model the workflow as ten stages with named owners.** Screening is a small part of hiring. The specification covers the full path — including a two-part assessment of written exam plus viva — with explicit role ownership per stage, so "who is this waiting on" is answerable from the system rather than from a chase email.
+
+**Separate the four roles properly.** Viewer (read-only, for department heads and internal audit), Hiring Manager (interview feedback, accept or return to HR), HR (the primary operator), and Admin (users, permissions, audit monitoring). Plus account states, so a departed employee is deactivated rather than deleted and the audit trail survives.
+
+**Record everything.** Every screening decision, every human override of an AI recommendation, and every export is logged. The override trail is the most valuable artefact in the system: it is the only way to find out where the model and the humans disagree, which is what tells you whether the templates need adjusting.
+
+## What shipped
+
+- **Position setup** with weighted, position-specific screening templates.
+- **Bulk CV intake and parsing** at several thousand per batch, Bangla and English.
+- **AI screening** producing ranked, explainable recommendations with contributing criteria and CV evidence.
+- **Decision support** — CV analysis, online presence, and assessment summary views.
+- **Assessment module** covering written exam and viva.
+- **A searchable talent pool** with full application history per candidate.
+- **Four roles** with distinct permissions, account states, and a complete audit trail of decisions, overrides and exports.
+
+## Outcome
+
+- Delivered against an approved clickable prototype, with the specification and the prototype kept in agreement rather than drifting.
+- Screening moved from inconsistent manual review to a consistent, auditable process where the reasoning is visible.
+- The rules that matter — no automatic rejection, every score explainable, both languages equal — are written as acceptance constraints, so they cannot be traded away later as a configuration change.
+
+## What I'd do differently
+
+**Specify the override review loop, not just the override.** The system records when a human disagrees with the AI, which is the right instinct. What it does not do is close the loop — nobody is scheduled to look at those overrides and ask whether a screening template is mis-weighted. The data is being collected for a question no one has been assigned to answer.
+
+**Set an accuracy bar per language before build, not after.** "Bangla is first-class" is a principle. "Bangla parsing must reach this measured accuracy on this sample set" is a test. I specified the principle and left the measurement to emerge, which is exactly the gap that lets an English-first system pass review.
+
+## Stack & tools
+
+**Build:** Web application · AI CV screening and ranking · role-based access control
+
+**Delivery:** PRD with module map and ten-stage workflow · clickable prototype approval · written acceptance constraints

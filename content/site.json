@@ -2187,7 +2187,7 @@
     {
       "slug": "moto-brand",
       "name": "Motorcycle Brand Site",
-      "solution": "National Motorcycle Brand Website",
+      "solution": "Motorcycle Brand Platform",
       "category": "client",
       "domain": "Client project · Automotive",
       "org": "Client project (name withheld)",
@@ -2222,12 +2222,13 @@
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
       ],
-      "live": "https://sadiasajarun.github.io/Suzuki_Bangladesh/"
+      "live": "https://sadiasajarun.github.io/Suzuki_Bangladesh/",
+      "caseStudy": "moto-brand"
     },
     {
       "slug": "apparel-group",
       "name": "Apparel Group Site",
-      "solution": "Apparel Manufacturing Group Website",
+      "solution": "Apparel Group Marketing Site",
       "category": "client",
       "domain": "Client project · Manufacturing",
       "org": "Client project (name withheld)",
@@ -2262,7 +2263,8 @@
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
       ],
-      "live": "https://sadiasajarun.github.io/Urmi_group/"
+      "live": "https://sadiasajarun.github.io/Urmi_group/",
+      "caseStudy": "apparel-group"
     },
     {
       "slug": "petnest",
@@ -2297,12 +2299,13 @@
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
       ],
-      "live": "https://sadiasajarun.github.io/petshop_V1/customer/index.html"
+      "live": "https://sadiasajarun.github.io/petshop_V1/customer/index.html",
+      "caseStudy": "petnest"
     },
     {
       "slug": "estate-developer",
       "name": "Property Developer Site",
-      "solution": "Real-Estate Developer Website",
+      "solution": "Property Developer Portfolio",
       "category": "client",
       "domain": "Client project · Real Estate",
       "org": "Client project (name withheld)",
@@ -2332,12 +2335,13 @@
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
       ],
-      "live": "https://sadiasajarun.github.io/jcx/"
+      "live": "https://sadiasajarun.github.io/jcx/",
+      "caseStudy": "estate-developer"
     },
     {
       "slug": "hrm-ats",
       "name": "HRM & Applicant Tracking",
-      "solution": "HR Management & Applicant-Tracking Dashboard",
+      "solution": "AI-Assisted Applicant Tracking System",
       "category": "client",
       "domain": "Client project · HR-Tech · AI",
       "org": "Client project (name withheld)",
@@ -2374,12 +2378,13 @@
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
       ],
-      "live": "https://sadiasajarun.github.io/Square_ATS/hr/dashboard.page.html"
+      "live": "https://sadiasajarun.github.io/Square_ATS/hr/dashboard.page.html",
+      "caseStudy": "hrm-ats"
     },
     {
       "slug": "estate-crm",
       "name": "Property CRM",
-      "solution": "Real-Estate Management & CRM",
+      "solution": "Dual-Experience Property App",
       "category": "client",
       "domain": "Client project · Real Estate · Mobile",
       "org": "Client project (name withheld)",
@@ -2415,7 +2420,8 @@
           "title": "Why the client is not named",
           "body": "These were commissioned projects for real businesses. The work is mine; the client names are withheld here. Happy to talk through any of them, and the specifics, in a conversation."
         }
-      ]
+      ],
+      "caseStudy": "estate-crm"
     }
   ]
 }
