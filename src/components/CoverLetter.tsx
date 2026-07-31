@@ -9,6 +9,7 @@ type Result = {
   words: number;
   tailored: boolean;
   pdf: string | null;
+  tailorError?: string | null;
   filename: string;
 };
 
@@ -66,7 +67,12 @@ export default function CoverLetter({ onClose }: { onClose: () => void }) {
           <span>
             Cover letter — {company}
             <em>
-              {result.words} words{result.tailored ? ' · tailored to the role' : ' · generic opening'}
+              {result.words} words
+              {result.tailored
+                ? ' · tailored to the role'
+                : /429|quota|limit/i.test(result.tailorError ?? '')
+                  ? ' · generic opening (AI limit hit — try again in a minute)'
+                  : ' · generic opening'}
             </em>
           </span>
           <button type="button" className="adm-mini" onClick={onClose}>
