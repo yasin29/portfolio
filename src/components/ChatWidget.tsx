@@ -127,6 +127,11 @@ export default function ChatWidget() {
     }
   }
 
+  // Without a configured API the assistant cannot answer, and a button that
+  // does nothing is worse than no button. The deployed build has no API URL
+  // until the service is live, so it simply does not render.
+  if (!API) return null;
+
   return (
     <>
       <button
