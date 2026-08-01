@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import type { FieldDef } from './schema';
+import { basePath } from '@/lib/profile';
 
 const API = process.env.NEXT_PUBLIC_CHAT_API ?? '';
 
@@ -141,6 +142,11 @@ export default function Field({
   /* ---------- image: upload or path ---------- */
   if (def.type === 'image') {
     return <ImageField def={def} value={value} onChange={onChange} token={token} slug={slug} label={label} />;
+  }
+
+  /* ---------- file: upload or path ---------- */
+  if (def.type === 'file') {
+    return <FileField def={def} value={value} onChange={onChange} token={token} label={label} />;
   }
 
   /* ---------- select ---------- */
@@ -311,6 +317,106 @@ function ImageField({
           }}
         />
       </div>
+    </div>
+  );
+}
+
+/**
+ * A document — the resume — as an upload rather than a typed path.
+ *
+ * The path stays editable because the file may already be in /public from
+ * before this control existed, and retyping it is sometimes the fastest fix.
+ * The View link is the useful part: it opens what the site will actually
+ * serve, which is the only way to catch a path that points at nothing.
+ */
+function FileField({
+  def,
+  value,
+  onChange,
+  token,
+  label,
+}: {
+  def: FieldDef;
+  value: unknown;
+  onChange: (v: unknown) => void;
+  token?: string;
+  label: React.ReactNode;
+}) {
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+  const [saved, setSaved] = useState<string | null>(null);
+  const src = String(value ?? '');
+
+  async function upload(file: File) {
+    if (!token) return setErr('Sign in again to upload.');
+    setBusy(true);
+    setErr(null);
+    setSaved(null);
+    try {
+      const buf = await file.arrayBuffer();
+      const bytes = new Uint8Array(buf);
+      // A PDF is megabytes; spreading it into String.fromCharCode blows the
+      // argument limit, so chunk it.
+      let bin = '';
+      for (let i = 0; i < bytes.length; i += 8192) {
+        bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
+      }
+      const r = await fetch(`${API}/api/admin/upload-doc`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ filename: file.name, data: btoa(bin) }),
+      });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(out.error ?? 'Upload failed');
+      onChange(out.path);
+      setSaved(`Saved ${(out.bytes / 1024 / 1024).toFixed(1)}MB to public${out.path}`);
+    } catch (e) {
+      setErr(e instanceof Error ? e.message : 'Upload failed');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <div className="adm-field">
+      {label}
+      <div className="adm-file">
+        <input
+          type="text"
+          value={src}
+          placeholder="/My-Resume.pdf"
+          onChange={(e) => onChange(e.target.value || undefined)}
+        />
+        <div className="adm-image-actions">
+          <button type="button" className="adm-mini" onClick={() => fileRef.current?.click()} disabled={busy}>
+            {busy ? 'Uploading…' : src ? 'Replace' : 'Upload'}
+          </button>
+          {src && (
+            <a className="adm-mini" href={`${basePath}${src}`} target="_blank" rel="noreferrer">
+              View
+            </a>
+          )}
+          {src && (
+            <button type="button" className="adm-mini" onClick={() => { onChange(undefined); setSaved(null); }}>
+              Remove
+            </button>
+          )}
+        </div>
+        {saved && <p className="adm-ok">{saved}</p>}
+        {err && <p className="adm-err">{err}</p>}
+      </div>
+      <input
+        ref={fileRef}
+        type="file"
+        accept=".pdf,.doc,.docx,application/pdf"
+        hidden
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) upload(f);
+          e.target.value = '';
+        }}
+      />
     </div>
   );
 }

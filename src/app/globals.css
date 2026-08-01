@@ -3005,7 +3005,13 @@ body {
   font-size: 0.65rem; color: var(--muted-2); border-style: dashed;
 }
 .adm-image-controls { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem; }
-.adm-image-actions { display: flex; gap: 0.4rem; }
+.adm-image-actions { display: flex; gap: 0.4rem; align-items: center; }
+/* View is an <a>, the rest are <button> — keep them the same size */
+.adm-image-actions a.adm-mini { display: inline-flex; align-items: center; text-decoration: none; }
+
+.adm-file { display: flex; flex-direction: column; gap: 0.4rem; }
+.adm-file .adm-ok,
+.adm-file .adm-err { margin-bottom: 0; }
 
 .adm-ai-open {
   align-self: flex-start; margin-top: 0.5rem; padding: 0.55rem 1rem;

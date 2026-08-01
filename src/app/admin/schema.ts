@@ -9,6 +9,7 @@ export type FieldType =
   | 'list'
   | 'select'
   | 'image'
+  | 'file'
   | 'group'
   | 'repeat'
   | 'json';
@@ -45,6 +46,7 @@ const ta = (key: string, label: string, hint?: string): FieldDef => ({ key, labe
 const url = (key: string, label: string, hint?: string): FieldDef => ({ key, label, type: 'url', hint });
 const list = (key: string, label: string, hint?: string): FieldDef => ({ key, label, type: 'list', hint });
 const img = (key: string, label: string, hint?: string): FieldDef => ({ key, label, type: 'image', hint });
+const file = (key: string, label: string, hint?: string): FieldDef => ({ key, label, type: 'file', hint });
 const sel = (key: string, label: string, options: string[], hint?: string): FieldDef => ({
   key, label, type: 'select', options, hint,
 });
@@ -92,7 +94,7 @@ export const SECTIONS: SectionDef[] = [
       url('whatsapp', 'WhatsApp link'),
       img('photo', 'Photo', 'Square headshot'),
       img('photoCutout', 'Hero portrait', 'Background removed — sits in the hero circle'),
-      t('resume', 'Resume file', 'A file in /public, e.g. /My-Resume.pdf'),
+      file('resume', 'Resume file', 'Upload a PDF, or type a path already in /public'),
       {
         key: 'socials', label: 'Social links', type: 'group',
         fields: [url('linkedin', 'LinkedIn'), url('github', 'GitHub')],
