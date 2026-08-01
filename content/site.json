@@ -723,7 +723,11 @@
             "Legacy model"
           ]
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "They took a complicated set of requirements and translated them into something our users actually find simple. What we ended up with is not a template with our name on it — it is a system built around the way we work.",
+        "attribution": "Client, Ivorymade"
+      }
     },
     {
       "slug": "artlive",
@@ -866,7 +870,11 @@
             "3 team members"
           ]
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "“Expert verification makes all the difference” — adds confidence when buying or evaluating items.",
+        "attribution": "Client, Artlive"
+      }
     },
     {
       "slug": "bside",
@@ -1005,7 +1013,11 @@
             "caption": "Shipped to both stores by a team of three."
           }
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "“A new way to experience art” — seamlessly connects physical exhibitions with digital interaction.",
+        "attribution": "Client, Bside"
+      }
     },
     {
       "slug": "cart-traders",
@@ -1125,7 +1137,11 @@
             "caption": "Shipped to iOS and Android."
           }
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "This was exactly what we needed. The onboarding is clean, trading feels transparent, and collectors can actually find what they’re looking for. You understood both our product and our audience perfectly.",
+        "attribution": "Client, Cart Traders"
+      }
     },
     {
       "slug": "trustix",
@@ -1252,7 +1268,11 @@
             "caption": "Reporting for the decisions the team makes daily."
           }
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "The workflow is now smooth and structured. Our ticket handling used to involve multiple files and manual checks — this dashboard changed that completely. The supplier system works exactly as we needed, and point tracking finally feels transparent and manageable.",
+        "attribution": "Client, Trustix"
+      }
     },
     {
       "slug": "thrll",
@@ -1371,7 +1391,11 @@
             "caption": "Discovery through to booking."
           }
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "Thrll now truly reflects the spirit of adventure we envisioned. The discovery feels personal, the group features build real connections, and users are excited to explore again. You captured exactly what makes Thrll different and brought it to life beautifully.",
+        "attribution": "Client, Thrll"
+      }
     },
     {
       "slug": "elite4print",
@@ -1446,7 +1470,11 @@
             "caption": "Delivery continued through a PM change without a scope reset."
           }
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "Working with the team on Elite4print has been a fantastic journey. They delivered not only a sleek and professional e-commerce platform but also a powerful ERP system that transformed the way we manage our printing business. The custom design tools are incredibly intuitive, making it easy for our customers to personalize products, while the backend ERP ensures smooth operations for our team. From vibrant print previews to fast, reliable order handling, the attention to detail has exceeded our expectations. Our clients love the simplicity and quality, and we’ve already seen a boost in orders and customer satisfaction.",
+        "attribution": "Client, Elite4print"
+      }
     },
     {
       "slug": "jtbs-erp",
@@ -1900,7 +1928,11 @@
             "Fixed reporting cadence"
           ]
         }
-      ]
+      ],
+      "feedback": {
+        "quote": "Working with the team on K-Talk has been outstanding. They delivered a beautifully crafted learning platform that is intuitive, motivating, and genuinely effective. The structure keeps learners engaged, and the real-life conversational focus has helped our users progress faster and more confidently. Our global audience appreciates how we’ve woven cultural insights into the lessons — this stands out from other platforms. Thanks to K-Talk, we’re delivering language learning that doesn’t just teach Korean, it empowers people to use it.",
+        "attribution": "Client, Ktalk"
+      }
     },
     {
       "slug": "pm-dashboard",

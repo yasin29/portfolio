@@ -136,6 +136,14 @@ export const SECTIONS: SectionDef[] = [
         titleField: 'title', addLabel: 'section',
         hint: 'The numbered accordion inside the drawer. This is where the detail lives.',
       },
+      {
+        key: 'feedback', label: 'Client feedback', type: 'group',
+        hint: 'Only ever a real client quote — leave empty rather than filling the space',
+        fields: [
+          ta('quote', 'Quote', 'What the client actually said'),
+          t('attribution', 'Attribution', 'e.g. Client, Cart Traders'),
+        ],
+      },
       { key: 'livePreview', label: 'Live-product image', type: 'group', fields: IMAGE_FIELDS },
       list('contribution', 'Fallback bullets', 'Only used if there are no sections'),
     ],

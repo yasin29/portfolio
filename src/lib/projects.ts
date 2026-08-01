@@ -60,6 +60,9 @@ export type Project = {
   live?: string;
   /** Slug of the full case study, when one has been written. */
   caseStudy?: string;
+  /** A real client quote. Only ever populated from something the client
+   *  actually said — never written to fill the space. */
+  feedback?: { quote: string; attribution?: string };
   /** Preview image path (basePath applied at render). */
   preview?: string;
 };

@@ -3131,3 +3131,38 @@ body {
   color: var(--muted); cursor: pointer; text-decoration: underline;
 }
 .cl-again:hover { color: var(--accent); }
+
+/* ---------- Client feedback in the drawer ---------- */
+.wk-quote {
+  position: relative;
+  margin: 0;
+  padding: 1.1rem 1.2rem 1.1rem 2.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.wk-quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.3rem;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.55;
+}
+.wk-quote blockquote {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+.wk-quote figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}

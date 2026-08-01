@@ -209,6 +209,21 @@ function Drawer({ project, onClose }: { project: Project | null; onClose: () => 
                 </>
               )}
 
+              {project.feedback && (
+                <>
+                  <p className="wk-preview-label">
+                    <span className="rule" aria-hidden="true" />
+                    Client feedback
+                  </p>
+                  <figure className="wk-quote">
+                    <blockquote>{project.feedback.quote}</blockquote>
+                    {project.feedback.attribution && (
+                      <figcaption>{project.feedback.attribution}</figcaption>
+                    )}
+                  </figure>
+                </>
+              )}
+
               {project.livePreview && (
                 <>
                   <p className="wk-preview-label">
