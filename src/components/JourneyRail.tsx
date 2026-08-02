@@ -12,20 +12,52 @@ function ExternalArrow() {
   );
 }
 
-function Card({ job }: { job: Experience }) {
-  const [open, setOpen] = useState(false);
+function Card({
+  job,
+  open,
+  onToggle,
+}: {
+  job: Experience;
+  open: boolean;
+  onToggle: () => void;
+}) {
   const hasDetails = Boolean(job.stats?.length || job.projects?.length);
+  const panelId = `jr-panel-${job.company.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
+
+  // The header doubles as the toggle, so it needs the keyboard behaviour a
+  // real button would have given us for free. It can't be a <button>: the
+  // company name inside it is a link, and nesting those is invalid.
+  const headProps = hasDetails
+    ? {
+        role: 'button' as const,
+        tabIndex: 0,
+        'aria-expanded': open,
+        'aria-controls': panelId,
+        onClick: onToggle,
+        onKeyDown: (e: React.KeyboardEvent) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onToggle();
+          }
+        },
+      }
+    : {};
 
   return (
     <article className={`jr-card${job.current ? ' is-current' : ''}`}>
       <span className="jr-dot" aria-hidden="true" />
 
-      <div className="flex items-start justify-between gap-3">
+      <div className={`jr-head${hasDetails ? ' is-clickable' : ''}`} {...headProps}>
         <div className="min-w-0">
           <p className="jr-period">[{job.period}]</p>
           <h3 className="jr-company">
             {job.url ? (
-              <a href={job.url} target="_blank" rel="noreferrer">
+              <a
+                href={job.url}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
                 {job.company}
               </a>
             ) : (
@@ -57,7 +89,7 @@ function Card({ job }: { job: Experience }) {
       )}
 
       {open && hasDetails && (
-        <div className="jr-details">
+        <div className="jr-details" id={panelId}>
           {job.stats && (
             <div className="jr-stats">
               {job.stats.map((s) => (
@@ -83,7 +115,13 @@ function Card({ job }: { job: Experience }) {
       )}
 
       {hasDetails && (
-        <button type="button" onClick={() => setOpen((v) => !v)} className="jr-toggle" aria-expanded={open}>
+        <button
+          type="button"
+          onClick={onToggle}
+          className="jr-toggle"
+          aria-expanded={open}
+          aria-controls={panelId}
+        >
           {open ? 'Collapse details' : 'Expand details'}
           <svg
             width="10"
@@ -101,12 +139,27 @@ function Card({ job }: { job: Experience }) {
   );
 }
 
-/** Vertical career rail. Work history only — education lives in Credentials. */
+/**
+ * Vertical career rail. Work history only — education lives in Credentials.
+ *
+ * One card open at a time: the expanded cards are long enough that two of
+ * them push the rest of the timeline off-screen, and the point of the rail
+ * is that you can still see where the roles sit relative to each other.
+ */
 export default function JourneyRail() {
+  const [openCompany, setOpenCompany] = useState<string | null>(null);
+
   return (
     <div className="jr-rail">
       {experience.map((job) => (
-        <Card key={job.company} job={job} />
+        <Card
+          key={job.company}
+          job={job}
+          open={openCompany === job.company}
+          onToggle={() =>
+            setOpenCompany((current) => (current === job.company ? null : job.company))
+          }
+        />
       ))}
     </div>
   );

@@ -643,12 +643,7 @@
         {
           "title": "Phase 1 - every order functional",
           "body": "Phase 1 was a genuine MVP, not a demo: a case could be submitted, designed, reviewed against the 3D model, produced, and invoiced without leaving the platform. Anything not required to make an order work was deliberately deferred.",
-          "quote": "Make the order the unit of truth before adding who is allowed to do what.",
-          "image": {
-            "src": "/case-studies/ivory/feature3.webp",
-            "alt": "Ivorymade order detail screen showing order information, tracking, and order actions",
-            "caption": "Order detail - submission, tracking, and actions in one place."
-          }
+          "quote": "Make the order the unit of truth before adding who is allowed to do what."
         },
         {
           "title": "Phase 2 - roles, terms, offices",
@@ -661,12 +656,7 @@
         },
         {
           "title": "3D model review",
-          "body": "Restoration review runs on the exocad viewer inside the platform, so the technician and the reviewing dentist look at the same model rather than exchanging files.",
-          "image": {
-            "src": "/case-studies/ivory/feature2.webp",
-            "alt": "Ivorymade 3D design model review using the embedded exocad viewer",
-            "caption": "3D design model review - exocad viewer embedded in the order flow."
-          }
+          "body": "Restoration review runs on the exocad viewer inside the platform, so the technician and the reviewing dentist look at the same model rather than exchanging files."
         },
         {
           "title": "Kickoff & scoping",
@@ -781,12 +771,7 @@
       "sections": [
         {
           "title": "The problem",
-          "body": "Art appraisal is a trust transaction before it is a commercial one. A collector needs to believe the expert is qualified; the expert needs to be paid without chasing invoices. Get either half wrong and there is no second attempt.",
-          "image": {
-            "src": "/case-studies/artlive/screen-1.webp",
-            "alt": "Artlive landing experience - connect with certified art experts and choose a service",
-            "caption": "Discovery leads with certified experts and a clear service choice."
-          }
+          "body": "Art appraisal is a trust transaction before it is a commercial one. A collector needs to believe the expert is qualified; the expert needs to be paid without chasing invoices. Get either half wrong and there is no second attempt."
         },
         {
           "title": "Model the money first",
@@ -796,21 +781,11 @@
             "Stripe Connect",
             "PayPal",
             "3 service flows"
-          ],
-          "image": {
-            "src": "/case-studies/artlive/screen-3.webp",
-            "alt": "Artlive expert profile showing online valuation, buyer support, and bespoke service pricing",
-            "caption": "Each service carries its own scope, turnaround, and price shape."
-          }
+          ]
         },
         {
           "title": "Make expertise legible",
-          "body": "Discovery leads with credentials, specialisms, and previously reviewed objects, because in this market the expert profile is the product. That shaped the design guidelines I wrote for the team.",
-          "image": {
-            "src": "/case-studies/artlive/screen-4.webp",
-            "alt": "Artlive expert search on a map showing rated appraisers by location and specialism",
-            "caption": "Expert search by location, rating, and specialism."
-          }
+          "body": "Discovery leads with credentials, specialisms, and previously reviewed objects, because in this market the expert profile is the product. That shaped the design guidelines I wrote for the team."
         },
         {
           "title": "Kickoff & scoping",
@@ -921,12 +896,7 @@
       "sections": [
         {
           "title": "The problem",
-          "body": "Standing in front of a piece of art, the information you want is immediate and the patience you have is short. A placard gives you a title; a search engine gives you fifty results for the wrong painting. The gap is recognition.",
-          "image": {
-            "src": "/case-studies/bside/screen-1.webp",
-            "alt": "Bside mobile app home screen showing the artwork feed",
-            "caption": "The app opens on the feed - recognition is one tap away."
-          }
+          "body": "Standing in front of a piece of art, the information you want is immediate and the patience you have is short. A placard gives you a title; a search engine gives you fifty results for the wrong painting. The gap is recognition."
         },
         {
           "title": "Recognition as a separate service",
@@ -936,12 +906,7 @@
             "PyTorch",
             "FastAPI",
             "AWS ECS"
-          ],
-          "image": {
-            "src": "/case-studies/bside/screen-3.webp",
-            "alt": "Bside artwork detail view with the recognised work and artist context",
-            "caption": "Recognition result - the work, the artist, and the context."
-          }
+          ]
         },
         {
           "title": "Three people, no handoff slack",
@@ -1006,12 +971,7 @@
             "App Store",
             "Google Play",
             "No rejection cycle"
-          ],
-          "image": {
-            "src": "/case-studies/bside/screen-4.webp",
-            "alt": "Bside app running on iOS, shipped to both the App Store and Google Play",
-            "caption": "Shipped to both stores by a team of three."
-          }
+          ]
         }
       ],
       "feedback": {
@@ -1054,12 +1014,7 @@
       "sections": [
         {
           "title": "The problem",
-          "body": "Collectible marketplaces live or die on whether a listing represents the item accurately and whether both sides trust the transaction. Trading cards make both harder, because condition is the price - the same card in two grades is effectively two different products.",
-          "image": {
-            "src": "/case-studies/cart-traders/screen-1.webp",
-            "alt": "Cart Traders mobile app showing the trading-card marketplace feed",
-            "caption": "Discovery has to make condition and price legible at a glance."
-          }
+          "body": "Collectible marketplaces live or die on whether a listing represents the item accurately and whether both sides trust the transaction. Trading cards make both harder, because condition is the price - the same card in two grades is effectively two different products."
         },
         {
           "title": "Listing flow above everything",
@@ -1069,12 +1024,7 @@
             "Camera-first",
             "Structured condition",
             "Supply-side priority"
-          ],
-          "image": {
-            "src": "/case-studies/cart-traders/screen-3.webp",
-            "alt": "Cart Traders listing flow capturing card details and condition",
-            "caption": "Structured condition capture, so discovery and pricing share one source."
-          }
+          ]
         },
         {
           "title": "Kickoff & scoping",
@@ -1130,12 +1080,7 @@
             "3 team members",
             "Legacy model",
             "App-store submission"
-          ],
-          "image": {
-            "src": "/case-studies/cart-traders/screen-4.webp",
-            "alt": "Cart Traders app running on iOS after store submission",
-            "caption": "Shipped to iOS and Android."
-          }
+          ]
         }
       ],
       "feedback": {
@@ -1179,21 +1124,11 @@
         {
           "title": "The problem",
           "body": "Sports-ticket supply is fast and high-variance: inventory changes value by the hour, every supplier has its own terms, and a mistake is immediately visible to a customer holding a ticket that does not work. Operations teams run on spreadsheets plus relationships until volume makes that untenable.",
-          "quote": "The failure mode is not dramatic - it is small reconciliation errors nobody has time to chase.",
-          "image": {
-            "src": "/case-studies/trustix/screen-1.webp",
-            "alt": "Trustix dashboard overview showing supplier and inventory state",
-            "caption": "Supplier state made observable rather than remembered."
-          }
+          "quote": "The failure mode is not dramatic - it is small reconciliation errors nobody has time to chase."
         },
         {
           "title": "Start from the operator day",
-          "body": "For an internal tool the specification that matters is the sequence a person actually performs between opening the dashboard and closing it. I wrote the user stories from that sequence, which kept the build focused on reducing clicks in high-frequency paths rather than covering every theoretical case.",
-          "image": {
-            "src": "/case-studies/trustix/screen-3.webp",
-            "alt": "Trustix supplier detail view with terms and fulfilment history",
-            "caption": "The high-frequency paths got the design attention."
-          }
+          "body": "For an internal tool the specification that matters is the sequence a person actually performs between opening the dashboard and closing it. I wrote the user stories from that sequence, which kept the build focused on reducing clicks in high-frequency paths rather than covering every theoretical case."
         },
         {
           "title": "Supplier terms as data",
@@ -1201,12 +1136,7 @@
           "chips": [
             "Configurable terms",
             "No special-case logic"
-          ],
-          "image": {
-            "src": "/case-studies/trustix/screen-4.webp",
-            "alt": "Trustix supplier configuration screen showing per-supplier terms",
-            "caption": "Adding a supplier is a form entry, not a release."
-          }
+          ]
         },
         {
           "title": "Kickoff & scoping",
@@ -1261,12 +1191,7 @@
           "chips": [
             "4 team members",
             "Legacy model"
-          ],
-          "image": {
-            "src": "/case-studies/trustix/screen-5.webp",
-            "alt": "Trustix reporting view used for daily operational decisions",
-            "caption": "Reporting for the decisions the team makes daily."
-          }
+          ]
         }
       ],
       "feedback": {
@@ -1309,12 +1234,7 @@
       "sections": [
         {
           "title": "The problem",
-          "body": "Discovery apps in the experiences space tend to optimise for inventory breadth and leave the user to filter. The result is a catalogue, and a catalogue puts the work back on the person who came looking for a recommendation.",
-          "image": {
-            "src": "/case-studies/thrll/screen-1.webp",
-            "alt": "Thrll mobile app onboarding, asking the user to pick an adventure style",
-            "caption": "Matching starts with signal, not with a filter panel."
-          }
+          "body": "Discovery apps in the experiences space tend to optimise for inventory breadth and leave the user to filter. The result is a catalogue, and a catalogue puts the work back on the person who came looking for a recommendation."
         },
         {
           "title": "Budget the onboarding",
@@ -1323,12 +1243,7 @@
           "chips": [
             "Fixed interaction budget",
             "Signal over preference lists"
-          ],
-          "image": {
-            "src": "/case-studies/thrll/screen-3.webp",
-            "alt": "Thrll personalised recommendations feed after onboarding",
-            "caption": "A short onboarding feeding a personalised feed."
-          }
+          ]
         },
         {
           "title": "Kickoff & scoping",
@@ -1384,12 +1299,7 @@
             "3 team members",
             "Legacy model",
             "Store review planned in"
-          ],
-          "image": {
-            "src": "/case-studies/thrll/screen-4.webp",
-            "alt": "Thrll booking flow for an adventure experience",
-            "caption": "Discovery through to booking."
-          }
+          ]
         }
       ],
       "feedback": {
@@ -1423,12 +1333,7 @@
         {
           "title": "Inheriting a live build",
           "body": "The platform had been in build for six months before I joined the company, and I took it over months after that. The codebase encoded decisions I was not part of, and there was no document explaining why things were the way they were.",
-          "quote": "The temptation is to rewrite. That spends the client money re-litigating settled decisions.",
-          "image": {
-            "src": "/case-studies/elite4print/screen-1.webp",
-            "alt": "Elite4print storefront showing print products and templates",
-            "caption": "A working platform I did not scope, stack, or kick off."
-          }
+          "quote": "The temptation is to rewrite. That spends the client money re-litigating settled decisions."
         },
         {
           "title": "Read before changing anything",
@@ -1444,12 +1349,7 @@
           "chips": [
             "Hands-on QA",
             "Defect triage"
-          ],
-          "image": {
-            "src": "/case-studies/elite4print/screen-3.webp",
-            "alt": "Elite4print order and production workflow screen",
-            "caption": "The production workflow I inherited and stabilised."
-          }
+          ]
         },
         {
           "title": "Own the client channel",
@@ -1463,12 +1363,7 @@
           "body": "Requests arriving mid-project as conversation are the fastest route to disputed scope. Every incoming change became a written feature requirement, which made scope decisions explicit rather than remembered.",
           "chips": [
             "Written change control"
-          ],
-          "image": {
-            "src": "/case-studies/elite4print/screen-4.webp",
-            "alt": "Elite4print solution overview after stabilisation",
-            "caption": "Delivery continued through a PM change without a scope reset."
-          }
+          ]
         }
       ],
       "feedback": {
@@ -1507,12 +1402,7 @@
             "Article vs item",
             "Colour × size matrix",
             "Seasonal ranges"
-          ],
-          "image": {
-            "src": "/case-studies/jtbs-erp/screen-1.webp",
-            "alt": "Jintech Business Suite platform overview showing its integrated modules",
-            "caption": "Four systems that have to agree: ordering, inventory, accounting, POS."
-          }
+          ]
         },
         {
           "title": "Stock lives in a network",
@@ -1599,12 +1489,7 @@
       "sections": [
         {
           "title": "Engineering analytics for Japanese teams",
-          "body": "Findy Team+ turns development data into the insights engineering leaders use to run their organisations. I ran offshore delivery on it, working directly with Japanese stakeholders.",
-          "image": {
-            "src": "/case-studies/findy-job/screen-1.webp",
-            "alt": "Findy Team+ platform showing engineering delivery analytics for software teams",
-            "caption": "Development data turned into organisational insight."
-          }
+          "body": "Findy Team+ turns development data into the insights engineering leaders use to run their organisations. I ran offshore delivery on it, working directly with Japanese stakeholders."
         },
         {
           "title": "Requirements & documentation",
@@ -1661,11 +1546,6 @@
           "title": "A multi-stakeholder mandate",
           "body": "A government department, a UN agency, and private-sector partners each arrive with a legitimate and different definition of success: policy outcomes, development targets, and commercial viability. None is wrong, and a delivery team cannot optimise for all three at once.",
           "quote": "The PM work here is making the trade-offs explicit before they surface as late-stage disagreement.",
-          "image": {
-            "src": "/case-studies/futurenation/screen-1.webp",
-            "alt": "Futurenation platform offering online training and job placement for Bangladesh",
-            "caption": "National skills and employment infrastructure, live."
-          },
           "chips": [
             "UNDP",
             "ICT Division",
@@ -1774,11 +1654,6 @@
         {
           "title": "First to market in Japan",
           "body": "Japan had no dedicated Duolingo English Test preparation platform. As Product Manager I defined the feature set from scratch rather than adapting an existing product, which meant owning what the product should be, not just its schedule.",
-          "image": {
-            "src": "/case-studies/det-bridge/screen-1.webp",
-            "alt": "DET Bridge homepage showing Duolingo English Test preparation for Japanese learners",
-            "caption": "Japan first for DET preparation - an official partner platform."
-          },
           "chips": [
             "Product Manager",
             "First to market",
@@ -1827,11 +1702,6 @@
         {
           "title": "Retention is the product",
           "body": "Language-learning products have no shortage of content and a chronic shortage of retention. The hard problem is not teaching Japanese; it is being the thing a learner opens on the day they do not feel like studying.",
-          "image": {
-            "src": "/case-studies/lifeark-nihongo/screen-1.webp",
-            "alt": "LifeArk platform teaching Japanese through games, with JLPT-mapped beginner lessons",
-            "caption": "Learn Japanese through games - lessons mapped to JLPT levels."
-          },
           "quote": "Gamification is not decoration here. It is the retention mechanism."
         },
         {
@@ -1904,12 +1774,7 @@
         {
           "title": "Product, not project",
           "body": "I took this over as Product Manager rather than Project Manager, which meant owning what the product should be, not only whether it shipped on time. The distinction is whether you are accountable for the plan or for the product.",
-          "quote": "Here it was the product - which meant saying no to requests that would have shipped fine but pulled it sideways.",
-          "image": {
-            "src": "/case-studies/ktalk/screen-1.webp",
-            "alt": "Ktalk Korean language-learning platform interface",
-            "caption": "Taken over mid-flight, with direction owned from that point."
-          }
+          "quote": "Here it was the product - which meant saying no to requests that would have shipped fine but pulled it sideways."
         },
         {
           "title": "Inherited decisions vs inherited assumptions",
@@ -2162,12 +2027,7 @@
         {
           "title": "The real question",
           "body": "A brand manager does not ask \"what is the sentiment\" — they ask \"what do I do today\". So the headline panel ranks issues by negative volume weighted by the attention each post draws, with a plain-language action per issue. In this data the answer was loud: failed transactions, 215 posts, 100% negative after the audit, and the most engaged theme on the feed.",
-          "quote": "Sentiment is a number. \"Fix this first\" is a product.",
-          "image": {
-            "src": "/case-studies/takapay/screen-1.webp",
-            "alt": "TakaPay Pulse dashboard with the what-needs-attention panel and sentiment charts",
-            "caption": "The dashboard leads with the decision, not the chart."
-          }
+          "quote": "Sentiment is a number. \"Fix this first\" is a product."
         },
         {
           "title": "Nothing renders unaudited",
@@ -2194,12 +2054,7 @@
             "Tool calls",
             "No estimated numbers",
             "Filters carried into the UI"
-          ],
-          "image": {
-            "src": "/case-studies/takapay/screen-3.webp",
-            "alt": "TakaPay Pulse analysis views including topic sentiment split and engagement breakdown",
-            "caption": "Every figure on screen traces back to a record in the posts table."
-          }
+          ]
         },
         {
           "title": "Where I overrode the AI",

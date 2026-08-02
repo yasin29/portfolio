@@ -70,7 +70,6 @@ const DRAWER_SECTION_FIELDS: FieldDef[] = [
   ta('body', 'Body', 'A short paragraph — what you did and why'),
   t('quote', 'Pull quote', 'Optional. One line worth highlighting'),
   list('chips', 'Tags', 'One per line'),
-  { key: 'image', label: 'Section image', type: 'group', fields: IMAGE_FIELDS },
 ];
 
 export const SECTIONS: SectionDef[] = [

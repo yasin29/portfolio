@@ -28,7 +28,6 @@ export type DrawerSection = {
   /** A single line worth pulling out — the insight, not a restatement. */
   quote?: string;
   chips?: string[];
-  image?: { src: string; alt: string; caption?: string };
 };
 
 export type Project = {

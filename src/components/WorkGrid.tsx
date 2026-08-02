@@ -109,21 +109,6 @@ function Accordion({ project }: { project: Project }) {
                   </div>
                 )}
 
-                {s.image && (
-                  <figure className="wk-acc-figure">
-                    <div className="wk-acc-frame">
-                      <Image
-                        src={`${basePath}${s.image.src}`}
-                        alt={s.image.alt}
-                        fill
-                        loading="lazy"
-                        sizes="40rem"
-                        className="object-contain"
-                      />
-                    </div>
-                    {s.image.caption && <figcaption>{s.image.caption}</figcaption>}
-                  </figure>
-                )}
               </div>
             )}
           </div>
