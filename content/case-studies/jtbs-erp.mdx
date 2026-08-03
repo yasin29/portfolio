@@ -35,11 +35,23 @@ Generic ERP breaks on apparel for a reason software people routinely underestima
 
 Get that hierarchy wrong and every number downstream is wrong. Stock is wrong because you counted articles instead of items. Purchase orders are wrong because a supplier ships an assortment, not a quantity. Reports are wrong in a way nobody notices until a season closes.
 
+<Figure
+  src="/case-studies/jtbs-erp/article-items.webp"
+  alt="JTBS article entry: one polo shirt article expanded into item rows by colour and size, each with its own item code and barcode flag"
+  caption="One article, thirty-plus items. Colour x size generates the rows; nobody types them by hand, and every number downstream reads at item level."
+/>
+
 Three constraints stack on top of it:
 
 - **Inventory lives in a network, not a building.** The clients ran a dispatching unit, a receiving store, a main warehouse, a retail warehouse and a set of regional godowns. The same item exists in several places at once, so "stock" means nothing without asking *where*.
 - **One item carries several prices.** Cost, retail, wholesale rate, a maximum permitted selling discount, and a per-customer discount that varies *by supplier*. Pricing is a matrix, not a field.
 - **Most B2B sales are credit sales.** Customers carry a credit limit, credit days and a running balance — so inventory cannot be separated from the ledger.
+
+<Figure
+  src="/case-studies/jtbs-erp/supplier-terms.webp"
+  alt="JTBS supplier entry showing commission or net-rate financial terms and a per-article table of purchasing and selling terms"
+  caption="Pricing is a matrix, not a field: each supplier is commission or net-rate, and every article carries its own cost, discount, retail and wholesale terms. Contact details blurred."
+/>
 
 ## My role
 
@@ -76,6 +88,27 @@ The honest summary: low-code moved the constraint. It did not remove it.
 - **Financial accounting** — journal vouchers, payable vouchers, bank payments, official and bank receipts, and customer adjustment notes, over a chart of accounts with general ledger, trial balance and customer statements.
 - **Windows POS** — sale, stock in, stock return, inter-store transfer, expenses, employees, cashout, and an end-of-day reconciliation covering opening cash, cash and card sales, settled and unsettled amounts, refunds, discount, sales tax, net sales, closing cash, excess and shortage, and carry forward. Integrated with **FBR**, Pakistan's tax authority.
 - **Reporting** — warehouse, sales and stock report families, all editable by the client as a direct consequence of the platform choice.
+
+<Figure
+  src="/case-studies/jtbs-erp/warehouse-transfer.webp"
+  alt="JTBS inter-warehouse transfer screen with the godown network open in a dropdown and childrenswear stock listed by colour and age band"
+  caption="Stock lives in a network, not a building. Note the sizes: childrenswear is age bands, not S/M/L."
+/>
+
+<FigureRow>
+
+<Figure compact
+  src="/case-studies/jtbs-erp/accounting-reports.webp"
+  alt="JTBS accounting reports menu listing chart of accounts, general ledger, trial balance, customer balances and seven journal types"
+  caption="Double-entry accounting on the same data inventory writes."
+/>
+
+<Figure compact
+  src="/case-studies/jtbs-erp/pos-employees.webp"
+  alt="JTBS Windows POS employee management screen alongside the till operations rail of sale, stock in, transfers, cashout and end of day"
+  caption="The Windows POS runs the counter. Staff names and ID numbers blurred."
+/>
+</FigureRow>
 
 ## Outcome
 

@@ -1298,6 +1298,8 @@ Jintech Business Suite is an apparel-industry ERP: purchase orders, inventory ac
 
 I ran the customisation as Project Manager for apparel-manufacturing clients, across a Bangladesh–Japan–Pakistan delivery chain. This case study is less about the feature list than about two decisions worth arguing over: how you model apparel inventory, and what you actually buy when you build an ERP on low-code.
 
+
+
 ## The problem
 
 Generic ERP breaks on apparel for a reason software people routinely underestimate: **a product is not a thing you can count.**
@@ -1306,11 +1308,15 @@ Generic ERP breaks on apparel for a reason software people routinely underestima
 
 Get that hierarchy wrong and every number downstream is wrong. Stock is wrong because you counted articles instead of items. Purchase orders are wrong because a supplier ships an assortment, not a quantity. Reports are wrong in a way nobody notices until a season closes.
 
+
+
 Three constraints stack on top of it:
 
 - **Inventory lives in a network, not a building.** The clients ran a dispatching unit, a receiving store, a main warehouse, a retail warehouse and a set of regional godowns. The same item exists in several places at once, so "stock" means nothing without asking *where*.
 - **One item carries several prices.** Cost, retail, wholesale rate, a maximum permitted selling discount, and a per-customer discount that varies *by supplier*. Pricing is a matrix, not a field.
 - **Most B2B sales are credit sales.** Customers carry a credit limit, credit days and a running balance — so inventory cannot be separated from the ledger.
+
+
 
 ## My role
 
@@ -1347,6 +1353,13 @@ The honest summary: low-code moved the constraint. It did not remove it.
 - **Financial accounting** — journal vouchers, payable vouchers, bank payments, official and bank receipts, and customer adjustment notes, over a chart of accounts with general ledger, trial balance and customer statements.
 - **Windows POS** — sale, stock in, stock return, inter-store transfer, expenses, employees, cashout, and an end-of-day reconciliation covering opening cash, cash and card sales, settled and unsettled amounts, refunds, discount, sales tax, net sales, closing cash, excess and shortage, and carry forward. Integrated with **FBR**, Pakistan's tax authority.
 - **Reporting** — warehouse, sales and stock report families, all editable by the client as a direct consequence of the platform choice.
+
+
+
+
+
+
+</FigureRow>
 
 ## Outcome
 
