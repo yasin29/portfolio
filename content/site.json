@@ -381,7 +381,7 @@
         },
         {
           "label": "Findy Team+",
-          "href": "/case-studies/findy-job"
+          "href": "/case-studies/findy-team"
         }
       ],
       "stats": [
@@ -1480,11 +1480,11 @@
         "Ran UAT and release management for the offshore engineering team."
       ],
       "live": "https://en.findy-team.io/",
-      "caseStudy": "findy-job",
-      "preview": "/case-studies/findy-job/screen-1.webp",
+      "caseStudy": "findy-team",
+      "preview": "/case-studies/findy-team/project-insights.webp",
       "livePreview": {
-        "src": "/case-studies/findy-job/screen-1.webp",
-        "alt": "Findy Team+ engineering analytics platform dashboard"
+        "src": "/case-studies/findy-team/project-insights.webp",
+        "alt": "Findy Team+ project insights summary dashboard"
       },
       "sections": [
         {

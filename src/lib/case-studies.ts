@@ -61,10 +61,10 @@ const DISPLAY: Record<string, { solution: string; category: string; metrics: str
     category: 'EdTech · AI',
     metrics: 'Japan-market first for DET prep · 1 of 2 SaaS launches',
   },
-  'findy-job': {
-    solution: 'Cross-Border Talent-Placement Platform',
-    category: 'HR-Tech · Marketplace',
-    metrics: 'Public–private partnership · enterprise & institutional partners',
+  'findy-team': {
+    solution: 'Engineering-Intelligence Platform',
+    category: 'DevEx · Data Product',
+    metrics: 'DORA & SPACE · 20+ tool integrations · offshore delivery for Japan',
   },
   trustix: {
     solution: 'Sports-Ticket Supplier Management Dashboard',
@@ -171,7 +171,7 @@ const ORDER = [
   'lifeark-nihongo',
   'det-bridge',
   'ktalk',
-  'findy-job',
+  'findy-team',
   'futurenation',
   'hrm-ats',
   'estate-crm',

@@ -1012,55 +1012,90 @@ The design problem is therefore about ordering, not about visuals: how do you ma
 
 **Delivery:** Written brief · page map · information hierarchy design
 
-### Case study: Findy Job & Futurenation — Bangladesh ↔ Japan Talent Bridge
-Client: Kawaii Advanced Technology — partners: Persol Group, NTT Docomo, UNDP, eGrowth Inc., ICT Division (Bangladesh) · Role: Project Manager · Period: 2024 – 2025
+### Case study: Findy Team+ — Shipping an Engineering-Intelligence Platform from Offshore
+Client: Kawaii Advanced Technology — offshore delivery for Findy Inc. (Japan) · Role: Project Manager · Period: 2024 – 2025
+Live: https://en.findy-team.io/
 
 ## At a glance
 
-Job-placement platform connecting Bangladeshi software talent with Japanese employers — built in partnership with **Persol Group**, **NTT Docomo**, **UNDP**, **eGrowth Inc.**, and Bangladesh's **ICT Division**. PM'd delivery across stakeholders on three continents and two governments.
+Findy Team+ is a Japanese engineering-intelligence platform: it reads an organisation's GitHub, Jira, calendar and AI-coding-tool activity and turns it into DORA metrics, cycle-time breakdowns, review analysis, meeting load, investment mix and SPACE-based team surveys — so engineering leaders can see where delivery time actually goes.
+
+The product belongs to **Findy Inc.** I ran the offshore delivery side as Project Manager at Kawaii: requirements, sprint cadence, UAT and release, working to Japanese stakeholders from Dhaka. This case study is about what that kind of product demands of delivery — because a tool that measures engineering teams fails differently from a tool that serves them.
 
 ## The problem
 
+Engineering leaders are asked a question they usually cannot answer with evidence: *where is the engineering effort going, and is it working?*
 
+The instinct is to reach for a number — commits, story points, velocity. Every one of those is easy to compute and easy to game, and a leader who acts on them makes worse decisions than one who acts on instinct. The useful questions are harder to instrument: how long does a change take to reach production, where does it wait, how much of the quarter went to features versus paying down debt, and are the people doing the work still able to do it next quarter.
 
-Japan has a structural shortage of software engineers; Bangladesh has the inverse — strong technical talent and weak access to international roles. Multiple intermediaries existed but none combined verified skill assessment, Japanese-language readiness signal, and the trust signal that comes from government and enterprise backers. Findy Job aimed to be that combined platform.
+That creates three problems that shaped the delivery, none of which are about charts.
+
+**A measurement product is a trust product.** If a dashboard reports a lead time the customer knows is wrong, they do not file a bug — they stop opening the dashboard. Trust in a metrics product is lost once and does not come back, because the customer has no way to tell a fixed number from a plausible one. That makes correctness a release gate rather than a quality target.
+
+**Every integration has its own dialect.** The platform reads GitHub, GitLab, Bitbucket, Azure DevOps, Backlog, Jira, Redmine, Notion, Asana, Google Calendar, Slack, and a growing set of AI coding tools. "Merged", "deployed", "review requested" and "done" mean subtly different things in each. The metric is the easy part; agreeing what an event *is* across a dozen sources is the work.
+
+**Metrics about people can be turned into a weapon.** The same cycle-time data that helps a manager remove a bottleneck can be used to rank individuals. That is a product decision before it is a feature, and it has to be settled in the specification rather than discovered after a customer misuses it.
 
 ## My role
 
-- **PM** across an unusually broad stakeholder map: Japanese enterprise HR (Persol, Docomo), a UN agency (UNDP), a Bangladeshi government division (ICT), and the engineering team in Dhaka.
-- **Requirements arbitrator** — when stakeholders disagreed (and they did), I had to find the version that shipped.
-- **Compliance liaison** — labour, data-residency, and cross-border verification rules.
+Project Manager for the offshore delivery team. Not the product owner — the roadmap and the metric definitions were Findy's. What I owned:
+
+- **Requirements and documentation** — translating Japanese-language product specifications into buildable tickets, and keeping them current in Jira and Confluence as definitions moved.
+- **Delivery cadence** — sprint planning, daily standups, and weekly meetings with Japanese stakeholders.
+- **Acceptance and release** — UAT against the client's definition of correct, then release management.
+- **Ambiguity triage** — deciding which unclear requirements were safe to interpret and which had to go back, when the round trip cost a day and a translation.
 
 ## Approach
 
-- Decomposed the platform into **four user surfaces** — candidate, employer, partner-agency, admin — and refused to let any surface block another. Each could ship and improve on its own cadence.
-- Stood up a verification pipeline: technical skill (algorithmic tests) + Japanese-language signal (JLPT level or LifeArk Achieve Japan track completion) + reference check.
-- Mapped the placement funnel from sourcing to onboarded-in-Japan and put **measurable conversion goals** at each stage — so the platform's value was defensible against the cheaper "just post a job" alternatives.
-- Coordinated weekly progress reports formatted for non-technical stakeholders (Persol HR, UNDP programme officers) separately from engineering standups.
+**Treat a wrong number as a release blocker, not a bug.** On most products, a display defect is a P2 you fix next sprint. On this one, a metric that disagrees with the customer's own source system is the whole product failing quietly. Acceptance meant reconciling values against GitHub and Jira directly rather than confirming a chart rendered — which is slower, and is the only version of UAT that means anything on a data product.
+
+**Push the definition question upstream, always.** The recurring failure mode on analytics work is an engineer making a reasonable local decision about what counts. Does a reverted deploy count toward deployment frequency? Does a PR opened and closed without merge enter cycle time? Do weekends come out of lead time? Each of those has a defensible answer and a customer who assumed the other one. I treated every such question as a requirement gap for the client to close, not an implementation detail — and wrote the answers down where the next engineer would find them.
+
+**Specify for a reader who was not in the conversation.** Requirements came from Japanese stakeholders to a Dhaka team, and the person approving a spec was often not the person who had discussed it. A document that works as a reminder of a meeting is useless to someone who was never in the meeting. Writing specs that stand alone was not documentation hygiene here — it was the only way the loop closed inside a sprint instead of across three.
+
+**Keep the aggregation defaults pointed at teams, not people.** Where the data could be read individually, the safe default is the team view and the cohort comparison — Copilot users against non-users, this quarter against last — rather than a leaderboard of names. This is the kind of decision that costs nothing to make early and is very expensive to reverse after a customer has built a performance review on it.
+
+**Sequence around the integrations, not the screens.** A dashboard is worthless until the connector behind it is trustworthy, so the connector's edge cases set the schedule. Planning by screen would have produced a demo-ready product that fell over on the second customer's GitHub configuration.
 
 ## What shipped
 
-- Candidate registration with verified skill + language profile
-- Employer-side job posting + candidate review queue
-- Partner-agency portal (separate flows for UNDP / ICT Division programmes)
-- Admin platform for moderation and placement tracking
-- Integration with Achieve Japan track from [LifeArk](./lifeark-nihongo.md) as language-readiness signal
+Delivery contributions across the platform's four areas:
+
+- **Delivery performance** — DORA metrics (deployment frequency, lead time for changes, change failure rate, time to restore), cycle-time analysis broken down by stage, and review analysis covering review lead time, workload distribution and stale-PR risk.
+
+</FigureRow>
+
+- **AI adoption measurement** — AI impact reporting that compares AI-assisted against non-AI-assisted work, and GitHub Copilot usage analysis by team, covering licence versus active users, suggestion volume and acceptance rate. This area grew fastest, because the market it measures kept moving.
+
+- **Engineering investment** — project investment analysis splitting effort across new features, improvements, developer productivity and quality assurance, and outcome analysis tying initiatives to results.
+
+</FigureRow>
+
+- **Team health** — SPACE-framework team surveys with response-rate tracking, and meeting analytics measuring how much of the week is spent in meetings rather than building.
+
+</FigureRow>
 
 ## Outcome
 
-- Platform delivered with all stakeholder partners onboarded.
-- Established the operational template Kawaii uses for cross-border HR-tech.
-- Indirect outcome: the language-readiness integration drove cross-product usage between LifeArk and Findy Job — exactly the SaaS cross-sell loop we designed for.
+- Delivered against the client's specifications and released, with the Japanese product team and the Dhaka engineering team operating as one delivery cycle rather than a handoff.
+- The metric-definition questions were closed in writing instead of being absorbed as assumptions, which is what stopped "the number looks wrong" from becoming a recurring conversation after release.
+- The platform is live and commercially available at [en.findy-team.io](https://en.findy-team.io/).
 
 ## What I'd do differently
 
-Push earlier for a **single, written stakeholder decision log**. Six-party decision-making creates ambiguity months later; we ran one for the back half of the project and it eliminated almost all "wait, who decided this?" loops. Day-one would have been better.
+**Build the reconciliation harness on day one.** Correctness was enforced by checking values against the source systems by hand during UAT. That worked and it did not scale — the same twenty checks were repeated every release, by a person, in the slowest part of the cycle. A scripted comparison against a known fixture would have paid for itself within two sprints and turned the release gate into something that ran unattended.
+
+**Write the definitions as a shared glossary, not as ticket comments.** The answers to "what counts as a deployment" existed, correctly, scattered across tickets and meeting notes. A single living definitions document — one page, owned by the client, referenced by every ticket — would have cut the number of questions that needed a translated round trip.
+
+**Ask for the misuse cases alongside the use cases.** The product decisions that protect against metrics being used punitively were made sensibly, but reactively. On any product that measures people, "how could a bad manager use this screen" belongs in the specification next to the intended use, and it is a cheap question to ask before the screen exists.
 
 ## Stack & tools
 
-**Build:** Next.js · Django · PostgreSQL · third-party assessment APIs
+**Product surface:** engineering analytics over GitHub, GitLab, Bitbucket, Azure DevOps, Backlog, Jira, Redmine, Notion, Asana, Google Calendar and Slack, plus AI-coding-tool telemetry
 
-**PM tooling:** Notion · Jira · MS Project · Confluence (stakeholder-shared) · Slack
+**Frameworks:** DORA delivery metrics · SPACE developer-experience framework
+
+**Delivery:** Jira · Confluence · sprint planning and daily standups · weekly Japanese-stakeholder reviews · UAT against source-system reconciliation
 
 ### Case study: Futurenation — National Skills & Employment Platform
 Client: Kawaii Advanced Technology — partners: UNDP, ICT Division (Bangladesh), private sector · Role: Project Manager · Period: 2024 – 2025

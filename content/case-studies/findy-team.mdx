@@ -1,0 +1,157 @@
+---
+slug: findy-team
+title: "Findy Team+ — Shipping an Engineering-Intelligence Platform from Offshore"
+client: "Kawaii Advanced Technology — offshore delivery for Findy Inc. (Japan)"
+role: Project Manager
+period: "2024 – 2025"
+status: Delivered
+stack: [Engineering analytics, GitHub & Jira integrations, Offshore delivery]
+chips:
+  - Developer productivity
+  - DORA & SPACE
+  - Data product
+  - Cross-border (BD–JP)
+link: https://en.findy-team.io/
+hero: /case-studies/findy-team/project-insights.webp
+---
+
+## At a glance
+
+Findy Team+ is a Japanese engineering-intelligence platform: it reads an organisation's GitHub, Jira, calendar and AI-coding-tool activity and turns it into DORA metrics, cycle-time breakdowns, review analysis, meeting load, investment mix and SPACE-based team surveys — so engineering leaders can see where delivery time actually goes.
+
+The product belongs to **Findy Inc.** I ran the offshore delivery side as Project Manager at Kawaii: requirements, sprint cadence, UAT and release, working to Japanese stakeholders from Dhaka. This case study is about what that kind of product demands of delivery — because a tool that measures engineering teams fails differently from a tool that serves them.
+
+<Figure
+  src="/case-studies/findy-team/project-insights.webp"
+  alt="Findy Team+ project insights summary showing registered projects by status with trend charts"
+  caption="The product's job in one screen: engineering activity, aggregated into something an executive can act on. Figures are Findy's demo data."
+/>
+
+## The problem
+
+Engineering leaders are asked a question they usually cannot answer with evidence: *where is the engineering effort going, and is it working?*
+
+The instinct is to reach for a number — commits, story points, velocity. Every one of those is easy to compute and easy to game, and a leader who acts on them makes worse decisions than one who acts on instinct. The useful questions are harder to instrument: how long does a change take to reach production, where does it wait, how much of the quarter went to features versus paying down debt, and are the people doing the work still able to do it next quarter.
+
+That creates three problems that shaped the delivery, none of which are about charts.
+
+**A measurement product is a trust product.** If a dashboard reports a lead time the customer knows is wrong, they do not file a bug — they stop opening the dashboard. Trust in a metrics product is lost once and does not come back, because the customer has no way to tell a fixed number from a plausible one. That makes correctness a release gate rather than a quality target.
+
+**Every integration has its own dialect.** The platform reads GitHub, GitLab, Bitbucket, Azure DevOps, Backlog, Jira, Redmine, Notion, Asana, Google Calendar, Slack, and a growing set of AI coding tools. "Merged", "deployed", "review requested" and "done" mean subtly different things in each. The metric is the easy part; agreeing what an event *is* across a dozen sources is the work.
+
+**Metrics about people can be turned into a weapon.** The same cycle-time data that helps a manager remove a bottleneck can be used to rank individuals. That is a product decision before it is a feature, and it has to be settled in the specification rather than discovered after a customer misuses it.
+
+## My role
+
+Project Manager for the offshore delivery team. Not the product owner — the roadmap and the metric definitions were Findy's. What I owned:
+
+- **Requirements and documentation** — translating Japanese-language product specifications into buildable tickets, and keeping them current in Jira and Confluence as definitions moved.
+- **Delivery cadence** — sprint planning, daily standups, and weekly meetings with Japanese stakeholders.
+- **Acceptance and release** — UAT against the client's definition of correct, then release management.
+- **Ambiguity triage** — deciding which unclear requirements were safe to interpret and which had to go back, when the round trip cost a day and a translation.
+
+## Approach
+
+**Treat a wrong number as a release blocker, not a bug.** On most products, a display defect is a P2 you fix next sprint. On this one, a metric that disagrees with the customer's own source system is the whole product failing quietly. Acceptance meant reconciling values against GitHub and Jira directly rather than confirming a chart rendered — which is slower, and is the only version of UAT that means anything on a data product.
+
+**Push the definition question upstream, always.** The recurring failure mode on analytics work is an engineer making a reasonable local decision about what counts. Does a reverted deploy count toward deployment frequency? Does a PR opened and closed without merge enter cycle time? Do weekends come out of lead time? Each of those has a defensible answer and a customer who assumed the other one. I treated every such question as a requirement gap for the client to close, not an implementation detail — and wrote the answers down where the next engineer would find them.
+
+<Figure
+  src="/case-studies/findy-team/cycle-time.webp"
+  alt="Findy Team+ cycle time breakdown showing average hours from commit to open, open to review, review to approve and approve to merge"
+  caption="Cycle time split by stage. Every boundary here is a definition someone had to agree before it could be built. Findy's demo data."
+/>
+
+**Specify for a reader who was not in the conversation.** Requirements came from Japanese stakeholders to a Dhaka team, and the person approving a spec was often not the person who had discussed it. A document that works as a reminder of a meeting is useless to someone who was never in the meeting. Writing specs that stand alone was not documentation hygiene here — it was the only way the loop closed inside a sprint instead of across three.
+
+**Keep the aggregation defaults pointed at teams, not people.** Where the data could be read individually, the safe default is the team view and the cohort comparison — Copilot users against non-users, this quarter against last — rather than a leaderboard of names. This is the kind of decision that costs nothing to make early and is very expensive to reverse after a customer has built a performance review on it.
+
+**Sequence around the integrations, not the screens.** A dashboard is worthless until the connector behind it is trustworthy, so the connector's edge cases set the schedule. Planning by screen would have produced a demo-ready product that fell over on the second customer's GitHub configuration.
+
+## What shipped
+
+Delivery contributions across the platform's four areas:
+
+- **Delivery performance** — DORA metrics (deployment frequency, lead time for changes, change failure rate, time to restore), cycle-time analysis broken down by stage, and review analysis covering review lead time, workload distribution and stale-PR risk.
+
+<FigureRow>
+
+<Figure compact
+  src="/case-studies/findy-team/dora-metrics.webp"
+  alt="Findy Team+ DORA metrics panel showing deployment frequency, lead time for changes, change failure rate and mean time to restore"
+  caption="The four DORA measures, with movement against the prior period."
+/>
+
+<Figure compact
+  src="/case-studies/findy-team/review-summary.webp"
+  alt="Findy Team+ review summary showing average changed lines and review lead times from open to request to approve"
+  caption="Review analysis: where a pull request waits, and on whom."
+/>
+
+</FigureRow>
+
+- **AI adoption measurement** — AI impact reporting that compares AI-assisted against non-AI-assisted work, and GitHub Copilot usage analysis by team, covering licence versus active users, suggestion volume and acceptance rate. This area grew fastest, because the market it measures kept moving.
+
+<Figure
+  src="/case-studies/findy-team/copilot-usage.webp"
+  alt="Findy Team+ GitHub Copilot usage table listing teams with licensed users, active users, suggestions, accepted suggestions and acceptance rate"
+  caption="Copilot adoption by team — licences held against licences actually used, and how much of what it suggests survives. Findy's demo data."
+/>
+
+- **Engineering investment** — project investment analysis splitting effort across new features, improvements, developer productivity and quality assurance, and outcome analysis tying initiatives to results.
+
+<FigureRow>
+
+<Figure compact
+  src="/case-studies/findy-team/investment-summary.webp"
+  alt="Findy Team+ project investment summary showing share of work across new features, improvements, productivity and quality assurance"
+  caption="Where the quarter went, by category rather than by ticket."
+/>
+
+<Figure compact
+  src="/case-studies/findy-team/outcome-summary.webp"
+  alt="Findy Team+ project outcome summary showing outcome categories including applications, job views and new user registrations"
+  caption="And what came out the other end."
+/>
+
+</FigureRow>
+
+- **Team health** — SPACE-framework team surveys with response-rate tracking, and meeting analytics measuring how much of the week is spent in meetings rather than building.
+
+<FigureRow>
+
+<Figure compact
+  src="/case-studies/findy-team/meeting-analytics.webp"
+  alt="Findy Team+ meeting analytics showing average daily meeting hours, meeting count and average duration per meeting"
+  caption="Meeting load as a first-class metric, not an anecdote."
+/>
+
+<Figure compact
+  src="/case-studies/findy-team/team-survey.webp"
+  alt="Findy Team+ team survey summary showing an overall SPACE score and survey response rate trending over six periods"
+  caption="SPACE surveys: the part of developer experience no log file records."
+/>
+
+</FigureRow>
+
+## Outcome
+
+- Delivered against the client's specifications and released, with the Japanese product team and the Dhaka engineering team operating as one delivery cycle rather than a handoff.
+- The metric-definition questions were closed in writing instead of being absorbed as assumptions, which is what stopped "the number looks wrong" from becoming a recurring conversation after release.
+- The platform is live and commercially available at [en.findy-team.io](https://en.findy-team.io/).
+
+## What I'd do differently
+
+**Build the reconciliation harness on day one.** Correctness was enforced by checking values against the source systems by hand during UAT. That worked and it did not scale — the same twenty checks were repeated every release, by a person, in the slowest part of the cycle. A scripted comparison against a known fixture would have paid for itself within two sprints and turned the release gate into something that ran unattended.
+
+**Write the definitions as a shared glossary, not as ticket comments.** The answers to "what counts as a deployment" existed, correctly, scattered across tickets and meeting notes. A single living definitions document — one page, owned by the client, referenced by every ticket — would have cut the number of questions that needed a translated round trip.
+
+**Ask for the misuse cases alongside the use cases.** The product decisions that protect against metrics being used punitively were made sensibly, but reactively. On any product that measures people, "how could a bad manager use this screen" belongs in the specification next to the intended use, and it is a cheap question to ask before the screen exists.
+
+## Stack & tools
+
+**Product surface:** engineering analytics over GitHub, GitLab, Bitbucket, Azure DevOps, Backlog, Jira, Redmine, Notion, Asana, Google Calendar and Slack, plus AI-coding-tool telemetry
+
+**Frameworks:** DORA delivery metrics · SPACE developer-experience framework
+
+**Delivery:** Jira · Confluence · sprint planning and daily standups · weekly Japanese-stakeholder reviews · UAT against source-system reconciliation

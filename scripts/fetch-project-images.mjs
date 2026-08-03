@@ -37,7 +37,7 @@ const SCRAPE = {
 
 /** Live products we screenshot directly. */
 const SHOOT = {
-  'findy-job': 'https://en.findy-team.io/',
+  'findy-team': 'https://en.findy-team.io/',
   futurenation: 'https://platform.futurenation.gov.bd/',
   'det-bridge': 'https://det-bridge.com/',
   'lifeark-nihongo': 'https://www.lifeark-nihongo.com/',
