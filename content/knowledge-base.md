@@ -278,10 +278,14 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - Category: Product he owned as Product Manager
 - Organisation: Kawaii Advanced Technology · Role: Product Manager · Period: 2024 – 2025
 - Live at: https://www.lifeark-nihongo.com/
-- Figures: +25% MAU after relaunch
+- Figures: +25% MAU after relaunch · N5-N1 JLPT coverage
 - Summary: A gamified Japanese-language LMS mapped to JLPT levels — +25% monthly active users after relaunch.
-- Retention is the product: Language-learning products have no shortage of content and a chronic shortage of retention. The hard problem is not teaching Japanese; it is being the thing a learner opens on the day they do not feel like studying. Key point: "Gamification is not decoration here. It is the retention mechanism."
-- The relaunch: As Product Manager I drove the gamification direction through a relaunch that lifted monthly active users by 25%, and owned the JLPT-level content mapping alongside the release cycle.
+- Retention is the product: Language products do not fail on content — every one of them can teach hiragana. They fail because the learner does not come back on day nine. LifeArk was aimed at the middle of a bimodal market: structured enough for someone with a real JLPT exam date, habit-forming enough to compete with a free app for the same evening. Key point: "If you cannot define what "learned" means, there is nothing to come back to."
+- Mastery as a repeatable score: The decision the rest of the product hangs from. A learning-path milestone reads "score full marks in the Hiragana Characters game — all characters, five times", not "read the lesson". Five clean runs is a claim about retention that one pass cannot make, and it turns a vague sense of progress into a condition the system can check.
+- Practice separated from progression: The Training Gym is free play sitting outside the curriculum. Progression has to be ordered and gated to mean anything; practice has to be unlimited and consequence-free to actually get done. Fuse them and every repetition either advances a bar it should not, or feels like wasted time.
+- The account wall sits at the JLPT line: All six beginner lessons — both kana scripts, their vocabulary, numbers and counting — run without registering. An account is required from N5 upward, where a learner stops sampling and starts committing. The ask arrives after the product has been useful, not before.
+- Habit mechanics, ambiently: A progress strip on every screen shows attempts today; the profile carries days engaged, games played, and current against longest streak. Streaks read as a cheap trick until you notice what they do: give a learner a reason to open the app on the evening they do not feel like it, which is the evening that decides the habit.
+- Outcome: The relaunch lifted monthly active users by 25%. One of two SaaS products I launched at Kawaii. Progress became a defensible claim rather than a completion bar — which is what the paid tier is actually selling to someone with an exam date.
 
 ### Achieve Japan — SSW & IT-Engineer Training LMS
 - Category: Product he owned as Product Manager
@@ -1469,56 +1473,78 @@ Interrogate the retention model earlier. I focused first on stabilising directio
 
 **Delivery:** Written requirements · release cycle management · stakeholder communication · Agile/Scrum
 
-### Case study: LifeArk & Achieve Japan — Gamified JLPT-Mapped LMS
-Client: Kawaii Advanced Technology — for LifeArk Corp (株式会社LifeArk) · Role: Project Manager · Period: 2024 – 2025
+### Case study: LifeArk Nihongo — Gamified JLPT-Mapped Language LMS
+Client: Kawaii Advanced Technology — for LifeArk Corp (株式会社LifeArk) · Role: Product Manager · Period: 2024 – 2025
+Live: https://www.lifeark-nihongo.com/
 
 ## At a glance
 
-A gamified Japanese-language learning platform — beginner to **JLPT N1** — with an "Achieve Japan" companion track for learners aiming at work-in-Japan placement. PM'd the relaunch that drove **25% MAU growth**.
+A gamified Japanese-language platform that teaches through games rather than lessons-then-quizzes — from the two kana scripts up through **JLPT N5 to N1**, with a guided learning path, a separate practice mode, and streaks and badges on top.
+
+I was Product Manager for the relaunch, which lifted **monthly active users by 25%**. The interesting part is not the games. It is that the product defines "learned" as a score you can repeat, not a page you have seen.
+
+</FigureRow>
 
 ## The problem
 
+Language-learning products do not fail on content. Every one of them can teach hiragana, and the syllabary has not changed in a thousand years. They fail because the learner does not come back on day nine.
 
+The market is also bimodal. Free apps own casual learners; expensive in-person schools own serious ones. LifeArk was aiming at the middle — structured and credible enough for someone genuinely sitting the JLPT, cheap and habit-forming enough to compete with a free app for the same evening.
 
-The Japanese-language learning market is crowded but bimodal: free apps (Duolingo) for casual learners, expensive in-person schools for serious ones. LifeArk wanted to capture the middle — affordable, structured, JLPT-mapped, with enough game mechanics to drive daily return. The pre-relaunch product had content but weak retention.
+That target sets up the real design problem, which is a measurement problem. **If you cannot define what "learned" means, you cannot build a progress system, and without a progress system there is nothing to come back to.** Marking a lesson complete when someone scrolls to the bottom produces a progress bar that fills while the learner forgets everything — a number that flatters and does not predict.
+
+The pre-relaunch product had the content. What it did not have was a reason to return.
 
 ## My role
 
-- **PM** for the relaunch: PRD revision, sprint plan, retention experiments.
-- **CRO lead** — owned onboarding A/B tests and the activation funnel.
-- **Multilingual coordination** — UI in English, Bangla, Mongolian; content in Japanese.
+Product Manager for the relaunch, end to end:
+
+- **Product direction** — the gamification model and what counted as progress.
+- **Curriculum mapping** — every lesson tied to a JLPT level so the platform stood up to a learner with an exam date.
+- **Activation and retention** — onboarding structure and the funnel from first visit to habitual use.
+- **Multilingual coordination** — interface localisation, with the taught language kept separate from the language of instruction.
 
 ## Approach
 
-- Audited the existing funnel and found the activation drop was at **lesson 3** — past initial novelty, before habit. Restructured onboarding to deliver an early "win" at lesson 2.
-- Introduced a **Training Gym** mode for repetition practice — separated practice from progression so learners could grind without "spending" curriculum.
-- Personalised lesson paths via the onboarding questionnaire so JLPT-N5 absolute beginners and N3 returners got different first lessons.
-- Mapped every lesson to JLPT can-do statements — gave the platform credibility for serious learners.
+**Define mastery as a repeatable score, not a completed page.** This is the decision the rest of the product hangs from. A learning-path milestone reads: *memorise all the hiragana characters, and score full marks in the Hiragana Characters game — all characters, five times.* Not "read the lesson". Five clean runs is a claim about retention that a single pass cannot make, and it converts a vague sense of progress into a condition the system can check.
+
+**Separate practice from progression.** The Training Gym is a free-play mode sitting outside the curriculum. It exists because the two activities have opposite requirements: progression must be ordered and gated to mean anything, and practice must be unlimited and consequence-free to actually get done. Fuse them and every repetition either advances a bar it should not, or feels like wasted time.
+
+**Put the account wall at the JLPT line, not the front door.** All six beginner lessons — both kana scripts, their vocabulary, numbers and counting — run without registering. An account is required from N5 upward. The boundary is placed where a learner stops sampling and starts committing, so the ask arrives after the product has already been useful rather than before.
+
+**Make the daily goal ambient.** A progress strip sits on every screen showing game attempts today, and the profile carries days engaged, games played, and current against longest streak. Streak mechanics are easy to dismiss as a cheap trick; what they actually do is give a learner a reason to open the app on the evening they do not feel like it, which is the only evening that decides whether a habit forms.
+
+**Let learners aim at a slice.** Practice can be scoped to a subset — the first ten words of a set, kanji 51 to 60 — rather than the whole lesson. A learner revising for a specific gap should not have to replay ninety items to reach the ten they keep failing.
 
 ## What shipped
 
-- Restructured onboarding with personalised path
-- Training Gym (free practice mode)
-- Multi-instructor model (JLPT N1, N2, and native-speaker teachers)
-- Multilingual UI (4 languages)
-- Subscription tiers
-- JLPT N5–N1 curriculum coverage
+- **Beginner track, no account** — hiragana, hiragana words, katakana, katakana words, numbers and counting, each with audio for the characters.
+- **JLPT track, N5 through N1** — grammar, vocabulary, kanji and listening practice, mapped level by level.
+- **Learning Path and Study Plan** — an ordered milestone chain with explicit pass conditions and per-milestone progress, so the next action is always visible.
+- **Training Gym** — repetition games separated from progression, scopeable to a slice of a set.
+- **Progress logging** — games save automatically, with score and time recorded per attempt.
+- **Streaks and badges** — days engaged, games played, current and longest streak, and an earned-badge shelf.
+- **Multilingual interface** and subscription tiers.
 
 ## Outcome
 
-- **+25% MAU growth** post-relaunch
-- **One of two SaaS launches** I led at Kawaii
-- Achieve Japan track established as the cross-sell path to placement services (later fed into Findy Job)
+- **+25% monthly active users** after the relaunch.
+- One of two SaaS products I launched at Kawaii, alongside [DET Bridge](./det-bridge.md).
+- Progress became a defensible claim rather than a completion bar — a milestone that says "full marks five times" means something to a learner with an exam date, which is what the paid tier is actually selling.
 
 ## What I'd do differently
 
-Build the **streak / habit loop** into the data model earlier. We added daily-streak mechanics post-launch when retention dipped on weekdays; doing it before the relaunch would have compounded the +25% number.
+**Follow the drop between the first script and the second.** The Training Gym shows Memory Match played 2,407 times for hiragana and 388 for katakana. Some of that gap is ordering, but a six-to-one ratio between the first thing a learner does and the second is not explained by ordering alone — it is where the funnel leaks, and it is visible on the product's own screen. I would have instrumented that transition specifically and treated it as the retention problem, rather than treating retention as one number for the whole platform.
+
+**Build the streak into the data model before launch, not after.** Daily-streak mechanics went in post-relaunch, when retention visibly sagged mid-week. The mechanic worked, which is the point: shipping it with the relaunch would have compounded into the +25% instead of arriving after it.
+
+**Ship the certificate, or stop implying it.** Learners ask what they get for finishing. The honest answer during my time was "the JLPT result itself" — which is true, and is not what someone grinding a streak wants to hear. A completion credential is cheap to issue and does real motivational work at exactly the point learners drop.
 
 ## Stack & tools
 
-**Build:** Next.js · Django · PostgreSQL · OpenAI API (feedback + content gen)
+**Build:** Next.js · Django · PostgreSQL · OpenAI API for feedback and content generation
 
-**PM tooling:** Notion · Figma · Jira · Lucidchart
+**Product tooling:** Notion · Figma · Jira · Lucidchart
 
 ### Case study: Motorcycle Brand Platform — Brand Site with a Conversion Job
 Client: Client project (name withheld) · Role: Product & delivery · Period: Apr – May 2026

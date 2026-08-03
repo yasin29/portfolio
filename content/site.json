@@ -1689,29 +1689,59 @@
         {
           "value": "+25%",
           "label": "MAU after relaunch"
+        },
+        {
+          "value": "N5-N1",
+          "label": "JLPT coverage"
         }
       ],
       "live": "https://www.lifeark-nihongo.com/",
       "caseStudy": "lifeark-nihongo",
-      "preview": "/case-studies/lifeark-nihongo/screen-1.webp",
+      "preview": "/case-studies/lifeark-nihongo/home-lessons.webp",
       "livePreview": {
-        "src": "/case-studies/lifeark-nihongo/screen-1.webp",
-        "alt": "LifeArk gamified Japanese language learning platform mapped to JLPT levels"
+        "src": "/case-studies/lifeark-nihongo/home-lessons.webp",
+        "alt": "LifeArk Nihongo home screen with beginner Japanese lessons taught through games"
       },
       "sections": [
         {
           "title": "Retention is the product",
-          "body": "Language-learning products have no shortage of content and a chronic shortage of retention. The hard problem is not teaching Japanese; it is being the thing a learner opens on the day they do not feel like studying.",
-          "quote": "Gamification is not decoration here. It is the retention mechanism."
+          "body": "Language products do not fail on content — every one of them can teach hiragana. They fail because the learner does not come back on day nine. LifeArk was aimed at the middle of a bimodal market: structured enough for someone with a real JLPT exam date, habit-forming enough to compete with a free app for the same evening.",
+          "quote": "If you cannot define what \"learned\" means, there is nothing to come back to."
         },
         {
-          "title": "The relaunch",
-          "body": "As Product Manager I drove the gamification direction through a relaunch that lifted monthly active users by 25%, and owned the JLPT-level content mapping alongside the release cycle.",
+          "title": "Mastery as a repeatable score",
+          "body": "The decision the rest of the product hangs from. A learning-path milestone reads \"score full marks in the Hiragana Characters game — all characters, five times\", not \"read the lesson\". Five clean runs is a claim about retention that one pass cannot make, and it turns a vague sense of progress into a condition the system can check.",
           "chips": [
-            "+25% MAU",
-            "JLPT-mapped",
-            "Product Manager"
+            "Learning path",
+            "Explicit pass conditions",
+            "Progress logging"
           ]
+        },
+        {
+          "title": "Practice separated from progression",
+          "body": "The Training Gym is free play sitting outside the curriculum. Progression has to be ordered and gated to mean anything; practice has to be unlimited and consequence-free to actually get done. Fuse them and every repetition either advances a bar it should not, or feels like wasted time.",
+          "chips": [
+            "Training Gym",
+            "Scoped practice",
+            "No curriculum cost"
+          ]
+        },
+        {
+          "title": "The account wall sits at the JLPT line",
+          "body": "All six beginner lessons — both kana scripts, their vocabulary, numbers and counting — run without registering. An account is required from N5 upward, where a learner stops sampling and starts committing. The ask arrives after the product has been useful, not before."
+        },
+        {
+          "title": "Habit mechanics, ambiently",
+          "body": "A progress strip on every screen shows attempts today; the profile carries days engaged, games played, and current against longest streak. Streaks read as a cheap trick until you notice what they do: give a learner a reason to open the app on the evening they do not feel like it, which is the evening that decides the habit.",
+          "chips": [
+            "Streaks",
+            "Badges",
+            "Daily goal"
+          ]
+        },
+        {
+          "title": "Outcome",
+          "body": "The relaunch lifted monthly active users by 25%. One of two SaaS products I launched at Kawaii. Progress became a defensible claim rather than a completion bar — which is what the paid tier is actually selling to someone with an exam date."
         }
       ]
     },
