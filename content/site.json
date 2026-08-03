@@ -1645,28 +1645,59 @@
       ],
       "live": "https://det-bridge.com/",
       "caseStudy": "det-bridge",
-      "preview": "/case-studies/det-bridge/screen-1.webp",
+      "preview": "/case-studies/det-bridge/ai-scoring.webp",
       "livePreview": {
-        "src": "/case-studies/det-bridge/screen-1.webp",
-        "alt": "DET Bridge Duolingo English Test preparation platform for the Japanese market"
+        "src": "/case-studies/det-bridge/ai-scoring.webp",
+        "alt": "DET Bridge AI scoring a written answer with Japanese-language feedback"
       },
       "sections": [
         {
-          "title": "First to market in Japan",
-          "body": "Japan had no dedicated Duolingo English Test preparation platform. As Product Manager I defined the feature set from scratch rather than adapting an existing product, which meant owning what the product should be, not just its schedule.",
+          "title": "The gap was explanation, not questions",
+          "body": "The Duolingo English Test was taking share from TOEFL and IELTS on price and speed, and Japanese candidates were switching fast. The prep market had not. A candidate faced DET material written in English — so the language under test was also the language of the explanation, which is the wrong way round.",
+          "quote": "Anyone can write practice questions. Nobody was explaining the test in Japanese."
+        },
+        {
+          "title": "Language of instruction as the product",
+          "body": "Every rubric, score breakdown, correction and improvement tip is written in Japanese, about English. Building it as an English product with a translation layer would have technically supported Japanese and solved nothing.",
           "chips": [
-            "Product Manager",
-            "First to market",
-            "Japan"
+            "Japanese-first",
+            "All 14 DET formats"
           ]
         },
         {
-          "title": "Owning direction end-to-end",
-          "body": "One of two SaaS products I launched at Kawaii. Product Manager from concept through launch: requirements, the release cycle, and the decisions about what stayed out of scope.",
+          "title": "Credibility before scale",
+          "body": "An explanation is worth what its author’s authority is worth. Items and explanations were overseen by a native Japanese-speaking certified DET trainer, the instructors’ own DET scores are published rather than hidden, and the platform holds official Gold Partner status with the Duolingo English Test.",
           "chips": [
-            "Concept to launch",
-            "1 of 2 SaaS launches"
+            "DET Gold Partner",
+            "Certified trainer oversight"
           ]
+        },
+        {
+          "title": "The AI marks, humans set the standard",
+          "body": "Per-answer feedback is the expensive, unscalable part of test prep, so that is what the model does — scoring a written response on content and vocabulary, structure, vocabulary range and grammar, correcting errors, and suggesting the word upgrades that move a band. The model answers defining each score band were written by instructors.",
+          "chips": [
+            "AI scoring",
+            "Grammar correction",
+            "Score-up hints"
+          ]
+        },
+        {
+          "title": "Selling the exam, not just the prep",
+          "body": "Partner status let test booking run through the platform — a discounted sitting and results inside 24 hours without the usual expedite fee. That turns a subscription product into a channel, and aligns the business with the moment the customer actually cares about."
+        },
+        {
+          "title": "Owning direction end-to-end",
+          "body": "Product Manager from concept through launch — feature set, content architecture, what the AI was allowed to judge, pricing and plan structure, and release. One of two SaaS products I launched at Kawaii."
+        }
+      ],
+      "stats": [
+        {
+          "value": "14",
+          "label": "DET question formats"
+        },
+        {
+          "value": "Gold",
+          "label": "Official DET partner"
         }
       ]
     },
@@ -1849,37 +1880,50 @@
       "caseStudy": "pm-dashboard",
       "sections": [
         {
-          "title": "The reporting tax",
-          "body": "A company running several client projects has its delivery state scattered across four tools: conversation in Slack, decisions in meetings, work in GitHub, documentation in Notion. No single view answers what the status actually is, so the answer comes from asking a person.",
-          "quote": "The most expensive recurring cost in delivery management is the same information re-entered into three places.",
+          "title": "Trouble is discovered at the deadline",
+          "body": "Delivery state lives in four tools: conversation in Slack, decisions in meetings, work in GitHub, docs in Notion. Nothing answers \"what is the actual status of this project\", so the answer comes from asking a person and is only as current as their memory.",
+          "quote": "The signals that a project is drifting exist weeks early — in different tools, correlated by nobody."
+        },
+        {
+          "title": "Health as a leading indicator",
+          "body": "Each project row carries milestone progress against elapsed time, days since the last client meeting and the last team meeting, Slack activity and server state. Ninety-seven days of client silence is a red flag long before a ticket is late — and it is a fact the system already knows.",
           "chips": [
-            "Slack",
-            "Google Meet",
-            "GitHub",
-            "Notion"
+            "Red / amber / green",
+            "Client vs team silence",
+            "Server state"
           ]
         },
         {
-          "title": "Internal tools compete with the workaround",
-          "body": "An internal product competes with just asking in Slack. If the platform is slower than the habit it replaces, it does not get used regardless of how correct it is. That shaped prioritisation more than any feature list."
+          "title": "\"What do I have to do\" beats \"how is the project\"",
+          "body": "Every project screen leads with a personal queue — waiting on you, overdue — and says \"all caught up\" when there is nothing. This decides whether an internal tool gets opened at all. A dashboard tells you about the project; only a queue competes with asking in Slack."
+        },
+        {
+          "title": "AI agents are members, not background jobs",
+          "body": "The roster carries people and bots side by side with roles and assigned projects — a QA runner and a ticket bot both holding a PM role. If an agent opens tickets and runs checks, hiding it in a cron job makes the work invisible exactly where a manager looks to see who did what. The same view tracks PR and Claude Code usage per member.",
+          "chips": [
+            "Agents in the roster",
+            "PR & Claude Code usage"
+          ]
+        },
+        {
+          "title": "Machine proposes, human disposes",
+          "body": "Tickets carry a Suggested state raised by the system and accepted by a person, a Stale marker for work that stopped moving, and explicit Blocked by Client and Client ticket flags. Naming client-side blockage as its own state stops \"we are waiting on them\" from being invisible in a column that only describes internal work."
         },
         {
           "title": "Ship the process alongside the tool",
-          "body": "A dashboard without a defined process is a database. I architected the company end-to-end Agile/Scrum delivery system in Notion - kickoff through closure - which is what makes the states in the ticket system mean something.",
+          "body": "A dashboard without a defined process is a database. I architected the company’s end-to-end Agile/Scrum system in Notion — kickoff through closure — which is what makes the ticket states mean something. Part of the same shift that took delivery from roughly three months to one.",
           "chips": [
-            "Agile/Scrum system design",
-            "Kickoff to closure"
-          ]
-        },
-        {
-          "title": "Product Owner, AI-native",
-          "body": "Owned direction, requirements, and prioritisation for the platform the whole company now delivers through, including the client projects in this portfolio. Built AI-native in both what it does and how it was delivered.",
-          "chips": [
-            "Product Owner",
-            "AI-native"
+            "Notion SDLC",
+            "Kickoff to closure",
+            "SOPs & ticket templates"
           ]
         }
-      ]
+      ],
+      "preview": "/case-studies/pm-dashboard/health-board.webp",
+      "livePreview": {
+        "src": "/case-studies/pm-dashboard/health-board.webp",
+        "alt": "PM Dashboard project health board with red, amber and green project status"
+      }
     },
     {
       "slug": "portfolio-site",

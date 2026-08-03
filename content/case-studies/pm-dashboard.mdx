@@ -11,52 +11,106 @@ chips:
   - AI ops
   - Product ownership
   - AI-native delivery
+hero: /case-studies/pm-dashboard/health-board.webp
 ---
 
 ## At a glance
 
-PM Dashboard is the internal platform Potential Inc. runs its delivery through — a ticket system that centralises Slack, Google Meet, GitHub, and Notion into one source of truth for every project in the company.
+PM Dashboard is the internal platform Potential Inc. runs its delivery through — one place where every project's health, tickets, meetings, milestones and people live, pulling from Slack, Google Meet, GitHub and Notion.
 
-I was **Product Owner** end-to-end. Alongside it, I architected the company's Agile/Scrum delivery system in Notion, covering the process from kickoff through to project closure.
+I was **Product Owner** end to end. Alongside it I architected the company's Agile/Scrum delivery system in Notion, from kickoff through closure.
+
+The idea worth stealing from it is not the ticket list. It is how the platform decides a project is in trouble.
+
+<Figure
+  src="/case-studies/pm-dashboard/health-board.webp"
+  alt="PM Dashboard project health board showing red, yellow and green project counts with milestone progress, last client and team meeting dates, Slack activity and server status per project"
+  caption="Red, yellow, green — derived from milestone slippage, how long since anyone spoke to the client, Slack activity and server state. Names blurred."
+/>
 
 ## The problem
 
-A software company running several client projects at once has its delivery state scattered across four tools: the conversation is in Slack, the decisions are in meetings, the work is in GitHub, and the documentation is in Notion. No single view answers "what is the actual status of this project" — so the answer comes from asking a person, and it is only as current as their memory.
+A software company running several client projects at once has its delivery state scattered across four tools. The conversation is in Slack, the decisions are in meetings, the work is in GitHub, and the documentation is in Notion. No single view answers *what is the actual status of this project* — so the answer comes from asking a person, and it is only ever as current as that person's memory.
 
-The second problem is consistency. Without a defined delivery process, every project runs the way its PM happens to run projects. That is survivable with one PM and untenable with several.
+That produces two failures worth separating.
+
+**Status is reconstructed, not observed.** Every weekly report is somebody re-deriving the same picture from four places. It is expensive, it is repeated, and it is stale the moment it is written.
+
+**Trouble is discovered at the deadline.** The signals that a project is drifting show up weeks before a milestone slips — a client who has gone quiet, a sprint where nothing moved, an environment that has been down and nobody mentioned it. Those signals exist, but they live in different tools and nobody is correlating them. So the first hard evidence arrives on the day the date is missed, which is the one day you can no longer do anything about it.
+
+And underneath both: without a defined process, every project runs the way its PM happens to run projects. Survivable with one PM. Untenable with several.
 
 ## My role
 
 Product Owner for an internal product with internal users — the hardest kind, because they can route around it:
 
-- **Product direction** — deciding what the platform needed to be for people who already had four tools.
-- **Requirements and prioritisation** — owning the backlog against real delivery pain rather than feature requests.
+- **Product direction** — deciding what the platform needed to be for people who already had four tools that worked.
+- **Requirements and prioritisation** — a backlog driven by observed delivery pain rather than feature requests.
 - **AI-native build** — the platform is AI-native in what it does and in how it was delivered.
-- **Process architecture** — designing the company's end-to-end Agile/Scrum system in Notion: kickoff, planning, execution, quality, closure.
+- **Process architecture** — the company's end-to-end Agile/Scrum system in Notion: kickoff, planning, execution, quality, closure.
 
 ## Approach
 
-**Solve the reporting tax first.** The most expensive recurring cost in delivery management is manual status reporting — the same information re-entered into three places. Centralising Slack, Meet, GitHub, and Notion into one ticket system attacked that directly, because it is the pain everyone feels weekly.
+**Make health a leading indicator, not a burndown.** Each project row carries milestone progress against elapsed time, days since the last *client* meeting and the last *team* meeting, Slack activity, and server state. A project sitting at ninety-seven days since the last client conversation is a red flag long before any ticket is late — and it is a fact the system already knows, which nobody would have thought to ask.
 
-**Internal tools have to be faster than the workaround.** An internal product competes with "just ask in Slack". If the platform is slower than the habit it replaces, it does not get used regardless of how correct it is. That shaped prioritisation more than any feature list.
+Separating client-facing silence from internal silence matters more than it sounds. A team talking to itself constantly while the client hears nothing is a specific, recognisable failure with a specific fix, and one aggregate "last activity" number would hide it completely.
 
-**Ship the process alongside the tool.** A dashboard without a defined process is a database. The Notion delivery system — kickoff through closure — is what makes the platform mean something, because it defines what the states in the ticket system actually represent.
+**Answer "what do I have to do" before "how is the project".** Every project screen leads with a personal work queue — items waiting on you, items overdue — and says *all caught up, there is nothing waiting on you right now* when there are none. This is the feature that decides whether an internal tool is opened at all. A dashboard tells you about the project; a queue tells you about you, and only one of those competes successfully with asking in Slack.
+
+<Figure
+  src="/case-studies/pm-dashboard/project-overview.webp"
+  alt="PM Dashboard project overview showing milestone progress against elapsed time, an onboarding checklist, and a work status panel listing items awaiting the current user"
+  caption="Internal deadline against client deadline, progress against time elapsed, and the queue of what is waiting on you."
+/>
+
+**Treat AI agents as members, not as automation.** The member list carries people and bots side by side, with roles and assigned projects — a QA runner and a ticket bot both sitting there with a PM role. If an agent opens tickets and runs checks, hiding it in a background job makes the work invisible in exactly the place a manager looks to see who is doing what. Putting agents in the roster is the honest representation of how the work actually happens.
+
+The same view tracks pull requests and Claude Code usage per member, today and over seven days. A company claiming AI-native delivery needs to measure that claim on itself before it says it out loud to a client.
+
+<Figure
+  src="/case-studies/pm-dashboard/members.webp"
+  alt="PM Dashboard member management view listing people and AI agents with roles, assigned projects, pull request counts and Claude Code usage per day and per week"
+  caption="People and AI agents in one roster, with PR and Claude Code usage alongside. Names, emails and photos blurred."
+/>
+
+**Let the machine propose and the human dispose.** Tickets carry a *Suggested* state — proposed by the system, accepted by a person — alongside a *Stale* marker for work that has stopped moving, and explicit *Blocked by Client* and *Client ticket* flags. Naming client-side blockage as its own state is a small modelling decision with a large effect: it stops "we are waiting on them" from being invisible in a status column that only describes internal work.
+
+<Figure
+  src="/case-studies/pm-dashboard/tickets.webp"
+  alt="PM Dashboard ticket list showing source, priority, size, status and assignee, with filters for suggested tickets, stale work and items blocked by the client"
+  caption="Suggested, stale, and blocked-by-client as first-class states rather than notes in a description."
+/>
+
+**Productise onboarding as tickets.** Client onboarding — company information, logo, brand colours, organisation email — runs as a checklist inside the project rather than as a document someone remembers to send. The most repeatable part of delivery is the part that most often gets improvised.
+
+**Ship the process alongside the tool.** A dashboard without a defined process is a database. The Notion delivery system — kickoff through closure — is what makes the platform mean something, because it defines what the states in the ticket system actually represent. Ticket templates and SOPs live in the platform for the same reason.
 
 ## What shipped
 
-- An internal delivery-ops platform centralising **Slack, Google Meet, GitHub, and Notion**.
-- A ticket system used as the single source of truth across the company's projects.
+- **Project health board** with red/amber/green rollup, computed from milestone slippage, client and team meeting recency, Slack activity and server status, filterable by health and PM, exportable to CSV.
+- **Project workspace** — overview, tickets, meetings, schedule and updates, with internal and client deadlines tracked separately.
+- **Personal work queue** on every project: what is waiting on you, what is overdue.
+- **Ticket system** with epics, sources, sizes, priorities, ticket templates, and suggested / stale / blocked-by-client states.
+- **Member management** covering people and AI agents, with per-member PR and Claude Code usage.
+- **Meeting capture** including an inbox for meetings not yet attached to a project.
+- **HR module** — employee hub, evaluations, team calendar, company policies, device register.
+- **Bilingual interface** (Korean and English) for a Korean company with an offshore team.
 - The company's **end-to-end Agile/Scrum delivery system in Notion**, from kickoff to closure.
 
 ## Outcome
 
-- Adopted as the ticket system and single source of truth on live client projects, including the ones in this portfolio.
+- Adopted as the ticket system and single source of truth for live client projects, including several in this portfolio.
 - The Notion delivery system standardised how projects run across PMs rather than per PM.
-- Part of the same shift that took client delivery from three months to one: the AI-native workflow needed somewhere to live, and this is it.
+- Part of the same shift that took client delivery from roughly three months to one: the AI-native workflow needed somewhere to live, and this is it.
+- Project health stopped being a question someone answered from memory and became a value the system derives.
 
 ## What I'd do differently
 
-Measure adoption explicitly. I know the platform is used because it is the system projects run on, but I did not instrument which parts earn their place and which are tolerated. For an internal product, that data is the whole roadmap.
+**Instrument adoption.** I know the platform is used, because it is the system projects run on. I do not know which parts earn their place and which are tolerated. For an internal product that is not a nice-to-have metric — it *is* the roadmap, and without it prioritisation is taste.
+
+**Validate the health formula against outcomes.** The red/amber/green rollup is a well-reasoned model of what predicts trouble. It has never been checked against what actually happened: of the projects it called red, how many genuinely went wrong, and how many late projects were green the week before. Until that comparison exists, the traffic light is a hypothesis with a colour.
+
+**Decide what the AI-usage columns are for, in writing, before they are read.** Per-member PR and Claude Code counts are useful for spotting where adoption has not landed and dangerous the moment someone treats them as productivity. That is the same trap I had already seen up close building engineering analytics on [Findy Team+](./findy-team.md) — and internal tools get less scrutiny on this than products do, not more.
 
 ## Stack & tools
 

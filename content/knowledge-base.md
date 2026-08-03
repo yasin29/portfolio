@@ -270,9 +270,14 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - Category: Product he owned as Product Manager
 - Organisation: Kawaii Advanced Technology · Role: Product Manager · Period: 2024
 - Live at: https://det-bridge.com/
+- Figures: 14 DET question formats · Gold Official DET partner
 - Summary: Japan’s first Duolingo English Test prep platform — owned end-to-end as Product Manager.
-- First to market in Japan: Japan had no dedicated Duolingo English Test preparation platform. As Product Manager I defined the feature set from scratch rather than adapting an existing product, which meant owning what the product should be, not just its schedule.
-- Owning direction end-to-end: One of two SaaS products I launched at Kawaii. Product Manager from concept through launch: requirements, the release cycle, and the decisions about what stayed out of scope.
+- The gap was explanation, not questions: The Duolingo English Test was taking share from TOEFL and IELTS on price and speed, and Japanese candidates were switching fast. The prep market had not. A candidate faced DET material written in English — so the language under test was also the language of the explanation, which is the wrong way round. Key point: "Anyone can write practice questions. Nobody was explaining the test in Japanese."
+- Language of instruction as the product: Every rubric, score breakdown, correction and improvement tip is written in Japanese, about English. Building it as an English product with a translation layer would have technically supported Japanese and solved nothing.
+- Credibility before scale: An explanation is worth what its author’s authority is worth. Items and explanations were overseen by a native Japanese-speaking certified DET trainer, the instructors’ own DET scores are published rather than hidden, and the platform holds official Gold Partner status with the Duolingo English Test.
+- The AI marks, humans set the standard: Per-answer feedback is the expensive, unscalable part of test prep, so that is what the model does — scoring a written response on content and vocabulary, structure, vocabulary range and grammar, correcting errors, and suggesting the word upgrades that move a band. The model answers defining each score band were written by instructors.
+- Selling the exam, not just the prep: Partner status let test booking run through the platform — a discounted sitting and results inside 24 hours without the usual expedite fee. That turns a subscription product into a channel, and aligns the business with the moment the customer actually cares about.
+- Owning direction end-to-end: Product Manager from concept through launch — feature set, content architecture, what the AI was allowed to judge, pricing and plan structure, and release. One of two SaaS products I launched at Kawaii.
 
 ### LifeArk — Gamified JLPT-Mapped Language LMS
 - Category: Product he owned as Product Manager
@@ -307,10 +312,12 @@ eHealth product · Dhaka. Shipped React and Next.js front-ends for an eHealth pr
 - Organisation: Potential Inc. · Role: Product Owner · Period: 2025 – 2026
 - Delivery approach: AI-native
 - Summary: The internal platform the whole company delivers through — centralising Slack, Google Meet, GitHub, and Notion.
-- The reporting tax: A company running several client projects has its delivery state scattered across four tools: conversation in Slack, decisions in meetings, work in GitHub, documentation in Notion. No single view answers what the status actually is, so the answer comes from asking a person. Key point: "The most expensive recurring cost in delivery management is the same information re-entered into three places."
-- Internal tools compete with the workaround: An internal product competes with just asking in Slack. If the platform is slower than the habit it replaces, it does not get used regardless of how correct it is. That shaped prioritisation more than any feature list.
-- Ship the process alongside the tool: A dashboard without a defined process is a database. I architected the company end-to-end Agile/Scrum delivery system in Notion - kickoff through closure - which is what makes the states in the ticket system mean something.
-- Product Owner, AI-native: Owned direction, requirements, and prioritisation for the platform the whole company now delivers through, including the client projects in this portfolio. Built AI-native in both what it does and how it was delivered.
+- Trouble is discovered at the deadline: Delivery state lives in four tools: conversation in Slack, decisions in meetings, work in GitHub, docs in Notion. Nothing answers "what is the actual status of this project", so the answer comes from asking a person and is only as current as their memory. Key point: "The signals that a project is drifting exist weeks early — in different tools, correlated by nobody."
+- Health as a leading indicator: Each project row carries milestone progress against elapsed time, days since the last client meeting and the last team meeting, Slack activity and server state. Ninety-seven days of client silence is a red flag long before a ticket is late — and it is a fact the system already knows.
+- "What do I have to do" beats "how is the project": Every project screen leads with a personal queue — waiting on you, overdue — and says "all caught up" when there is nothing. This decides whether an internal tool gets opened at all. A dashboard tells you about the project; only a queue competes with asking in Slack.
+- AI agents are members, not background jobs: The roster carries people and bots side by side with roles and assigned projects — a QA runner and a ticket bot both holding a PM role. If an agent opens tickets and runs checks, hiding it in a cron job makes the work invisible exactly where a manager looks to see who did what. The same view tracks PR and Claude Code usage per member.
+- Machine proposes, human disposes: Tickets carry a Suggested state raised by the system and accepted by a person, a Stale marker for work that stopped moving, and explicit Blocked by Client and Client ticket flags. Naming client-side blockage as its own state stops "we are waiting on them" from being invisible in a column that only describes internal work.
+- Ship the process alongside the tool: A dashboard without a defined process is a database. I architected the company’s end-to-end Agile/Scrum system in Notion — kickoff through closure — which is what makes the ticket states mean something. Part of the same shift that took delivery from roughly three months to one.
 
 ### Portfolio Site — This Site
 - Category: In-house product built for the company itself
@@ -776,55 +783,80 @@ Specify the dispute path at the same time as the happy path. We built listing, d
 
 **Delivery:** Agile/Scrum · Jira · Notion · UAT & SQA · App-store submission
 
-### Case study: DET Bridge — Japan's First Duolingo English Test Prep App
-Client: Kawaii Advanced Technology · Role: Project Manager · Period: 2024
+### Case study: DET Bridge — Duolingo English Test Prep, Built for Japanese Learners
+Client: Kawaii Advanced Technology · Role: Product Manager · Period: 2024
+Live: https://det-bridge.com/
 
 ## At a glance
 
-Japan's first dedicated preparation app for the **Duolingo English Test (DET)** — the alternative to TOEFL/IELTS that has become the default for cross-border university applications. PM'd the SaaS launch from PRD through release.
+A preparation platform for the **Duolingo English Test** — the cheaper, faster alternative to TOEFL and IELTS, now accepted by more than 5,700 institutions worldwide — built specifically for Japanese learners. Practice across all **14 DET question formats**, model answers written for every score band, and AI writing feedback that explains itself in Japanese.
+
+I was Product Manager, from concept through launch. The product's real insight is not the practice questions. It is that the thing Japanese DET candidates could not buy at any price was *an explanation in their own language*.
 
 ## The problem
 
+The Duolingo English Test was taking share from TOEFL and IELTS for exactly the reasons you would expect: it costs a fraction as much, it is taken at home, and results arrive in days rather than weeks. Japanese students applying abroad were switching to it fast.
 
+The preparation market had not switched with them. It was still built around TOEFL, and a Japanese candidate preparing for the DET faced three specific gaps:
 
-DET is rising fast as a TOEFL alternative for Japanese students applying abroad, but the prep market in Japan was almost entirely TOEFL-focused. Students were guessing the question formats from outdated forum posts. Kawaii spotted the gap; my job was to ship the product before competitors noticed.
+- **No authoritative explanation in Japanese.** The DET's own materials are in English. A candidate whose English is the thing under test has to decode the explanation before they can use it — which is the wrong way round.
+- **No sense of what "good" looks like at their level.** Knowing a 100 answer from a 130 answer is the entire skill in a scored writing task, and no published resource showed the difference.
+- **No affordable feedback loop.** Reading and listening can be self-marked. Writing and speaking cannot, and human marking is the most expensive thing in test prep.
+
+The commercial opportunity was a timing bet: get a Japanese-language DET product to market before the incumbent TOEFL prep businesses noticed the category had moved.
 
 ## My role
 
-- **PM ownership** end-to-end: PRD, sprint plan, content strategy, release.
-- **Curriculum architect** — collaborated with Japan-side education advisors on item-type taxonomy.
-- **Launch coordinator** — landing page, payment integration, support flow.
+Product Manager, owning direction rather than just the schedule:
+
+- **Product definition** — the feature set, what shipped first, and what was deliberately left out of launch.
+- **Content architecture** — the question taxonomy across all 14 DET formats, and the model-answer structure by score band.
+- **AI feature design** — what the model was allowed to judge, and where a human had to stay in the loop.
+- **Launch** — pricing and plan structure, payments, and the release itself.
 
 ## Approach
 
-- Reverse-engineered DET's published item types into a structured question taxonomy so we could generate practice content systematically rather than ad-hoc.
-- Used **OpenAI API** for automated question generation and feedback, but enforced human review on the first thousand items to anchor quality.
-- Built the question bank as a separate Django app from the practice runner — let the content team add items without touching student-facing code.
-- Localised the entire surface to Japanese first; English UI was a later toggle.
+**Treat the language of instruction as the product, not a localisation task.** Everything a learner reads — the question rubric, the score breakdown, the reason each dimension scored what it did, the improvement tips — is written in Japanese, about English. That inversion is the whole proposition. Building it as an English product with a Japanese translation layer would have produced something that technically supported Japanese and solved nothing.
+
+**Buy credibility before scale.** In test prep, an explanation is only worth what its author's authority is worth. So the item bank and explanations were overseen by a native Japanese-speaking instructor who is a certified DET trainer, the instructors' own DET scores are published on the site rather than hidden, and the platform holds official **Gold Partner** status with the Duolingo English Test. A larger question bank from an anonymous source would have been worth less than a smaller one a candidate could trust.
+
+**Split the work between the model and the humans by cost, not by capability.** The expensive, unscalable part of prep is per-answer feedback, so that is what the AI does: it scores a written response across content and vocabulary, structure, vocabulary range, and grammar; corrects spelling and grammar errors; and returns targeted upgrades — the synonyms that move a word from adequate to strong. The part that needs judgement and cannot be faked, the model answers demonstrating what each score band looks like, was written by instructors. The AI marks; humans set the standard.
+
+**Cover every format, because a candidate's weakest one sets their score.** All 14 DET question types are practised, not the popular six. In a test that composites its sub-scores, a format you have never seen is where the points leak, and "we cover most of it" is not a claim a candidate preparing for an exam date can act on.
+
+**Sell the exam, not just the preparation.** Partner status made it possible to route the actual test booking through the platform — a discounted sitting, results inside 24 hours without the usual expedite fee, and same-day return available on top. That turns a subscription product into a channel, and it aligns the business with the moment the customer actually cares about.
+
+**Let people in before asking for anything.** Practice runs without registration. Plans then split between an auto-renewing subscription and a fixed-period plan that does not renew — because a candidate with an exam date in six weeks is not buying a habit, and charging them like they are is how you earn a chargeback.
 
 ## What shipped
 
-- Full DET-mapped practice modes (reading, listening, writing, speaking with audio)
-- AI-powered feedback on free-response answers
-- Progress tracking + readiness score
-- Subscription billing
-- Japanese-first UI
+- **Practice across all 14 DET question formats**, covering reading, listening, writing and speaking.
+- **Model answers by score band**, written by instructors, with tips explaining what separates one band from the next.
+- **AI writing feedback** — dimension-by-dimension scoring, spelling and grammar correction, and score-up suggestions, all presented in Japanese.
+- **Japanese-first interface** across the entire surface.
+- **Test booking through the platform** at a partner rate, with expedited results.
+- **Plan structure** — free unregistered trial, auto-renewing subscription, fixed-period non-renewing plan, and a student discount.
 
 ## Outcome
 
-- **One of two SaaS products** launched at Kawaii during my tenure.
-- Validated the Japan EdTech distribution playbook (same one we'd reuse for LifeArk).
-- Marketed as **Japan's first** DET-dedicated app — first-mover positioning maintained at launch.
+- Launched into the Japan market as a dedicated DET preparation platform, holding official Gold Partner status with the Duolingo English Test.
+- **One of two SaaS products** I launched at Kawaii, alongside [LifeArk](./lifeark-nihongo.md).
+- Picked up consumer-press coverage during 2024 — *mina*, *ar*, and *Sports Nippon* — which for a category-creating product is the signal that the positioning read clearly to people outside the category.
+- Established the Japan EdTech launch pattern the team reused afterwards.
 
 ## What I'd do differently
 
-Invest earlier in **listening audio quality**. We launched with TTS-generated audio for practice items and replaced it with native recordings post-launch — students noticed immediately. Should have been native from day one.
+**Record the listening audio with native speakers from day one.** Launch shipped with synthesised audio for listening items and it was replaced with native recordings afterwards. Candidates noticed immediately — and they were right to. On a test that scores listening comprehension, practising against audio that does not sound like the test is worse than not practising.
+
+**Instrument the AI-scoring quota before pricing around it.** AI marking is metered per account. Metering is the correct call — it is the one feature with a real marginal cost — but the limit was set from an estimate rather than from usage. Knowing how many submissions a candidate actually needs between a 95 and a 120 would have made both the quota and the price defensible instead of provisional.
+
+**Publish score-outcome evidence, not just score examples.** The site shows what a good answer looks like at each band. What it does not show is what happened to candidates who used the platform. That evidence is the most persuasive asset a prep product can own, and collecting it requires asking learners for their result at a moment that has to be designed in from the start — retro-fitting it is close to impossible.
 
 ## Stack & tools
 
-**Build:** Next.js · Django · PostgreSQL · OpenAI API · Stripe (JP payment methods)
+**Build:** Next.js · Django · PostgreSQL · OpenAI API for scoring and feedback · Stripe with Japanese payment methods
 
-**PM tooling:** Jira · Notion · Figma · Slack
+**Product tooling:** Jira · Notion · Figma · Slack
 
 ### Case study: Elite4print — Taking Over a Live Print-Commerce Platform
 Client: Potential Inc. · Role: Project Manager (took over) · Period: 2025 – 2026
@@ -1667,48 +1699,77 @@ Client: Potential Inc. (internal) · Role: Product Owner · Period: 2025 – 202
 
 ## At a glance
 
-PM Dashboard is the internal platform Potential Inc. runs its delivery through — a ticket system that centralises Slack, Google Meet, GitHub, and Notion into one source of truth for every project in the company.
+PM Dashboard is the internal platform Potential Inc. runs its delivery through — one place where every project's health, tickets, meetings, milestones and people live, pulling from Slack, Google Meet, GitHub and Notion.
 
-I was **Product Owner** end-to-end. Alongside it, I architected the company's Agile/Scrum delivery system in Notion, covering the process from kickoff through to project closure.
+I was **Product Owner** end to end. Alongside it I architected the company's Agile/Scrum delivery system in Notion, from kickoff through closure.
+
+The idea worth stealing from it is not the ticket list. It is how the platform decides a project is in trouble.
 
 ## The problem
 
-A software company running several client projects at once has its delivery state scattered across four tools: the conversation is in Slack, the decisions are in meetings, the work is in GitHub, and the documentation is in Notion. No single view answers "what is the actual status of this project" — so the answer comes from asking a person, and it is only as current as their memory.
+A software company running several client projects at once has its delivery state scattered across four tools. The conversation is in Slack, the decisions are in meetings, the work is in GitHub, and the documentation is in Notion. No single view answers *what is the actual status of this project* — so the answer comes from asking a person, and it is only ever as current as that person's memory.
 
-The second problem is consistency. Without a defined delivery process, every project runs the way its PM happens to run projects. That is survivable with one PM and untenable with several.
+That produces two failures worth separating.
+
+**Status is reconstructed, not observed.** Every weekly report is somebody re-deriving the same picture from four places. It is expensive, it is repeated, and it is stale the moment it is written.
+
+**Trouble is discovered at the deadline.** The signals that a project is drifting show up weeks before a milestone slips — a client who has gone quiet, a sprint where nothing moved, an environment that has been down and nobody mentioned it. Those signals exist, but they live in different tools and nobody is correlating them. So the first hard evidence arrives on the day the date is missed, which is the one day you can no longer do anything about it.
+
+And underneath both: without a defined process, every project runs the way its PM happens to run projects. Survivable with one PM. Untenable with several.
 
 ## My role
 
 Product Owner for an internal product with internal users — the hardest kind, because they can route around it:
 
-- **Product direction** — deciding what the platform needed to be for people who already had four tools.
-- **Requirements and prioritisation** — owning the backlog against real delivery pain rather than feature requests.
+- **Product direction** — deciding what the platform needed to be for people who already had four tools that worked.
+- **Requirements and prioritisation** — a backlog driven by observed delivery pain rather than feature requests.
 - **AI-native build** — the platform is AI-native in what it does and in how it was delivered.
-- **Process architecture** — designing the company's end-to-end Agile/Scrum system in Notion: kickoff, planning, execution, quality, closure.
+- **Process architecture** — the company's end-to-end Agile/Scrum system in Notion: kickoff, planning, execution, quality, closure.
 
 ## Approach
 
-**Solve the reporting tax first.** The most expensive recurring cost in delivery management is manual status reporting — the same information re-entered into three places. Centralising Slack, Meet, GitHub, and Notion into one ticket system attacked that directly, because it is the pain everyone feels weekly.
+**Make health a leading indicator, not a burndown.** Each project row carries milestone progress against elapsed time, days since the last *client* meeting and the last *team* meeting, Slack activity, and server state. A project sitting at ninety-seven days since the last client conversation is a red flag long before any ticket is late — and it is a fact the system already knows, which nobody would have thought to ask.
 
-**Internal tools have to be faster than the workaround.** An internal product competes with "just ask in Slack". If the platform is slower than the habit it replaces, it does not get used regardless of how correct it is. That shaped prioritisation more than any feature list.
+Separating client-facing silence from internal silence matters more than it sounds. A team talking to itself constantly while the client hears nothing is a specific, recognisable failure with a specific fix, and one aggregate "last activity" number would hide it completely.
 
-**Ship the process alongside the tool.** A dashboard without a defined process is a database. The Notion delivery system — kickoff through closure — is what makes the platform mean something, because it defines what the states in the ticket system actually represent.
+**Answer "what do I have to do" before "how is the project".** Every project screen leads with a personal work queue — items waiting on you, items overdue — and says *all caught up, there is nothing waiting on you right now* when there are none. This is the feature that decides whether an internal tool is opened at all. A dashboard tells you about the project; a queue tells you about you, and only one of those competes successfully with asking in Slack.
+
+**Treat AI agents as members, not as automation.** The member list carries people and bots side by side, with roles and assigned projects — a QA runner and a ticket bot both sitting there with a PM role. If an agent opens tickets and runs checks, hiding it in a background job makes the work invisible in exactly the place a manager looks to see who is doing what. Putting agents in the roster is the honest representation of how the work actually happens.
+
+The same view tracks pull requests and Claude Code usage per member, today and over seven days. A company claiming AI-native delivery needs to measure that claim on itself before it says it out loud to a client.
+
+**Let the machine propose and the human dispose.** Tickets carry a *Suggested* state — proposed by the system, accepted by a person — alongside a *Stale* marker for work that has stopped moving, and explicit *Blocked by Client* and *Client ticket* flags. Naming client-side blockage as its own state is a small modelling decision with a large effect: it stops "we are waiting on them" from being invisible in a status column that only describes internal work.
+
+**Productise onboarding as tickets.** Client onboarding — company information, logo, brand colours, organisation email — runs as a checklist inside the project rather than as a document someone remembers to send. The most repeatable part of delivery is the part that most often gets improvised.
+
+**Ship the process alongside the tool.** A dashboard without a defined process is a database. The Notion delivery system — kickoff through closure — is what makes the platform mean something, because it defines what the states in the ticket system actually represent. Ticket templates and SOPs live in the platform for the same reason.
 
 ## What shipped
 
-- An internal delivery-ops platform centralising **Slack, Google Meet, GitHub, and Notion**.
-- A ticket system used as the single source of truth across the company's projects.
+- **Project health board** with red/amber/green rollup, computed from milestone slippage, client and team meeting recency, Slack activity and server status, filterable by health and PM, exportable to CSV.
+- **Project workspace** — overview, tickets, meetings, schedule and updates, with internal and client deadlines tracked separately.
+- **Personal work queue** on every project: what is waiting on you, what is overdue.
+- **Ticket system** with epics, sources, sizes, priorities, ticket templates, and suggested / stale / blocked-by-client states.
+- **Member management** covering people and AI agents, with per-member PR and Claude Code usage.
+- **Meeting capture** including an inbox for meetings not yet attached to a project.
+- **HR module** — employee hub, evaluations, team calendar, company policies, device register.
+- **Bilingual interface** (Korean and English) for a Korean company with an offshore team.
 - The company's **end-to-end Agile/Scrum delivery system in Notion**, from kickoff to closure.
 
 ## Outcome
 
-- Adopted as the ticket system and single source of truth on live client projects, including the ones in this portfolio.
+- Adopted as the ticket system and single source of truth for live client projects, including several in this portfolio.
 - The Notion delivery system standardised how projects run across PMs rather than per PM.
-- Part of the same shift that took client delivery from three months to one: the AI-native workflow needed somewhere to live, and this is it.
+- Part of the same shift that took client delivery from roughly three months to one: the AI-native workflow needed somewhere to live, and this is it.
+- Project health stopped being a question someone answered from memory and became a value the system derives.
 
 ## What I'd do differently
 
-Measure adoption explicitly. I know the platform is used because it is the system projects run on, but I did not instrument which parts earn their place and which are tolerated. For an internal product, that data is the whole roadmap.
+**Instrument adoption.** I know the platform is used, because it is the system projects run on. I do not know which parts earn their place and which are tolerated. For an internal product that is not a nice-to-have metric — it *is* the roadmap, and without it prioritisation is taste.
+
+**Validate the health formula against outcomes.** The red/amber/green rollup is a well-reasoned model of what predicts trouble. It has never been checked against what actually happened: of the projects it called red, how many genuinely went wrong, and how many late projects were green the week before. Until that comparison exists, the traffic light is a hypothesis with a colour.
+
+**Decide what the AI-usage columns are for, in writing, before they are read.** Per-member PR and Claude Code counts are useful for spotting where adoption has not landed and dangerous the moment someone treats them as productivity. That is the same trap I had already seen up close building engineering analytics on [Findy Team+](./findy-team.md) — and internal tools get less scrutiny on this than products do, not more.
 
 ## Stack & tools
 

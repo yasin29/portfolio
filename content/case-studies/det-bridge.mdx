@@ -1,8 +1,8 @@
 ---
 slug: det-bridge
-title: "DET Bridge — Japan's First Duolingo English Test Prep App"
+title: "DET Bridge — Duolingo English Test Prep, Built for Japanese Learners"
 client: Kawaii Advanced Technology
-role: Project Manager
+role: Product Manager
 period: "2024"
 status: Launched
 stack: [Next.js, Django, PostgreSQL, OpenAI API]
@@ -11,56 +11,84 @@ chips:
   - SaaS
   - Japan-market
   - AI-augmented
-hero: /case-studies/det-bridge/hero.png
+  - Official DET Gold Partner
+link: https://det-bridge.com/
+hero: /case-studies/det-bridge/ai-scoring.webp
 ---
 
 ## At a glance
 
-Japan's first dedicated preparation app for the **Duolingo English Test (DET)** — the alternative to TOEFL/IELTS that has become the default for cross-border university applications. PM'd the SaaS launch from PRD through release.
+A preparation platform for the **Duolingo English Test** — the cheaper, faster alternative to TOEFL and IELTS, now accepted by more than 5,700 institutions worldwide — built specifically for Japanese learners. Practice across all **14 DET question formats**, model answers written for every score band, and AI writing feedback that explains itself in Japanese.
+
+I was Product Manager, from concept through launch. The product's real insight is not the practice questions. It is that the thing Japanese DET candidates could not buy at any price was *an explanation in their own language*.
+
+<Figure
+  src="/case-studies/det-bridge/ai-scoring.webp"
+  alt="DET Bridge AI scoring screen showing a writing task scored across content, structure, vocabulary and grammar, with Japanese-language feedback and synonym suggestions"
+  caption="A written answer scored across four dimensions, with the reasoning, the corrections and the score-up hints all in Japanese."
+/>
 
 ## The problem
 
-<Figure
-  src="/case-studies/det-bridge/screen-1.webp"
-  alt="DET Bridge homepage showing Duolingo English Test preparation for Japanese learners"
-  caption="Japan first for DET preparation - an official partner platform."
-/>
+The Duolingo English Test was taking share from TOEFL and IELTS for exactly the reasons you would expect: it costs a fraction as much, it is taken at home, and results arrive in days rather than weeks. Japanese students applying abroad were switching to it fast.
 
-DET is rising fast as a TOEFL alternative for Japanese students applying abroad, but the prep market in Japan was almost entirely TOEFL-focused. Students were guessing the question formats from outdated forum posts. Kawaii spotted the gap; my job was to ship the product before competitors noticed.
+The preparation market had not switched with them. It was still built around TOEFL, and a Japanese candidate preparing for the DET faced three specific gaps:
+
+- **No authoritative explanation in Japanese.** The DET's own materials are in English. A candidate whose English is the thing under test has to decode the explanation before they can use it — which is the wrong way round.
+- **No sense of what "good" looks like at their level.** Knowing a 100 answer from a 130 answer is the entire skill in a scored writing task, and no published resource showed the difference.
+- **No affordable feedback loop.** Reading and listening can be self-marked. Writing and speaking cannot, and human marking is the most expensive thing in test prep.
+
+The commercial opportunity was a timing bet: get a Japanese-language DET product to market before the incumbent TOEFL prep businesses noticed the category had moved.
 
 ## My role
 
-- **PM ownership** end-to-end: PRD, sprint plan, content strategy, release.
-- **Curriculum architect** — collaborated with Japan-side education advisors on item-type taxonomy.
-- **Launch coordinator** — landing page, payment integration, support flow.
+Product Manager, owning direction rather than just the schedule:
+
+- **Product definition** — the feature set, what shipped first, and what was deliberately left out of launch.
+- **Content architecture** — the question taxonomy across all 14 DET formats, and the model-answer structure by score band.
+- **AI feature design** — what the model was allowed to judge, and where a human had to stay in the loop.
+- **Launch** — pricing and plan structure, payments, and the release itself.
 
 ## Approach
 
-- Reverse-engineered DET's published item types into a structured question taxonomy so we could generate practice content systematically rather than ad-hoc.
-- Used **OpenAI API** for automated question generation and feedback, but enforced human review on the first thousand items to anchor quality.
-- Built the question bank as a separate Django app from the practice runner — let the content team add items without touching student-facing code.
-- Localised the entire surface to Japanese first; English UI was a later toggle.
+**Treat the language of instruction as the product, not a localisation task.** Everything a learner reads — the question rubric, the score breakdown, the reason each dimension scored what it did, the improvement tips — is written in Japanese, about English. That inversion is the whole proposition. Building it as an English product with a Japanese translation layer would have produced something that technically supported Japanese and solved nothing.
+
+**Buy credibility before scale.** In test prep, an explanation is only worth what its author's authority is worth. So the item bank and explanations were overseen by a native Japanese-speaking instructor who is a certified DET trainer, the instructors' own DET scores are published on the site rather than hidden, and the platform holds official **Gold Partner** status with the Duolingo English Test. A larger question bank from an anonymous source would have been worth less than a smaller one a candidate could trust.
+
+**Split the work between the model and the humans by cost, not by capability.** The expensive, unscalable part of prep is per-answer feedback, so that is what the AI does: it scores a written response across content and vocabulary, structure, vocabulary range, and grammar; corrects spelling and grammar errors; and returns targeted upgrades — the synonyms that move a word from adequate to strong. The part that needs judgement and cannot be faked, the model answers demonstrating what each score band looks like, was written by instructors. The AI marks; humans set the standard.
+
+**Cover every format, because a candidate's weakest one sets their score.** All 14 DET question types are practised, not the popular six. In a test that composites its sub-scores, a format you have never seen is where the points leak, and "we cover most of it" is not a claim a candidate preparing for an exam date can act on.
+
+**Sell the exam, not just the preparation.** Partner status made it possible to route the actual test booking through the platform — a discounted sitting, results inside 24 hours without the usual expedite fee, and same-day return available on top. That turns a subscription product into a channel, and it aligns the business with the moment the customer actually cares about.
+
+**Let people in before asking for anything.** Practice runs without registration. Plans then split between an auto-renewing subscription and a fixed-period plan that does not renew — because a candidate with an exam date in six weeks is not buying a habit, and charging them like they are is how you earn a chargeback.
 
 ## What shipped
 
-- Full DET-mapped practice modes (reading, listening, writing, speaking with audio)
-- AI-powered feedback on free-response answers
-- Progress tracking + readiness score
-- Subscription billing
-- Japanese-first UI
+- **Practice across all 14 DET question formats**, covering reading, listening, writing and speaking.
+- **Model answers by score band**, written by instructors, with tips explaining what separates one band from the next.
+- **AI writing feedback** — dimension-by-dimension scoring, spelling and grammar correction, and score-up suggestions, all presented in Japanese.
+- **Japanese-first interface** across the entire surface.
+- **Test booking through the platform** at a partner rate, with expedited results.
+- **Plan structure** — free unregistered trial, auto-renewing subscription, fixed-period non-renewing plan, and a student discount.
 
 ## Outcome
 
-- **One of two SaaS products** launched at Kawaii during my tenure.
-- Validated the Japan EdTech distribution playbook (same one we'd reuse for LifeArk).
-- Marketed as **Japan's first** DET-dedicated app — first-mover positioning maintained at launch.
+- Launched into the Japan market as a dedicated DET preparation platform, holding official Gold Partner status with the Duolingo English Test.
+- **One of two SaaS products** I launched at Kawaii, alongside [LifeArk](./lifeark-nihongo.md).
+- Picked up consumer-press coverage during 2024 — *mina*, *ar*, and *Sports Nippon* — which for a category-creating product is the signal that the positioning read clearly to people outside the category.
+- Established the Japan EdTech launch pattern the team reused afterwards.
 
 ## What I'd do differently
 
-Invest earlier in **listening audio quality**. We launched with TTS-generated audio for practice items and replaced it with native recordings post-launch — students noticed immediately. Should have been native from day one.
+**Record the listening audio with native speakers from day one.** Launch shipped with synthesised audio for listening items and it was replaced with native recordings afterwards. Candidates noticed immediately — and they were right to. On a test that scores listening comprehension, practising against audio that does not sound like the test is worse than not practising.
+
+**Instrument the AI-scoring quota before pricing around it.** AI marking is metered per account. Metering is the correct call — it is the one feature with a real marginal cost — but the limit was set from an estimate rather than from usage. Knowing how many submissions a candidate actually needs between a 95 and a 120 would have made both the quota and the price defensible instead of provisional.
+
+**Publish score-outcome evidence, not just score examples.** The site shows what a good answer looks like at each band. What it does not show is what happened to candidates who used the platform. That evidence is the most persuasive asset a prep product can own, and collecting it requires asking learners for their result at a moment that has to be designed in from the start — retro-fitting it is close to impossible.
 
 ## Stack & tools
 
-**Build:** Next.js · Django · PostgreSQL · OpenAI API · Stripe (JP payment methods)
+**Build:** Next.js · Django · PostgreSQL · OpenAI API for scoring and feedback · Stripe with Japanese payment methods
 
-**PM tooling:** Jira · Notion · Figma · Slack
+**Product tooling:** Jira · Notion · Figma · Slack
